@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>테크 시그널 하드웨어</title>
+<meta name="description" content="시제품과 양산 사이를 아는 사람이 읽는 AI 하드웨어. 부품 수급, 외주 조립, 불량 관점의 한 줄 해석.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+:root{
+  --bg:#FFFFFF;--ink:#111111;--soft:#555555;--muted:#8A8A8A;--line:#ECECEC;--tint:#F6F6F4;
+  --hit:#1F7A4D;--miss:#B5402F;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C0C0C;--ink:#EDEDED;--soft:#A8A8A8;--muted:#727272;--line:#1F1F1F;--tint:#151515;--hit:#4FB585;--miss:#E07563;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C0C0C;--ink:#EDEDED;--soft:#A8A8A8;--muted:#727272;--line:#1F1F1F;--tint:#151515;--hit:#4FB585;--miss:#E07563;color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere;overflow-x:clip}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
+.wrap{max-width:600px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.label{font-size:12px;color:var(--muted);letter-spacing:.02em}
+
+/* Header */
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;align-items:baseline;gap:8px;padding-block:14px}
+.name{font-weight:600;font-size:14px;white-space:nowrap}
+.ed{font-size:12px;color:var(--muted);white-space:nowrap}
+.nav{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none;margin-top:-4px}
+.nav::-webkit-scrollbar{display:none}
+.nav button{font-size:14px;color:var(--muted);padding-block:10px;border-bottom:1.5px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.nav button[aria-current="page"]{color:var(--ink);font-weight:600;border-bottom-color:var(--ink)}
+
+main .wrap{padding-block:32px 72px;display:flex;flex-direction:column;gap:36px}
+.lead h1{font-weight:300;font-size:clamp(23px,6.4vw,29px);line-height:1.45;letter-spacing:-.02em;margin:6px 0 0;text-wrap:balance}
+.lead p{margin:10px 0 0;color:var(--soft);font-size:14.5px}
+
+/* Lens filter */
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13px;color:var(--soft);border:1px solid var(--line);border-radius:999px;padding:4px 11px;white-space:nowrap}
+.chip[aria-pressed="true"]{color:var(--bg);background:var(--ink);border-color:var(--ink)}
+.chip small{font-family:var(--mono);font-size:11px;color:inherit;opacity:.65;margin-left:4px}
+
+/* Feed */
+.feed{display:flex;flex-direction:column}
+.day{font-size:12px;color:var(--muted);font-family:var(--mono);padding-top:28px;padding-bottom:2px}
+.day:first-child{padding-top:0}
+.sig{padding-block:22px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px;min-width:0}
+.sig:last-child{border-bottom:0}
+.meta{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:12px;color:var(--muted);min-width:0}
+.meta span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sig h3{margin:0;font-size:15px;font-weight:400;line-height:1.55;color:var(--soft)}
+.sig h3 a{border-bottom:1px solid var(--line)}
+.sig h3 a:hover{border-bottom-color:var(--soft)}
+.take{margin:0;font-size:17px;font-weight:600;line-height:1.55;letter-spacing:-.01em}
+.lenses{display:flex;flex-wrap:wrap;gap:4px 12px}
+.lens{font-family:var(--mono);font-size:12px;color:var(--muted)}
+button.lens:hover{color:var(--ink)}
+.ai{margin:0;font-size:13.5px;color:var(--soft);padding-left:10px;border-left:1.5px solid var(--line)}
+.ai b{font-weight:400;color:var(--muted);margin-right:6px;font-size:12px}
+.facts{font-size:12.5px;color:var(--muted)}
+.pred{font-size:13.5px;background:var(--tint);padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.pred b{font-size:12px;font-weight:400;color:var(--muted)}
+.more{align-self:flex-start;margin-top:8px;font-size:13px;color:var(--muted);border-bottom:1px solid var(--line)}
+.more:hover{color:var(--ink)}
+
+/* Scoreboard */
+.score{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.score div{background:var(--tint);padding:12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.score strong{font-family:var(--mono);font-size:22px;font-weight:400;letter-spacing:-.02em}
+.score span{font-size:12px;color:var(--muted)}
+.verdict{font-weight:600}
+.verdict.hit{color:var(--hit)} .verdict.miss{color:var(--miss)} .verdict.wait{color:var(--muted);font-weight:400}
+
+/* About */
+.about{display:flex;flex-direction:column;gap:28px}
+.about h2{font-size:15px;font-weight:600;margin:0 0 8px}
+.about p{margin:0;color:var(--soft)}
+.steps{margin:0;padding-left:1.2em;color:var(--soft);display:flex;flex-direction:column;gap:6px}
+.defs{margin:0;display:flex;flex-direction:column}
+.defs div{padding-block:9px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:1px}
+.defs div:last-child{border-bottom:0}
+.defs dt{font-weight:600;font-size:14px}
+.defs dd{margin:0;font-size:13.5px;color:var(--soft)}
+.bars{display:flex;flex-direction:column;gap:8px}
+.br{display:grid;grid-template-columns:6.5rem minmax(0,1fr) 2rem;gap:10px;align-items:center;font-size:13px}
+.br .t{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.br .t i{display:block;height:100%;background:var(--ink);border-radius:3px}
+.br .n{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:right}
+
+.empty{padding-block:40px;text-align:center;color:var(--muted);display:flex;flex-direction:column;gap:4px;font-size:14px}
+.empty strong{color:var(--ink);font-weight:600}
+footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:4px;border-top:1px solid var(--line);padding-top:20px}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap"><span class="name">테크 시그널</span><span class="ed">하드웨어</span></div>
+  <div class="wrap">
+    <nav class="nav" id="nav" aria-label="보기">
+      <button type="button" data-v="signals">시그널</button>
+      <button type="button" data-v="failures">실패 사례</button>
+      <button type="button" data-v="predictions">예측 성적표</button>
+      <button type="button" data-v="about">소개</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="lead">
+      <div class="label" id="leadLabel">시제품과 양산 사이</div>
+      <h1 id="leadTitle">시제품과 양산 사이를 아는 사람이 읽는 AI 하드웨어</h1>
+      <p id="leadText"></p>
+    </section>
+
+    <section id="filterSec" hidden>
+      <div class="chips" id="chips" role="toolbar" aria-label="관점으로 거르기"></div>
+    </section>
+
+    <section id="view" aria-live="polite">
+      <div class="empty"><strong>불러오는 중</strong></div>
+    </section>
+
+    <footer>
+      <span>AI가 기사를 모아 정리하고, 사람이 먼저 판단한 기사만 여기에 올라옵니다. 기사 원문은 각 링크에서 보세요.</span>
+      <span>특정 종목이나 자산의 매수·매도를 권하는 곳이 아닙니다.</span>
+    </footer>
+  </div>
+</main>
+
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+  const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : null;
+  const host = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
+  const md = d => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d || ''); return m ? `${+m[2]}월 ${+m[3]}일` : (d || ''); };
+  const pad = n => String(n).padStart(2, '0');
+  const today = (() => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; })();
+  const get = async (path, fallback) => { try { const r = await fetch(path + '?t=' + Date.now()); return r.ok ? await r.json() : fallback; } catch (e) { return fallback; } };
+
+  const PAGE = 15, ARCHIVE_DAYS = 60;
+  let meta = { lenses: {}, categories: [] }, posts = [], view = 'signals', lens = null, tag = null, shown = PAGE;
+
+  // ───── 데이터: 사람이 코멘트를 남긴 기사만 공개 ─────
+  async function load() {
+    meta = await get('data/meta.json', meta);
+    const comments = await get('data/comments.json', []);
+    const published = (Array.isArray(comments) ? comments : [])
+      .filter(c => c && !c.skipped && (c.comment || '').trim())
+      .sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.saved_at || '').localeCompare(a.saved_at || ''));
+    // 요약·근거 항목은 그날 아카이브에서 붙인다 (최근 날짜만)
+    const dates = [...new Set(published.map(c => c.date).filter(Boolean))].slice(0, ARCHIVE_DAYS);
+    const archives = await Promise.all(dates.map(d => get(`data/archive/${d}.json`, null)));
+    const byId = {};
+    archives.forEach(a => (a && Array.isArray(a.items) ? a.items : []).forEach(it => { byId[it.id] = it; }));
+    posts = published.map(c => ({ c, it: byId[c.id] || null }));
+  }
+
+  // ───── 공통 조각 ─────
+  function lensRow(list, clickable) {
+    const box = el('div', 'lenses');
+    (list || []).forEach(l => {
+      const b = el(clickable ? 'button' : 'span', 'lens', '#' + l);
+      if (clickable) { b.type = 'button'; b.addEventListener('click', () => { lens = l; shown = PAGE; go('signals'); }); }
+      box.appendChild(b);
+    });
+    return box;
+  }
+  function factLine(it) {
+    const ex = it && it.extracted; if (!ex) return null;
+    const bits = [];
+    (ex.companies || []).forEach(f => bits.push(f.value));
+    if (ex.stage) bits.push(ex.stage.value);
+    (ex.numbers || []).forEach(f => bits.push(f.value));
+    return bits.length ? el('div', 'facts', bits.join(' · ')) : null;
+  }
+  function titleLink(c, it) {
+    const h = el('h3'), u = safeUrl(c.link);
+    if (u) { const a = el('a', '', c.title || ''); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; h.appendChild(a); }
+    else h.textContent = c.title || '';
+    return h;
+  }
+  function verdictOf(p) {
+    if (!p) return null;
+    if (p.result === '맞음') return ['적중', 'hit'];
+    if (p.result === '틀림') return ['빗나감', 'miss'];
+    if (p.result === '애매') return ['애매', 'wait'];
+    return [p.review_on <= today ? '채점 대기' : `${md(p.review_on)} 확인`, 'wait'];
+  }
+
+  function card({ c, it }) {
+    const a = el('article', 'sig');
+    const meta1 = el('div', 'meta');
+    meta1.appendChild(el('span', '', c.category || '기타'));
+    const src = (it && it.source) || host(c.link); if (src) meta1.appendChild(el('span', '', src));
+    a.appendChild(meta1);
+    a.appendChild(el('p', 'take', c.comment));
+    if (Array.isArray(c.my_lenses) && c.my_lenses.length) a.appendChild(lensRow(c.my_lenses, true));
+    a.appendChild(titleLink(c, it));
+    if (it && it.summary) { const p = el('p', 'ai'); p.appendChild(el('b', '', 'AI 요약')); p.appendChild(document.createTextNode(it.summary)); a.appendChild(p); }
+    const f = factLine(it); if (f) a.appendChild(f);
+    if (c.prediction && c.prediction.text) {
+      const v = verdictOf(c.prediction), p = el('div', 'pred');
+      const head = el('b'); head.appendChild(document.createTextNode('예측 · ')); head.appendChild(el('span', 'verdict ' + v[1], v[0])); p.appendChild(head);
+      p.appendChild(el('span', '', c.prediction.text)); a.appendChild(p);
+    }
+    return a;
+  }
+  function empty(title, body) { const e = el('div', 'empty'); e.appendChild(el('strong', '', title)); if (body) e.appendChild(el('span', '', body)); return e; }
+  function chips(items, current, onPick, allLabel) {
+    const box = $('chips'); box.textContent = '';
+    const mk = (label, key, n) => {
+      const b = el('button', 'chip', label); b.type = 'button';
+      if (n != null) b.appendChild(el('small', '', String(n)));
+      b.setAttribute('aria-pressed', current === key ? 'true' : 'false');
+      b.addEventListener('click', () => onPick(key));
+      box.appendChild(b);
+    };
+    mk(allLabel, null, null);
+    items.forEach(([k, n]) => mk(k, k, n));
+    $('filterSec').hidden = items.length === 0;
+  }
+  const count = (arr, f) => { const m = new Map(); arr.forEach(x => f(x).forEach(k => m.set(k, (m.get(k) || 0) + 1))); return [...m.entries()].sort((a, b) => b[1] - a[1]); };
+  function lead(label, title, text) { $('leadLabel').textContent = label; $('leadTitle').textContent = title; $('leadText').textContent = text || ''; $('leadText').hidden = !text; }
+
+  // ───── 보기: 시그널 ─────
+  function renderSignals() {
+    const v = $('view'); v.textContent = '';
+    lead(posts.length ? `시그널 ${posts.length}건` : '시제품과 양산 사이', '시제품과 양산 사이를 아는 사람이 읽는 AI 하드웨어',
+      'AI 기기·로봇·엣지 디바이스 소식을 부품 수급, 외주 조립, 불량의 눈으로 한 줄씩 읽습니다.');
+    const order = Object.keys(meta.lenses || {});
+    const counts = count(posts, p => p.c.my_lenses || []).sort((a, b) => (order.indexOf(a[0]) + 99) % 99 - (order.indexOf(b[0]) + 99) % 99);
+    chips(counts, lens, k => { lens = k; shown = PAGE; render(); }, '전체');
+    const list = posts.filter(p => !lens || (p.c.my_lenses || []).includes(lens));
+    if (!list.length) { v.appendChild(empty(lens ? '이 관점의 시그널이 아직 없어요' : '아직 발행된 시그널이 없어요', '매일 아침 기사를 모으고, 직접 판단을 남긴 기사만 여기에 올라와요.')); return; }
+    const feed = el('div', 'feed'); let lastDay = null;
+    list.slice(0, shown).forEach(p => {
+      if (p.c.date !== lastDay) { lastDay = p.c.date; feed.appendChild(el('div', 'day', md(p.c.date))); }
+      feed.appendChild(card(p));
+    });
+    v.appendChild(feed);
+    if (list.length > shown) { const b = el('button', 'more', `더 보기 (${list.length - shown}건 남음)`); b.type = 'button'; b.addEventListener('click', () => { shown += PAGE; render(); }); v.appendChild(b); }
+  }
+
+  // ───── 보기: 실패 사례 ─────
+  function renderFailures() {
+    const v = $('view'); v.textContent = '';
+    const list = posts.filter(p => p.c.failure);
+    lead(`실패 사례 ${list.length}건`, '데모는 됐는데, 왜 못 만들었나',
+      '하드웨어가 시제품에서 양산으로 넘어가다 막힌 사례를 원인별로 모읍니다.');
+    chips(count(list, p => p.c.failure.tags || []), tag, k => { tag = k; render(); }, '전체 원인');
+    const shownList = list.filter(p => !tag || (p.c.failure.tags || []).includes(tag));
+    if (!shownList.length) { v.appendChild(empty('아직 모인 실패 사례가 없어요', '양산 단계에서 막힌 하드웨어 소식이 나오면 원인과 함께 여기에 쌓여요.')); return; }
+    const feed = el('div', 'feed');
+    shownList.forEach(p => {
+      const a = card(p);
+      const t = el('div', 'meta'); (p.c.failure.tags || []).forEach(x => t.appendChild(el('span', 'verdict miss', x)));
+      a.insertBefore(t, a.firstChild.nextSibling);
+      feed.appendChild(a);
+    });
+    v.appendChild(feed);
+  }
+
+  // ───── 보기: 예측 성적표 ─────
+  function renderPredictions() {
+    const v = $('view'); v.textContent = ''; $('filterSec').hidden = true;
+    const list = posts.filter(p => p.c.prediction && p.c.prediction.text);
+    const judged = list.filter(p => p.c.prediction.result === '맞음' || p.c.prediction.result === '틀림');
+    const hit = judged.filter(p => p.c.prediction.result === '맞음').length;
+    const waiting = list.filter(p => !p.c.prediction.result).length;
+    lead('예측 성적표', '맞힌 것도, 틀린 것도 그대로 남깁니다',
+      '기사를 읽고 남긴 예측을 정해 둔 날짜에 다시 꺼내 채점합니다. 애매한 건 적중률 계산에서 뺍니다.');
+    const s = el('div', 'score');
+    [[judged.length ? Math.round(hit / judged.length * 100) + '%' : '—', `적중률 (${hit}/${judged.length})`], [String(judged.length), '채점 끝'], [String(waiting), '확인 대기']]
+      .forEach(([n, l]) => { const d = el('div'); d.appendChild(el('strong', '', n)); d.appendChild(el('span', '', l)); s.appendChild(d); });
+    v.appendChild(s);
+    if (!list.length) { v.appendChild(empty('아직 남긴 예측이 없어요', '예측은 3·6·12개월 뒤에 채점돼요.')); return; }
+    const sorted = list.slice().sort((a, b) => (b.c.prediction.result ? 1 : 0) - (a.c.prediction.result ? 1 : 0) || (a.c.prediction.review_on || '').localeCompare(b.c.prediction.review_on || ''));
+    const feed = el('div', 'feed');
+    sorted.forEach(p => {
+      const pr = p.c.prediction, vd = verdictOf(pr), a = el('article', 'sig');
+      const m = el('div', 'meta'); m.appendChild(el('span', 'verdict ' + vd[1], vd[0])); m.appendChild(el('span', '', `${md(pr.made_on || p.c.date)}에 예측`)); a.appendChild(m);
+      a.appendChild(el('p', 'take', pr.text));
+      if (pr.note) a.appendChild(el('p', 'ai', pr.note));
+      a.appendChild(titleLink(p.c, p.it));
+      feed.appendChild(a);
+    });
+    v.appendChild(feed);
+  }
+
+  // ───── 보기: 소개 ─────
+  function jaccard(a, b) { const A = new Set(a), B = new Set(b); if (!A.size && !B.size) return null; return [...A].filter(x => B.has(x)).length / new Set([...A, ...B]).size; }
+  function renderAbout() {
+    const v = $('view'); v.textContent = ''; $('filterSec').hidden = true;
+    lead('소개', '부품이 제품이 되기까지를 자재 쪽에서 챙겨본 사람이 씁니다', '');
+    const box = el('div', 'about');
+    const sec = (h, ...nodes) => { const s = el('section'); s.appendChild(el('h2', '', h)); nodes.forEach(n => s.appendChild(n)); box.appendChild(s); };
+
+    sec('누가 쓰나',
+      el('p', '', '가전 제조사 자재과에서 3년 동안 부품을 챙겨 수량을 맞추고, 외주 조립업체(자삽·수삽)와 납기·불량 문제로 부딪혔습니다. 전기공학을 공부하며 YOLO 영상인식과 아두이노로 시제품도 만들어 봤습니다. 시제품과 양산 사이, 그 둘을 다 겪어 본 시선으로 AI 하드웨어 소식을 읽습니다.'));
+
+    const ol = el('ol', 'steps');
+    ['매일 아침 AI가 하드웨어 기사를 모으고, 원문에 실제로 있는 내용만 골라 정리합니다.',
+     '운영자가 먼저 기사마다 관점을 고르고 한 줄 판단을 남깁니다. AI의 판단은 이때 보지 않습니다.',
+     '저장한 뒤에야 AI가 고른 관점이 공개되고, 둘이 얼마나 같았는지 기록됩니다.',
+     '판단을 남긴 기사만 이 페이지에 올라옵니다. 쌓인 판단은 다음 날 AI의 예시가 됩니다.'].forEach(t => ol.appendChild(el('li', '', t)));
+    sec('어떻게 만드나', ol);
+
+    const dl = el('dl', 'defs');
+    Object.entries(meta.lenses || {}).forEach(([k, d]) => { const r = el('div'); r.appendChild(el('dt', '', k)); r.appendChild(el('dd', '', d)); dl.appendChild(r); });
+    if (dl.childNodes.length) sec('일곱 가지 관점', dl);
+
+    const counts = count(posts, p => p.c.my_lenses || []);
+    if (counts.length) {
+      const max = counts[0][1], bars = el('div', 'bars');
+      counts.forEach(([k, n]) => { const r = el('div', 'br'); r.appendChild(el('span', '', k)); const t = el('span', 't'), i = el('i'); i.style.width = Math.round(n / max * 100) + '%'; t.appendChild(i); r.appendChild(t); r.appendChild(el('span', 'n', String(n))); bars.appendChild(r); });
+      sec('자주 보는 관점', bars);
+    }
+
+    // 개인화 효과: 내 코멘트를 본 AI와 안 본 AI가 내 관점에 얼마나 가까운가 (같은 기사끼리 비교)
+    const rows = posts.map(p => p.c).filter(c => Array.isArray(c.my_lenses) && c.my_lenses.length && Array.isArray(c.ai_lenses) && Array.isArray(c.ai_lenses_baseline))
+      .map(c => [jaccard(c.my_lenses, c.ai_lenses), jaccard(c.my_lenses, c.ai_lenses_baseline)]);
+    const p1 = rows.length ? rows.reduce((s, r) => s + r[0], 0) / rows.length : null;
+    const p0 = rows.length ? rows.reduce((s, r) => s + r[1], 0) / rows.length : null;
+    const txt = rows.length < 20
+      ? `판단이 20건 쌓이면 공개합니다. 지금 ${rows.length}건.`
+      : `내 판단을 예시로 본 AI는 내 관점과 ${Math.round(p1 * 100)}% 겹치고, 예시 없이 고른 AI는 ${Math.round(p0 * 100)}% 겹칩니다 (${rows.length}건 기준).`;
+    sec('AI가 내 기준을 얼마나 따라오나', el('p', '', txt));
+
+    v.appendChild(box);
+  }
+
+  // ───── 라우팅 (#failures 같은 주소로 바로 열 수 있게) ─────
+  const VIEWS = { signals: renderSignals, failures: renderFailures, predictions: renderPredictions, about: renderAbout };
+  function render() {
+    document.querySelectorAll('#nav button').forEach(b => { if (b.dataset.v === view) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+    VIEWS[view]();
+  }
+  function go(v) { view = VIEWS[v] ? v : 'signals'; if (location.hash.slice(1) !== view) history.replaceState(null, '', '#' + view); render(); window.scrollTo({ top: 0 }); }
+  $('nav').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (b) { if (b.dataset.v === 'signals') lens = null; go(b.dataset.v); } });
+  window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if (h !== view && VIEWS[h]) { view = h; render(); } });
+
+  view = VIEWS[location.hash.slice(1)] ? location.hash.slice(1) : 'signals';
+  load().then(render, () => { $('view').textContent = ''; $('view').appendChild(empty('데이터를 불러오지 못했어요', '잠시 후 새로고침해 주세요.')); });
+})();
+</script>
+</body>
+</html>

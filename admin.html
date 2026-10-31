@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>테크 시그널 검수</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+</style>
+</head>
+<body class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100 min-h-screen pb-28">
+
+<header class="sticky top-0 z-10 bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur border-b border-stone-200 dark:border-stone-800">
+  <div class="max-w-2xl mx-auto px-4 pt-3 pb-2">
+    <div class="flex items-baseline justify-between gap-2">
+      <h1 class="font-bold tracking-tight shrink-0">테크 시그널 <span class="font-normal text-stone-500">검수</span></h1>
+      <span id="date" class="text-xs text-stone-500 truncate"></span>
+    </div>
+    <div class="mt-2 h-1.5 rounded-full bg-stone-200 dark:bg-stone-800 overflow-hidden">
+      <div id="bar" class="h-full bg-emerald-600 transition-all duration-300" style="width:0%"></div>
+    </div>
+    <nav id="tabs" class="mt-3 flex gap-1 text-sm overflow-x-auto">
+      <button data-tab="today" class="tab px-3 py-1.5 rounded-full shrink-0">오늘 검수</button>
+      <button data-tab="review" class="tab px-3 py-1.5 rounded-full shrink-0">예측 복기 <span id="dueBadge"></span></button>
+      <button data-tab="stats" class="tab px-3 py-1.5 rounded-full shrink-0">관점 통계</button>
+      <button data-tab="settings" class="tab px-3 py-1.5 rounded-full shrink-0">설정</button>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-2xl mx-auto px-4 py-4">
+  <section id="tab-today"></section>
+  <section id="tab-review" hidden></section>
+  <section id="tab-stats" hidden></section>
+  <section id="tab-settings" hidden>
+    <div class="space-y-4">
+      <p class="text-sm text-stone-600 dark:text-stone-400">
+        코멘트는 GitHub 저장소의 <code>data/comments.json</code>에 저장됩니다.
+        이 저장소 하나에만, <b>Contents 읽기·쓰기</b> 권한만 준 fine-grained 토큰을 쓰세요.
+        토큰은 이 브라우저에만 저장되고 코드나 저장소에는 들어가지 않습니다.
+      </p>
+      <label class="block text-sm">GitHub 사용자명
+        <input id="cfg-owner" class="mt-1 w-full rounded-lg border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-2" autocomplete="off"></label>
+      <label class="block text-sm">저장소 이름
+        <input id="cfg-repo" class="mt-1 w-full rounded-lg border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-2" autocomplete="off"></label>
+      <label class="block text-sm">브랜치
+        <input id="cfg-branch" class="mt-1 w-full rounded-lg border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-2" autocomplete="off"></label>
+      <label class="block text-sm">토큰
+        <input id="cfg-token" type="password" class="mt-1 w-full rounded-lg border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-2" autocomplete="off"></label>
+      <div class="flex gap-2">
+        <button id="cfg-save" class="rounded-lg bg-stone-900 text-white dark:bg-stone-100 dark:text-stone-900 px-4 py-2 text-sm font-medium">저장하고 연결 확인</button>
+        <button id="cfg-clear" class="rounded-lg border border-stone-300 dark:border-stone-700 px-4 py-2 text-sm">토큰 지우기</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="fixed bottom-0 inset-x-0 border-t border-stone-200 dark:border-stone-800 bg-white/95 dark:bg-stone-900/95 backdrop-blur">
+  <div class="max-w-2xl mx-auto px-4 py-3 flex items-center gap-3">
+    <span id="status" class="text-sm text-stone-500 flex-1 min-w-0 truncate"></span>
+    <button id="save" class="rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 text-sm font-semibold disabled:opacity-40">저장</button>
+  </div>
+</div>
+
+<script>
+const REQUIRED = 3;           // 매일 꼭 코멘트할 상위 기사 수
+const MAX_COMMENT = 160;
+const MAX_LENSES = 3;
+// pipeline.py의 LENS_DEFS와 반드시 같게 유지하세요. (사람과 AI가 같은 정의를 봐야 일치율이 의미 있음)
+const LENS_DEFS = {
+  '부품 수급': '부품을 제때 구하나 — 리드타임, 단종(EOL), 품귀, 특정 공급사 의존, 대체품 유무',
+  '외주 조립·납기': '외주 공장(EMS·ODM)이 자삽·수삽으로 제때 만들어 내나 — 생산 이관, 업체 생산 능력, 납기 지연',
+  '불량·수율': '만든 것 중 얼마나 제대로 나오나 — 초기 불량, 수율, 로스, 리콜·반품',
+  '설계 양산성': '시제품 설계 그대로 수천 대를 만들 수 있나 — 부품 선택, 조립·검사하기 쉬운 구조, 설계 변경',
+  '양산 단가': '한 대 만드는 데 얼마 드나 — BOM 원가, 금형·초기 투자, 물량에 따른 단가',
+  '수요·시장성': '누가 왜 사나 — 실제 문제를 푸나, 값만큼 쓸모 있나, 오버엔지니어링은 아닌가',
+  '인증·규제': '팔기 전에 통과해야 하나 — KC·전파·안전 인증, 수출 규제, 정부 지원 요건',
+};
+const LENSES = Object.keys(LENS_DEFS);
+
+// ───── 유틸 ─────
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '#';
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2, '0');
+const localDate = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const todayStr = () => localDate(new Date());
+const addMonths = (s, m) => { const d = new Date(s + 'T00:00:00'); d.setMonth(d.getMonth() + m); return localDate(d); };
+const addDays = (s, n) => { const d = new Date(s + 'T00:00:00'); d.setDate(d.getDate() + n); return localDate(d); };
+const weekStart = s => { const d = new Date(s + 'T00:00:00'); d.setDate(d.getDate() - (d.getDay() + 6) % 7); return localDate(d); };
+const b64ToUtf8 = b => new TextDecoder().decode(Uint8Array.from(atob(b.replace(/\s/g, '')), c => c.charCodeAt(0)));
+const utf8ToB64 = s => { let bin = ''; new TextEncoder().encode(s).forEach(b => bin += String.fromCharCode(b)); return btoa(bin); };
+const avg = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
+const pct = v => v == null ? '-' : Math.round(v * 100) + '%';
+const status = (msg, tone = '') => { const el = $('status'); el.textContent = msg; el.className = 'text-sm flex-1 min-w-0 truncate ' + (tone === 'err' ? 'text-red-600' : tone === 'ok' ? 'text-emerald-600' : 'text-stone-500'); };
+
+// 두 렌즈 집합의 일치율 (Jaccard: 교집합 / 합집합).
+// 집계 규칙: 내가 "해당 없음"을 고른 기사는 개인화·기준선 양쪽 통계에서 모두 뺀다.
+// (AI 답에 따라 빼면 두 AI가 서로 다른 기사 묶음으로 평균을 내게 되어 비교가 불공정해짐)
+function jaccard(a, b) {
+  if (!Array.isArray(a) || !Array.isArray(b)) return null;
+  const A = new Set(a), B = new Set(b);
+  if (!A.size && !B.size) return null;
+  const inter = [...A].filter(x => B.has(x)).length;
+  return inter / new Set([...A, ...B]).size;
+}
+
+// ───── 상태 ─────
+let cfg = LS.get('ts_cfg', { owner: '', repo: '', branch: 'main', token: '' });
+let latest = { date: '', items: [] };
+let comments = [];
+let savedById = {};
+let commentsSha = null;
+let drafts = LS.get('ts_drafts', {});   // 기사 id → 작성 중인 검수 내용
+let reviews = {};                        // 예측 id → 복기 결과
+let showRest = false;
+let defsOpen = false;   // 렌즈 정의 펼침 상태 (다시 그려도 유지)
+
+const saveDrafts = () => LS.set('ts_drafts', drafts);
+const reindex = () => { savedById = Object.fromEntries(comments.map(c => [c.id, c])); };
+const draft = it => {
+  if (!drafts[it.id]) {
+    drafts[it.id] = { comment: '', starred: false, skipped: false, pred: false, predText: '', predMonths: 6,
+                      failure: false, failTags: (it.failure_case?.cause_tags || []).join(', '),
+                      myLenses: [], noneFit: false };
+  }
+  const d = drafts[it.id];
+  if (!Array.isArray(d.myLenses)) d.myLenses = [];   // 이전 버전 초안 호환
+  return d;
+};
+const draftDone = it => { const d = drafts[it.id]; return !!d && (d.skipped || d.comment.trim().length > 0); };
+const isDone = it => !!savedById[it.id] || draftDone(it);
+const pendingItems = () => (latest.items || []).filter(it => !savedById[it.id] && draftDone(it));
+
+// ───── GitHub ─────
+function api(path, opts = {}) {
+  const url = `https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/contents/${path}`
+            + (opts.method ? '' : `?ref=${encodeURIComponent(cfg.branch)}`);
+  return fetch(url, { ...opts, headers: { Authorization: `Bearer ${cfg.token}`, Accept: 'application/vnd.github+json',
+                                         ...(opts.body ? { 'Content-Type': 'application/json' } : {}) } });
+}
+
+async function loadLatest() {
+  const r = await fetch('data/latest.json?t=' + Date.now());
+  if (!r.ok) throw new Error('data/latest.json을 불러오지 못했습니다');
+  latest = await r.json();
+}
+
+async function loadComments() {
+  if (!cfg.token) {
+    try { const r = await fetch('data/comments.json?t=' + Date.now()); comments = r.ok ? await r.json() : []; }
+    catch { comments = []; }
+    commentsSha = null; reindex();
+    return;
+  }
+  const r = await api('data/comments.json');
+  if (r.status === 404) { comments = []; commentsSha = null; reindex(); return; }
+  if (!r.ok) throw new Error(`GitHub 읽기 실패 (${r.status}) — 설정을 확인하세요`);
+  const j = await r.json();
+  commentsSha = j.sha;
+  comments = JSON.parse(b64ToUtf8(j.content));
+  reindex();
+}
+
+function buildEntries() {
+  const now = new Date().toISOString();
+  return pendingItems().map(it => {
+    const d = drafts[it.id];
+    const lensChosen = !d.skipped && (d.noneFit || d.myLenses.length > 0);
+    const my = lensChosen ? (d.noneFit ? [] : [...d.myLenses]) : null;   // null = 고르지 않음 → 통계 제외
+    const ai = Array.isArray(it.ai_lenses) ? it.ai_lenses : null;
+    const base = Array.isArray(it.ai_lenses_baseline) ? it.ai_lenses_baseline : null;
+    const e = { id: it.id, date: latest.date, title: it.title, link: it.link, category: it.category || '기타',
+                comment: d.skipped ? '' : d.comment.trim(), starred: !d.skipped && d.starred,
+                skipped: d.skipped, saved_at: now,
+                my_lenses: my, ai_lenses: ai, ai_lenses_baseline: base,
+                alignment: my?.length ? jaccard(my, ai) : null,
+                alignment_baseline: my?.length ? jaccard(my, base) : null };
+    if (!d.skipped && d.pred && d.predText.trim())
+      e.prediction = { text: d.predText.trim(), made_on: latest.date, review_on: addMonths(latest.date, +d.predMonths || 6), result: null };
+    if (!d.skipped && d.failure)
+      e.failure = { tags: d.failTags.split(',').map(s => s.trim()).filter(Boolean), evidence: it.failure_case?.evidence || '' };
+    return e;
+  });
+}
+
+function merge(base, entries, revs) {
+  // 이미 저장된 기사는 덮어쓰지 않는다 (AI 렌즈를 본 뒤 고치는 것을 막기 위해)
+  const have = new Set(base.map(c => c.id));
+  const out = [...base, ...entries.filter(e => !have.has(e.id))];
+  for (const c of out) {
+    const r = revs[c.id];
+    if (r && c.prediction) Object.assign(c.prediction, { result: r.result, note: r.note || '', reviewed_on: todayStr() });
+  }
+  return out;
+}
+
+async function save() {
+  if (!cfg.token || !cfg.owner || !cfg.repo) { status('설정에서 GitHub 정보를 먼저 넣어주세요', 'err'); switchTab('settings'); return; }
+  const entries = buildEntries();
+  if (!entries.length && !Object.keys(reviews).length) { status('저장할 내용이 없어요'); return; }
+  $('save').disabled = true; status('저장 중…');
+  try {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      await loadComments();
+      const merged = merge(comments, entries, reviews);
+      const body = { message: `comments: ${latest.date} 검수 ${entries.length}건`, branch: cfg.branch,
+                     content: utf8ToB64(JSON.stringify(merged, null, 1)) };
+      if (commentsSha) body.sha = commentsSha;
+      const r = await api('data/comments.json', { method: 'PUT', body: JSON.stringify(body) });
+      if (r.ok) {
+        commentsSha = (await r.json()).content.sha;
+        comments = merged; reindex();
+        for (const e of entries) delete drafts[e.id];
+        reviews = {};
+        saveDrafts(); render();
+        status(`저장 완료 (${entries.length}건) · AI 판단이 공개됐어요`, 'ok');
+        return;
+      }
+      if (![409, 422].includes(r.status)) throw new Error(`GitHub 저장 실패 (${r.status})`);
+    }
+    throw new Error('다른 곳에서 동시에 수정됐어요. 다시 저장해 주세요');
+  } catch (e) { status(e.message, 'err'); }
+  finally { $('save').disabled = false; }
+}
+
+// ───── 공통 조각 ─────
+const chip = (t, cls) => `<span class="inline-block rounded-full px-2 py-0.5 text-[11px] font-medium ${cls}">${esc(t)}</span>`;
+const EST_LABEL = { production_difficulty: '양산 난이도', likely_bottleneck: '예상 병목' };
+const ON = 'border-stone-900 bg-stone-900 text-white dark:border-stone-100 dark:bg-stone-100 dark:text-stone-900';
+const OFF = 'border-stone-300 dark:border-stone-700 text-stone-600 dark:text-stone-300';
+
+function facts(it) {
+  const ex = it.extracted || {}, rows = [];
+  (ex.companies || []).forEach(f => rows.push(['기업', f]));
+  if (ex.stage) rows.push(['단계', ex.stage]);
+  (ex.numbers || []).forEach(f => rows.push(['수치', f]));
+  const body = rows.length ? rows.map(([k, f]) => `
+    <details class="text-sm">
+      <summary class="flex gap-2 py-0.5"><span class="text-stone-400 w-8 shrink-0">${k}</span><span>${esc(f.value)}</span><span class="text-stone-300 dark:text-stone-600 text-xs ml-auto">근거</span></summary>
+      <p class="ml-10 text-xs text-stone-500 border-l-2 border-stone-200 dark:border-stone-700 pl-2 my-1">원문: “${esc(f.evidence)}”</p>
+    </details>`).join('') : `<p class="text-xs text-stone-400">원문에서 확인된 항목 없음</p>`;
+  return `<div class="rounded-xl bg-stone-50 dark:bg-stone-950 p-3">
+      <p class="text-[11px] font-semibold text-stone-500 mb-1">원문 확인 항목</p>${body}
+      ${it.dropped ? `<p class="text-[11px] text-stone-400 mt-1">근거가 원문에 없어 자동 제거된 항목 ${it.dropped}개</p>` : ''}</div>`;
+}
+
+function estimates(it) {
+  const est = it.estimated || {};
+  const rows = Object.entries(EST_LABEL).map(([k, label]) => {
+    const e = est[k] || {};
+    if (!e.value || e.value === '판단불가')
+      return `<div class="text-sm flex gap-2"><span class="text-amber-700/60 dark:text-amber-400/60 w-20 shrink-0">${label}</span><span class="text-stone-400">판단불가</span></div>`;
+    return `<div class="text-sm">
+      <div class="flex gap-2"><span class="text-amber-800 dark:text-amber-300 w-20 shrink-0">${label}</span><span class="font-medium">${esc(e.value)}</span><span class="ml-auto text-[11px] text-amber-700 dark:text-amber-400 shrink-0">확신 ${esc(e.confidence || '-')}</span></div>
+      ${e.reason ? `<p class="ml-[5.5rem] text-xs text-stone-500">${esc(e.reason)}</p>` : ''}</div>`;
+  }).join('');
+  return `<div class="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200/70 dark:border-amber-900/50 p-3 space-y-1">
+      <p class="text-[11px] font-semibold text-amber-800 dark:text-amber-300">AI 추정 · 검증 전</p>${rows}</div>`;
+}
+
+function header(it, idx, doneLabel) {
+  const required = idx < REQUIRED;
+  return `<div class="flex flex-wrap items-center gap-1.5">
+      ${chip('#' + (idx + 1) + (required ? ' 필수' : ''), required ? 'bg-stone-900 text-white dark:bg-stone-100 dark:text-stone-900' : 'bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300')}
+      ${chip(it.category || '기타', 'bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300')}
+      ${chip('점수 ' + (it.score ?? '-'), 'bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-300')}
+      ${it.why ? `<span class="text-[11px] text-stone-400">${esc(it.why)}</span>` : ''}
+      <span data-donelabel class="ml-auto text-xs text-emerald-600 font-medium">${doneLabel || ''}</span>
+    </div>
+    <div>
+      <a href="${esc(safeUrl(it.link))}" target="_blank" rel="noopener" class="font-semibold leading-snug hover:underline">${esc(it.title)}</a>
+      <p class="text-xs text-stone-400 mt-0.5">${esc(it.source)}</p>
+    </div>
+    ${it.summary ? `<p class="text-sm text-stone-700 dark:text-stone-300">${esc(it.summary)}</p>` : ''}`;
+}
+
+const progs = it => (it.programs || []).length ? `<div class="text-sm"><p class="text-[11px] font-semibold text-stone-500 mb-1">연결 가능한 지원사업</p><ul class="space-y-0.5">${
+  it.programs.map(p => `<li><a class="underline" href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener">${esc(p.title)}</a>
+    <span class="text-stone-400">${esc(p.agency || '')} ${p.deadline ? '· ~' + esc(p.deadline) : ''}</span></li>`).join('')}</ul></div>` : '';
+
+// ───── 작성 중 카드: AI 렌즈·추정은 숨김 ─────
+function draftCard(it, idx) {
+  const d = draft(it), done = draftDone(it);
+  return `
+  <article data-id="${esc(it.id)}" class="rounded-2xl border ${done ? 'border-emerald-300 dark:border-emerald-800' : 'border-stone-200 dark:border-stone-800'} bg-white dark:bg-stone-900 p-4 space-y-3 ${d.skipped ? 'opacity-50' : ''}">
+    ${header(it, idx, done ? (d.skipped ? '건너뜀 · 저장 전' : '작성됨 · 저장 전') : '')}
+    ${facts(it)}
+    ${progs(it)}
+    ${it.failure_case ? `<p class="text-xs text-rose-700 dark:text-rose-300">실패 사례로 감지됨: ${esc((it.failure_case.cause_tags || []).join(', '))} — 확인 후 아래에서 DB에 추가하세요</p>` : ''}
+
+    ${d.skipped ? '' : `<div>
+      <p class="text-[11px] font-semibold text-stone-500 mb-1.5">내가 보는 관점 <span class="font-normal text-stone-400">최대 ${MAX_LENSES}개 · AI 판단은 저장 후 공개</span></p>
+      <div class="flex flex-wrap gap-1.5 text-[13px]">
+        ${LENSES.map(l => `<button data-lens="${esc(l)}" title="${esc(LENS_DEFS[l])}" class="rounded-full border px-2.5 py-1 ${d.myLenses.includes(l) ? ON : OFF}">${esc(l)}</button>`).join('')}
+        <button data-lens="__none" title="렌즈와 무관한 기사 — 일치율 통계에서 빠짐" class="rounded-full border border-dashed px-2.5 py-1 ${d.noneFit ? ON : OFF}">해당 없음</button>
+      </div>
+      <details data-defs class="mt-1.5" ${defsOpen ? 'open' : ''}><summary class="text-[11px] text-stone-400">렌즈 정의 보기 ▾</summary>
+        <dl class="mt-1 space-y-0.5 text-[11px]">${LENSES.map(l => `<div class="flex gap-2"><dt class="w-24 shrink-0 font-medium text-stone-600 dark:text-stone-300">${esc(l)}</dt><dd class="text-stone-500">${esc(LENS_DEFS[l])}</dd></div>`).join('')}</dl>
+      </details></div>`}
+
+    <div>
+      <textarea data-field="comment" rows="2" maxlength="${MAX_COMMENT}" ${d.skipped ? 'disabled' : ''}
+        placeholder="${esc(it.review_question || '자재·외주 현장에서 본 관점 한 줄')}"
+        class="w-full rounded-xl border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-2 text-[15px] focus:outline-none focus:ring-2 focus:ring-emerald-500">${esc(d.comment)}</textarea>
+      <div class="flex justify-between gap-2 text-[11px] text-stone-400 mt-0.5">
+        <span>${it.review_question ? '질문: ' + esc(it.review_question) : ''}</span>
+        <span data-counter class="shrink-0">${d.comment.length}/${MAX_COMMENT}</span>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap gap-1.5 text-sm">
+      ${toggle('starred', d.starred, '⭐ 학습 예시로', '다음 날부터 AI 프롬프트의 예시로 우선 사용')}
+      ${toggle('pred', d.pred, '🔮 예측 남기기', '나중에 맞았는지 복기')}
+      ${toggle('failure', d.failure, '🧱 실패 DB', '하드웨어 실패 사례 DB에 추가')}
+      ${toggle('skipped', d.skipped, '건너뛰기', '오늘은 코멘트하지 않음')}
+    </div>
+
+    ${d.pred && !d.skipped ? `<div class="flex gap-2">
+      <input data-field="predText" value="${esc(d.predText)}" placeholder="예: 6개월 안에 출시 일정이 한 번 더 밀린다"
+        class="flex-1 min-w-0 rounded-lg border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-1.5 text-sm">
+      <select data-field="predMonths" class="rounded-lg border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-2 text-sm">
+        ${[3, 6, 12].map(m => `<option value="${m}" ${+d.predMonths === m ? 'selected' : ''}>${m}개월 뒤</option>`).join('')}
+      </select></div>` : ''}
+
+    ${d.failure && !d.skipped ? `<input data-field="failTags" value="${esc(d.failTags)}" placeholder="원인 태그 (쉼표 구분): 양산, 부품수급"
+        class="w-full rounded-lg border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-1.5 text-sm">` : ''}
+  </article>`;
+}
+
+function toggle(field, on, label, title) {
+  return `<button data-toggle="${field}" title="${esc(title)}" class="rounded-full border px-3 py-1 ${on ? ON : OFF}">${label}</button>`;
+}
+
+// ───── 저장된 카드: 내 판단 옆에 AI 판단을 공개 ─────
+function lensRow(label, lenses, mine) {
+  if (!Array.isArray(lenses)) return `<div class="flex gap-2 text-sm"><span class="text-stone-400 w-24 shrink-0">${label}</span><span class="text-stone-400">기록 없음</span></div>`;
+  const chips = lenses.length ? lenses.map(l => {
+    const match = mine && mine.has(l);
+    return chip(l, match ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 ring-1 ring-emerald-400/60' : 'bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-300');
+  }).join(' ') : `<span class="text-xs text-stone-400">해당 없음</span>`;
+  return `<div class="flex gap-2 text-sm items-start"><span class="text-stone-500 w-24 shrink-0 text-xs pt-0.5">${label}</span><div class="flex flex-wrap gap-1">${chips}</div></div>`;
+}
+
+function savedCard(it, s, idx) {
+  if (s.skipped) return `<article class="rounded-2xl border border-stone-200 dark:border-stone-800 p-4 space-y-1 opacity-60">${header(it, idx, '건너뜀')}</article>`;
+  const mine = Array.isArray(s.my_lenses) ? new Set(s.my_lenses) : null;
+  return `
+  <article class="rounded-2xl border border-emerald-300 dark:border-emerald-800 bg-emerald-50/40 dark:bg-emerald-950/20 p-4 space-y-3">
+    ${header(it, idx, '저장됨')}
+    <div class="rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 p-3">
+      <p class="text-[15px]">💬 ${esc(s.comment)}</p>
+      ${s.prediction ? `<p class="text-xs text-stone-500 mt-1">🔮 ${esc(s.prediction.text)} · ${esc(s.prediction.review_on)} 복기</p>` : ''}
+      ${s.failure ? `<p class="text-xs text-rose-700 dark:text-rose-300 mt-1">🧱 실패 DB: ${esc(s.failure.tags.join(', '))}</p>` : ''}
+    </div>
+    <div class="rounded-xl bg-stone-50 dark:bg-stone-950 p-3 space-y-1.5">
+      <div class="flex items-center justify-between">
+        <p class="text-[11px] font-semibold text-stone-500">관점 비교</p>
+        ${s.alignment != null ? `<span class="text-xs font-semibold">일치율 ${pct(s.alignment)} <span class="font-normal text-stone-400">(기준선 ${pct(s.alignment_baseline)})</span></span>` : ''}
+      </div>
+      ${!mine ? `<p class="text-xs text-stone-400">렌즈를 고르지 않아 통계에서 빠집니다</p>`
+        : !mine.size ? `<p class="text-xs text-stone-400">"해당 없음"으로 골라 일치율 통계에서 빠집니다</p>`
+        : lensRow('나', s.my_lenses)}
+      ${lensRow('AI · 내 기준 학습', s.ai_lenses, mine)}
+      ${lensRow('AI · 기준선', s.ai_lenses_baseline, mine)}
+    </div>
+    ${estimates(it)}
+    ${facts(it)}
+  </article>`;
+}
+
+function card(it, idx) {
+  if (it.error) return `<article class="rounded-2xl border border-red-200 dark:border-red-900 p-4 text-sm">
+      <a href="${esc(safeUrl(it.link))}" target="_blank" rel="noopener" class="font-medium underline">${esc(it.title)}</a>
+      <p class="text-red-600 text-xs mt-1">구조화 실패: ${esc(it.error)}</p></article>`;
+  return savedById[it.id] ? savedCard(it, savedById[it.id], idx) : draftCard(it, idx);
+}
+
+function renderToday() {
+  const items = latest.items || [];
+  if (!items.length) { $('tab-today').innerHTML = `<p class="text-sm text-stone-500 py-10 text-center">오늘 수집된 기사가 없어요.</p>`; return; }
+  const top = items.slice(0, REQUIRED), rest = items.slice(REQUIRED);
+  $('tab-today').innerHTML = `
+    <div class="space-y-4">${top.map((it, i) => card(it, i)).join('')}</div>
+    ${rest.length ? `<details id="rest" class="mt-6" ${showRest ? 'open' : ''}>
+      <summary class="text-sm text-stone-500 py-2">나머지 ${rest.length}건 (선택) ▾</summary>
+      <div class="space-y-4 mt-2">${rest.map((it, i) => card(it, i + REQUIRED)).join('')}</div></details>` : ''}`;
+  const r = $('rest'); if (r) r.addEventListener('toggle', () => { showRest = r.open; });
+}
+
+// ───── 예측 복기 ─────
+function renderReview() {
+  const today = todayStr();
+  const preds = comments.filter(c => c.prediction);
+  const due = preds.filter(c => !c.prediction.result && c.prediction.review_on <= today);
+  const judged = preds.filter(c => c.prediction.result);
+  const hit = judged.filter(c => c.prediction.result === '맞음').length;
+  const upcoming = preds.filter(c => !c.prediction.result && c.prediction.review_on > today).length;
+  const box = (big, small) => `<div class="rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 p-3"><p class="text-2xl font-bold">${big}</p><p class="text-[11px] text-stone-500">${small}</p></div>`;
+
+  $('tab-review').innerHTML = `
+    <div class="grid grid-cols-3 gap-2 mb-5 text-center">
+      ${box(judged.length ? pct(hit / judged.length) : '-', `적중률 (${hit}/${judged.length})`)}
+      ${box(due.length, '복기할 예측')}${box(upcoming, '대기 중')}
+    </div>
+    ${!cfg.token ? `<p class="text-xs text-stone-500 mb-3">토큰이 없으면 공개된 comments.json만 읽어요. 복기 저장은 설정 후 가능합니다.</p>` : ''}
+    ${due.length ? `<div class="space-y-3">${due.map(c => {
+      const r = reviews[c.id] || {};
+      return `<article data-rid="${esc(c.id)}" class="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 p-4 space-y-2">
+        <p class="text-xs text-stone-400">${esc(c.prediction.made_on || c.date)}에 예측 · 복기일 ${esc(c.prediction.review_on)}</p>
+        <a href="${esc(safeUrl(c.link))}" target="_blank" rel="noopener" class="text-sm font-medium hover:underline">${esc(c.title)}</a>
+        <p class="text-[15px]">🔮 ${esc(c.prediction.text)}</p>
+        <p class="text-xs text-stone-500">당시 코멘트: ${esc(c.comment)}</p>
+        <div class="flex gap-1.5">${['맞음', '틀림', '애매'].map(v => `<button data-result="${v}" class="rounded-full border px-3 py-1 text-sm ${r.result === v ? ON : OFF}">${v}</button>`).join('')}</div>
+        <input data-rnote value="${esc(r.note || '')}" placeholder="무엇이 맞고 틀렸나 (선택)" class="w-full rounded-lg border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-3 py-1.5 text-sm">
+      </article>`; }).join('')}</div>`
+    : `<p class="text-sm text-stone-500 py-10 text-center">오늘 복기할 예측이 없어요.</p>`}`;
+  $('dueBadge').textContent = due.length ? `(${due.length})` : '';
+}
+
+// ───── 관점 통계 ─────
+function bar(v, cls) {
+  return `<div class="h-2 rounded-full bg-stone-200 dark:bg-stone-800 overflow-hidden"><div class="h-full rounded-full ${cls}" style="width:${v == null ? 0 : Math.round(v * 100)}%"></div></div>`;
+}
+
+function renderStats() {
+  // 저장된 값 대신 원본 렌즈로 매번 다시 계산 → 계산 규칙을 바꿔도 과거 데이터에 그대로 적용됨
+  const rows = comments
+    .filter(c => !c.skipped && Array.isArray(c.my_lenses) && c.my_lenses.length && Array.isArray(c.ai_lenses))
+    .map(c => ({ ...c, alignment: jaccard(c.my_lenses, c.ai_lenses),
+                 alignment_baseline: Array.isArray(c.ai_lenses_baseline) ? jaccard(c.my_lenses, c.ai_lenses_baseline) : null }))
+    .sort((a, b) => a.date < b.date ? -1 : 1);
+  const noneCount = comments.filter(c => !c.skipped && Array.isArray(c.my_lenses) && !c.my_lenses.length).length;
+  if (!rows.length) {
+    $('tab-stats').innerHTML = `<div class="py-10 text-center text-sm text-stone-500 space-y-2">
+      <p>아직 데이터가 없어요.</p><p class="text-xs">코멘트를 저장할 때 렌즈를 고르면, 내 관점과 AI 관점의 일치율이 여기에 쌓입니다.</p></div>`;
+    return;
+  }
+  const today = todayStr(), from30 = addDays(today, -30);
+  const recent = rows.filter(c => c.date >= from30);
+  const first = rows.slice(0, Math.min(20, rows.length));
+  // 개인화 효과는 두 AI 값이 모두 있는 같은 기사끼리만 비교 (기준선 호출이 실패한 기사는 제외)
+  const paired = recent.filter(c => c.alignment_baseline != null);
+  const pAll = avg(recent.map(c => c.alignment));
+  const bAll = avg(paired.map(c => c.alignment_baseline));
+  const pFirst = avg(first.map(c => c.alignment));
+  const gap = avg(paired.map(c => c.alignment - c.alignment_baseline));
+
+  // 주별 추이 (최근 12주)
+  const weeks = {};
+  for (const c of rows) (weeks[weekStart(c.date)] ||= []).push(c);
+  const wkeys = Object.keys(weeks).sort().slice(-12);
+  const weekRows = wkeys.map(w => {
+    const g = weeks[w], p = avg(g.map(c => c.alignment)), b = avg(g.filter(c => c.alignment_baseline != null).map(c => c.alignment_baseline));
+    return `<div class="grid grid-cols-[4.5rem_1fr_3rem] gap-2 items-center text-xs">
+      <span class="text-stone-500">${w.slice(5)}주 <span class="text-stone-400">${g.length}건</span></span>
+      <div class="space-y-1">${bar(p, 'bg-emerald-600')}${bar(b, 'bg-stone-400 dark:bg-stone-500')}</div>
+      <span class="text-right"><b>${pct(p)}</b><br><span class="text-stone-400">${pct(b)}</span></span></div>`;
+  }).join('');
+
+  // 렌즈 빈도: 나 vs AI
+  const cnt = key => { const m = Object.fromEntries(LENSES.map(l => [l, 0])); rows.forEach(c => (c[key] || []).forEach(l => { if (l in m) m[l]++; })); return m; };
+  const mine = cnt('my_lenses'), ai = cnt('ai_lenses');
+  const maxC = Math.max(1, ...Object.values(mine), ...Object.values(ai));
+  const lensRows = LENSES.map(l => `<div class="grid grid-cols-[5.5rem_1fr_2.5rem] gap-2 items-center text-xs">
+      <span class="text-stone-600 dark:text-stone-300">${esc(l)}</span>
+      <div class="space-y-1">${bar(mine[l] / maxC, 'bg-sky-600')}${bar(ai[l] / maxC, 'bg-stone-400 dark:bg-stone-500')}</div>
+      <span class="text-right">${mine[l]}<br><span class="text-stone-400">${ai[l]}</span></span></div>`).join('');
+
+  const box = (big, small, sub = '') => `<div class="rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 p-3"><p class="text-2xl font-bold">${big}</p><p class="text-[11px] text-stone-500">${small}</p>${sub ? `<p class="text-[10px] text-stone-400 mt-0.5">${sub}</p>` : ''}</div>`;
+
+  $('tab-stats').innerHTML = `
+    <div class="grid grid-cols-3 gap-2 text-center">
+      ${box(pct(pAll), '최근 30일 일치율', `초기 20건 ${pct(pFirst)}`)}
+      ${box(pct(bAll), '기준선 일치율', '내 코멘트 없이')}
+      ${box(gap == null ? '-' : (gap >= 0 ? '+' : '') + Math.round(gap * 100) + '%p', '개인화 효과', '일치율 − 기준선')}
+    </div>
+    <p class="text-[11px] text-stone-400 mt-2">집계 ${rows.length}건${noneCount ? ` · "해당 없음" ${noneCount}건 제외` : ''}</p>
+    ${rows.length < 20 ? `<p class="text-[11px] text-amber-700 dark:text-amber-400 mt-1 leading-relaxed">초기 구간이에요. 코멘트가 15~20건 쌓이기 전에는 개인화 AI도 참고할 예시가 거의 없어서 기준선과 비슷하게 나오는 게 정상이고, 몇 건만으로도 수치가 크게 흔들립니다.</p>` : ''}
+
+    <h2 class="text-sm font-semibold mt-6 mb-1">주별 추이</h2>
+    <p class="text-[11px] text-stone-400 mb-3"><span class="inline-block w-2 h-2 rounded-full bg-emerald-600 align-middle"></span> 내 기준 학습 AI
+      &nbsp;<span class="inline-block w-2 h-2 rounded-full bg-stone-400 align-middle"></span> 기준선 AI</p>
+    <div class="space-y-3">${weekRows}</div>
+
+    <h2 class="text-sm font-semibold mt-8 mb-1">어떤 관점을 자주 보나</h2>
+    <p class="text-[11px] text-stone-400 mb-3"><span class="inline-block w-2 h-2 rounded-full bg-sky-600 align-middle"></span> 나
+      &nbsp;<span class="inline-block w-2 h-2 rounded-full bg-stone-400 align-middle"></span> AI</p>
+    <div class="space-y-3">${lensRows}</div>
+
+    <p class="text-xs text-stone-500 mt-8 leading-relaxed">일치율만 오르면 "AI가 나를 배웠다"와 "내가 AI를 닮아갔다"가 구분되지 않아요.
+      기준선(내 코멘트를 안 본 AI)과의 차이가 벌어질 때가, 내 기준이 실제로 전달됐다는 근거입니다.</p>`;
+}
+
+// ───── 진행률 · 탭 ─────
+function updateProgress() {
+  const items = latest.items || [];
+  const top = items.slice(0, REQUIRED), reqDone = top.filter(isDone).length;
+  const allDone = items.filter(isDone).length;
+  $('bar').style.width = (top.length ? reqDone / top.length * 100 : 0) + '%';
+  $('date').textContent = latest.date ? `${latest.date} · 필수 ${reqDone}/${top.length} · 전체 ${allDone}/${items.length}` : '';
+  const pending = pendingItems().length + Object.keys(reviews).length;
+  $('save').textContent = pending ? `저장 (${pending})` : '저장';
+}
+
+function switchTab(t) {
+  for (const s of ['today', 'review', 'stats', 'settings']) $('tab-' + s).hidden = s !== t;
+  document.querySelectorAll('.tab').forEach(b => {
+    b.className = 'tab px-3 py-1.5 rounded-full shrink-0 ' + (b.dataset.tab === t ? ON : 'text-stone-600 dark:text-stone-400');
+  });
+  if (t === 'settings') { $('cfg-owner').value = cfg.owner; $('cfg-repo').value = cfg.repo; $('cfg-branch').value = cfg.branch || 'main'; $('cfg-token').value = cfg.token; }
+}
+
+function render() { renderToday(); renderReview(); renderStats(); updateProgress(); }
+
+// ───── 이벤트 ─────
+$('tabs').addEventListener('click', e => { const b = e.target.closest('[data-tab]'); if (b) switchTab(b.dataset.tab); });
+
+$('tab-today').addEventListener('input', e => {
+  const art = e.target.closest('[data-id]'), field = e.target.dataset.field;
+  if (!art || !field) return;
+  const d = drafts[art.dataset.id];
+  d[field] = e.target.value;
+  if (field === 'comment') {
+    // 다시 그리지 않고 제자리에서 갱신 (다시 그리면 다음 탭 입력이 사라짐)
+    const done = d.comment.trim().length > 0;
+    art.querySelector('[data-counter]').textContent = `${d.comment.length}/${MAX_COMMENT}`;
+    art.querySelector('[data-donelabel]').textContent = done ? '작성됨 · 저장 전' : '';
+    art.classList.toggle('border-emerald-300', done);
+    art.classList.toggle('dark:border-emerald-800', done);
+    art.classList.toggle('border-stone-200', !done);
+    art.classList.toggle('dark:border-stone-800', !done);
+  }
+  saveDrafts(); updateProgress();
+});
+
+$('tab-today').addEventListener('click', e => {
+  const art = e.target.closest('[data-id]'); if (!art) return;
+  const d = drafts[art.dataset.id];
+  const t = e.target.closest('[data-toggle]');
+  const l = e.target.closest('[data-lens]');
+  if (t) {
+    d[t.dataset.toggle] = !d[t.dataset.toggle];
+  } else if (l) {
+    const lens = l.dataset.lens;
+    if (lens === '__none') { d.noneFit = !d.noneFit; d.myLenses = []; }
+    else if (d.myLenses.includes(lens)) { d.myLenses = d.myLenses.filter(x => x !== lens); }
+    else if (d.myLenses.length >= MAX_LENSES) { status(`관점은 최대 ${MAX_LENSES}개까지 고를 수 있어요`); return; }
+    else { d.myLenses = [...d.myLenses, lens]; d.noneFit = false; }
+  } else return;
+  saveDrafts(); renderToday(); updateProgress();
+});
+
+$('tab-review').addEventListener('click', e => {
+  const b = e.target.closest('[data-result]'); if (!b) return;
+  const id = b.closest('[data-rid]').dataset.rid;
+  reviews[id] = { ...(reviews[id] || {}), result: b.dataset.result };
+  renderReview(); updateProgress();
+});
+$('tab-review').addEventListener('input', e => {
+  if (!e.target.hasAttribute('data-rnote')) return;
+  const id = e.target.closest('[data-rid]').dataset.rid;
+  if (reviews[id]) reviews[id].note = e.target.value;   // 결과를 고른 뒤에만 메모 저장
+});
+
+$('tab-today').addEventListener('toggle', e => { if (e.target.hasAttribute?.('data-defs')) defsOpen = e.target.open; }, true);
+
+$('save').addEventListener('click', save);
+
+$('cfg-save').addEventListener('click', async () => {
+  cfg = { owner: $('cfg-owner').value.trim(), repo: $('cfg-repo').value.trim(),
+          branch: $('cfg-branch').value.trim() || 'main', token: $('cfg-token').value.trim() };
+  LS.set('ts_cfg', cfg);
+  try { await loadComments(); status(`연결됨 · 저장된 코멘트 ${comments.length}건`, 'ok'); render(); switchTab('today'); }
+  catch (err) { status(err.message, 'err'); }
+});
+$('cfg-clear').addEventListener('click', () => { cfg.token = ''; LS.set('ts_cfg', cfg); $('cfg-token').value = ''; status('토큰을 지웠어요'); });
+
+// ───── 시작 ─────
+(async function init() {
+  switchTab('today');
+  try { await loadLatest(); }
+  catch (e) { $('tab-today').innerHTML = `<p class="text-sm text-red-600 py-10 text-center">${esc(e.message)}<br><span class="text-stone-500">내 컴퓨터에서 열 때는 폴더에서 <code>python -m http.server</code> 실행 후 localhost:8000/admin.html 로 여세요.</span></p>`; }
+  try { await loadComments(); } catch (e) { status(e.message, 'err'); }
+  render();
+  if (!cfg.token) status('설정에서 GitHub 토큰을 넣어야 저장할 수 있어요');
+})();
+</script>
+</body>
+</html>
