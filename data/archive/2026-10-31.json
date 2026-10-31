@@ -1,20 +1,8 @@
 {
  "date": "2026-10-31",
- "generated_at": "2026-10-31T13:15+09:00",
+ "generated_at": "2026-10-31T13:57+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
-  {
-   "id": "2f93e59b90bd",
-   "title": "전파 자율주행·광음향 내시경·AI 비전검사…교원창업 기술경쟁 - 머니투데이 - 머니투데이",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBKbzhlRlNJZk9fUHc0Ykl2Wkt6Y0xLZWtYNVk5ODNpSTN1MmtrR2NfOTRBQ3hvNjUzZ3hLSTFUNVRiOUJvc2RDOWlPdkRpeFV6YTRONFFTNHRmT01LOUJyUnpDZjY5aEdUZVhvRFZaTdIBb0FVX3lxTFBKbzhlRlNJZk9fUHc0Ykl2Wkt6Y0xLZWtYNVk5ODNpSTN1MmtrR2NfOTRBQ3hvNjUzZ3hLSTFUNVRiOUJvc2RDOWlPdkRpeFV6YTRONFFTNHRmT01LOUJyUnpDZjY5aEdUZVhvRFZaTQ?oc=5",
-   "source": "머니투데이",
-   "published": "Sat, 31 Oct 2026 01:15:00 GMT",
-   "snippet": "전파 자율주행·광음향 내시경·AI 비전검사…교원창업 기술경쟁 - 머니투데이 머니투데이",
-   "score": 0.0,
-   "why": "",
-   "category_hint": "기타",
-   "error": "404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
-  },
   {
    "id": "e049b440127a",
    "title": "대동기어·대동로보틱스, 中 로봇부품 기업과 손잡는다…“2029년 국내 양산” - 농민신문",
@@ -314,6 +302,43 @@
    "program_ids": [],
    "failure_case": null,
    "review_question": "본문 내용이 없는 빈 기사인데, 수집 파이프라인의 에러인지 원본 페이지의 오류인지 확인이 필요할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "2f93e59b90bd",
+   "title": "전파 자율주행·광음향 내시경·AI 비전검사…교원창업 기술경쟁 - 머니투데이 - 머니투데이",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBKbzhlRlNJZk9fUHc0Ykl2Wkt6Y0xLZWtYNVk5ODNpSTN1MmtrR2NfOTRBQ3hvNjUzZ3hLSTFUNVRiOUJvc2RDOWlPdkRpeFV6YTRONFFTNHRmT01LOUJyUnpDZjY5aEdUZVhvRFZaTdIBb0FVX3lxTFBKbzhlRlNJZk9fUHc0Ykl2Wkt6Y0xLZWtYNVk5ODNpSTN1MmtrR2NfOTRBQ3hvNjUzZ3hLSTFUNVRiOUJvc2RDOWlPdkRpeFV6YTRONFFTNHRmT01LOUJyUnpDZjY5aEdUZVhvRFZaTQ?oc=5",
+   "source": "머니투데이",
+   "published": "Sat, 31 Oct 2026 01:15:00 GMT",
+   "snippet": "전파 자율주행·광음향 내시경·AI 비전검사…교원창업 기술경쟁 - 머니투데이 머니투데이",
+   "score": 2.0,
+   "why": "초기 기술 홍보성 기사로 양산 관점 부족",
+   "category_hint": "기타",
+   "summary": "대학 교원창업 기업들이 전파 자율주행, 광음향 내시경, AI 비전검사 등 다양한 혁신 기술로 경쟁력을 선보이고 있습니다. 관련 기술들의 산업 적용성과 양산 가능성에 대한 검토가 필요합니다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 교원창업 기술 경쟁에 대한 언급만 있을 뿐, 구체적인 양산 공정이나 제품 스펙이 나와 있지 않다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 생산 병목이나 공급망 관련 정보가 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "교원창업 초기 기술들이 실험실 단계를 넘어 실제 양산 라인에서 대량 생산할 때 발생하는 수율 문제를 어떻게 해결할 계획일까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": []
