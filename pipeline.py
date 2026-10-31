@@ -25,7 +25,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -34,8 +34,8 @@ KST = dt.timezone(dt.timedelta(hours=9))
 PROVIDER = os.getenv("LLM_PROVIDER", "anthropic").lower()  # anthropic | gemini
 DEFAULT_MODELS = {"anthropic": "claude-haiku-5-5", "gemini": "gemini-3.5-flash-lite"}
 MODEL = os.getenv("LLM_MODEL") or DEFAULT_MODELS.get(PROVIDER, "")
-TOP_N = int(os.getenv("TOP_N", "10"))            # 하루에 구조화할 기사 수
-FRESH_HOURS = int(os.getenv("FRESH_HOURS", "36"))  # 이 시간보다 오래된 기사는 제외
+TOP_N = int(os.getenv("TOP_N") or 10)              # 하루에 구조화할 기사 수 (비어 있으면 10)
+FRESH_HOURS = int(os.getenv("FRESH_HOURS") or 36)  # 이 시간보다 오래된 기사는 제외
 FEWSHOT_N = 8                                      # 프롬프트에 넣을 과거 코멘트 수
 SAME_CAT_MAX = 5                                   # 그중 같은 카테고리에서 가져올 최대 수
 
@@ -84,20 +84,45 @@ def clean(text: str | None) -> str:
     return re.sub(r"\s+", " ", html.unescape(text)).strip()
 
 
-def collect() -> list[dict]:
-    import feedparser
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 
+
+def fetch_feed(url: str):
+    """브라우저처럼 접속해서 RSS를 받아온다. 실패하면 이유를 알려준다."""
+    import feedparser
+    import requests
+
+    try:
+        r = requests.get(url, headers={"User-Agent": UA, "Accept-Language": "ko,en;q=0.8"}, timeout=30)
+    except Exception as e:
+        return [], f"접속 실패 ({type(e).__name__})"
+    if r.status_code != 200:
+        return [], f"응답 {r.status_code}"
+    feed = feedparser.parse(r.content)
+    if not feed.entries:
+        head = r.text[:80].replace("\n", " ")
+        return [], f"기사 없음 (받은 내용 앞부분: {head!r})"
+    return feed.entries, ""
+
+
+def collect() -> list[dict]:
     cutoff = time.time() - FRESH_HOURS * 3600
     items, seen_titles = [], set()
     for name, url in SOURCES:
-        feed = feedparser.parse(url)
-        for e in feed.entries[:30]:
+        entries, problem = fetch_feed(url)
+        q = re.search(r"q=([^&]+)", url)
+        label = unquote(q.group(1) if q else url)[:40]
+        before = len(items)
+        old = 0
+        for e in entries[:30]:
             title = clean(e.get("title"))
             link = e.get("link", "")
             if not title or not link:
                 continue
             pp = e.get("published_parsed")
             if pp and calendar.timegm(pp) < cutoff:
+                old += 1
                 continue
             key = re.sub(r"[^0-9a-z가-힣]", "", title.lower())[:60]
             if key in seen_titles:
@@ -113,6 +138,9 @@ def collect() -> list[dict]:
                 # 저작권: 원문 전체가 아니라 RSS 요약만 저장한다.
                 "snippet": clean(e.get("summary"))[:600],
             })
+        got = len(items) - before
+        note = problem or (f"{len(entries)}건 중 새 기사 {got}건" + (f", {FRESH_HOURS}시간 넘은 것 {old}건 제외" if old else ""))
+        print(f"  [{label}] {note}")
     return items
 
 
@@ -448,15 +476,35 @@ def main() -> None:
             print(f"[경고] 구조화 실패 {x['id']}: {e}", file=sys.stderr)
         time.sleep(0.5)
 
-    payload = {"date": today, "generated_at": now.isoformat(timespec="minutes"),
-               "model": f"{PROVIDER}/{MODEL}", "items": ranked}
-    save_json(DATA / "latest.json", payload)
-    save_json(DATA / "archive" / f"{today}.json", payload)
     write_meta()
+    ok = [x for x in ranked if not x.get("error")]
+    prev = load_json(DATA / "latest.json", {})
+    prev_items = prev.get("items", []) if prev.get("date") == today else []
 
-    seen_list += [x["id"] for x in items]
-    save_json(DATA / "seen.json", seen_list[-5000:])
-    print(f"완료: {len(ranked)}건 → data/latest.json")
+    # 같은 날 다시 돌려도 오늘 목록을 지우지 않는다: 새 기사가 없거나 전부 실패하면 기존 목록을 그대로 둔다
+    if not ranked or (not ok and prev_items):
+        if not ranked:
+            print("새로 정리할 기사가 없어요. " + ("오늘 목록은 그대로 둡니다." if prev_items else "위 수집 기록에서 원인을 확인하세요."))
+        else:
+            print("[경고] 이번 실행의 정리가 모두 실패해서 오늘 목록은 그대로 둡니다.", file=sys.stderr)
+        if not prev_items:
+            save_json(DATA / "latest.json", {"date": today, "generated_at": now.isoformat(timespec="minutes"),
+                                              "model": f"{PROVIDER}/{MODEL}", "items": ranked})
+    else:
+        new_ids = {x["id"] for x in ranked}
+        merged = [x for x in prev_items if x.get("id") not in new_ids] + ranked  # 이미 검수 중인 순서는 유지
+        payload = {"date": today, "generated_at": now.isoformat(timespec="minutes"),
+                   "model": f"{PROVIDER}/{MODEL}", "items": merged}
+        save_json(DATA / "latest.json", payload)
+        save_json(DATA / "archive" / f"{today}.json", payload)
+        print(f"완료: 새로 {len(ranked)}건" + (f" (오늘 기존 {len(prev_items)}건에 추가)" if prev_items else "") + " → data/latest.json")
+
+    # 정리가 하나도 안 됐으면(키 오류·사용량 초과 등) 다음 실행 때 같은 기사를 다시 시도할 수 있게 '본 기사'로 기록하지 않는다
+    if ok or not ranked:
+        seen_list += [x["id"] for x in items]
+        save_json(DATA / "seen.json", seen_list[-5000:])
+    else:
+        print("[경고] 정리가 모두 실패해서 이번 기사들은 다음 실행 때 다시 시도합니다.", file=sys.stderr)
 
 
 # ─────────────────────────────── 샘플 데이터 ───────────────────────────────

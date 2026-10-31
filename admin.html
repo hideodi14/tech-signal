@@ -385,7 +385,7 @@ function card(it, idx) {
 
 function renderToday() {
   const items = latest.items || [];
-  if (!items.length) { $('tab-today').innerHTML = `<p class="text-sm text-stone-500 py-10 text-center">오늘 수집된 기사가 없어요.</p>`; return; }
+  if (!items.length) { $('tab-today').innerHTML = `<div class="text-sm text-stone-500 py-10 text-center space-y-2"><p>오늘 수집된 기사가 없어요.</p><p class="text-xs leading-relaxed">깃허브 저장소 → Actions → 가장 최근 실행 → <b>파이프라인 실행</b> 단계를 열면<br>검색어마다 몇 건을 가져왔는지, 막혔다면 왜 막혔는지 나와요.</p></div>`; return; }
   const top = items.slice(0, REQUIRED), rest = items.slice(REQUIRED);
   $('tab-today').innerHTML = `
     <div class="space-y-4">${top.map((it, i) => card(it, i)).join('')}</div>
