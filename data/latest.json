@@ -1,6 +1,111 @@
 {
- "date": "2026-11-01",
- "generated_at": "2026-11-01T06:55+09:00",
+ "date": "2026-11-02",
+ "generated_at": "2026-11-02T06:56+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
- "items": []
+ "items": [
+  {
+   "id": "091ef59b0d20",
+   "title": "How Small Electronics Manufacturers Prevent Component Shortages - EE Times",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQjlGZ0hiT3BCbGhzUU5EVTlmbjRaWU9GMUVxblZsbjhwb0VuOE9qdFpETExpUjd4cThFSlNHT3N6RmpFTkdZY0M5ZUpSZnNjVlpkZFlMWm5IelpGWWlBcnM5eUw0cVpUVU9ybk41OHg2RV91c0tIZzNKM0VWWUJaVFVDdkxlVkg3Nm54ZF9sOHV3Zw?oc=5",
+   "source": "EE Times",
+   "published": "Sun, 01 Nov 2026 14:01:45 GMT",
+   "snippet": "How Small Electronics Manufacturers Prevent Component Shortages EE Times",
+   "score": 9.0,
+   "why": "중소 제조사의 부품 수급 및 품귀 대응",
+   "category_hint": "부품·공급망",
+   "summary": "소형 전자기기 제조업체들이 부품 부족 현상을 예방하는 방법에 대한 내용입니다. 공급망 관리와 리스크 대응 방안을 다루고 있습니다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 난이도나 수치 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 수 있는 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "실제 소형 제조사들이 부품 수급난을 막기 위해 가장 먼저 점검하는 대체품 리스트 기준은 무엇일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  },
+  {
+   "id": "53171faaae55",
+   "title": "[AI 특집] 세계 최대 전자제품 위탁생산 기업 폭스콘, 200개 넘는 공장에 AI 에이전트… 생산계획 인력 시간 25%·금형 교체 작업 50% 줄였다 - CEO경제신문",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9md1V3UkpsWU93LVpjODByTEVJdWtOU0VrRFBGYzlmZTNLRWd4ZFBMeW1qdE1xZkhQX2V2UC1ZUDFWajU0UV9SMTB4TDFIQ0ZBbUVVV2NOZXpqeG9CblVHamRKZ20xeDBkMHUtQg?oc=5",
+   "source": "CEO경제신문",
+   "published": "Sun, 01 Nov 2026 02:09:13 GMT",
+   "snippet": "[AI 특집] 세계 최대 전자제품 위탁생산 기업 폭스콘, 200개 넘는 공장에 AI 에이전트… 생산계획 인력 시간 25%·금형 교체 작업 50% 줄였다 CEO경제신문",
+   "score": 8.0,
+   "why": "위탁생산 공장의 AI 도입과 금형 교체 효율화",
+   "category_hint": "외주생산·EMS",
+   "summary": "폭스콘이 200개 이상의 공장에 AI 에이전트를 도입하여 생산 계획 인력의 작업 시간을 단축하고 금형 교체 효율성을 대폭 개선했습니다. 제조 현장의 공정 자동화와 스마트 팩토리 전환이 가속화되고 있습니다.",
+   "category": "외주생산·EMS",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "폭스콘",
+      "evidence": "세계 최대 전자제품 위탁생산 기업 폭스콘"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "200개 넘는 공장에 AI 에이전트"
+    },
+    "numbers": [
+     {
+      "value": "200개",
+      "evidence": "200개 넘는 공장에"
+     },
+     {
+      "value": "25%",
+      "evidence": "생산계획 인력 시간 25%"
+     },
+     {
+      "value": "50%",
+      "evidence": "금형 교체 작업 50% 줄였다"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "중간",
+     "reason": "전 세계 수많은 공장에 AI 솔루션을 동시 적용하고 기존 생산라인과 연동하는 과정에서 시스템 정합성 확보가 까다로울 수 있습니다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 병목 구간에 대한 언급이 없습니다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "폭스콘처럼 다품종 대량생산 체인에서 AI로 금형 교체를 줄일 때, 현장 작업자의 실제 작업 표준과 시스템 예측값 간의 오차는 어떻게 잡을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기",
+    "양산 단가"
+   ]
+  }
+ ]
 }
