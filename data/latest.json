@@ -1,43 +1,58 @@
 {
- "date": "2026-11-02",
- "generated_at": "2026-11-02T06:56+09:00",
+ "date": "2026-11-03",
+ "generated_at": "2026-11-03T07:02+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "091ef59b0d20",
-   "title": "How Small Electronics Manufacturers Prevent Component Shortages - EE Times",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQjlGZ0hiT3BCbGhzUU5EVTlmbjRaWU9GMUVxblZsbjhwb0VuOE9qdFpETExpUjd4cThFSlNHT3N6RmpFTkdZY0M5ZUpSZnNjVlpkZFlMWm5IelpGWWlBcnM5eUw0cVpUVU9ybk41OHg2RV91c0tIZzNKM0VWWUJaVFVDdkxlVkg3Nm54ZF9sOHV3Zw?oc=5",
-   "source": "EE Times",
-   "published": "Sun, 01 Nov 2026 14:01:45 GMT",
-   "snippet": "How Small Electronics Manufacturers Prevent Component Shortages EE Times",
+   "id": "40587d8362e1",
+   "title": "스텔란티스, 칩 부족으로 피아트 생산 차질…연말까지 지속 - 글로벌이코노믹",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb2k2YlNna2phZmhKZ1RqaFBKalRBa0VPOFBkU3lOSmtmekdENG1XWGhhRkRhYlBxSUdvTmJmN3NrVDVORVhnSTlsM0FDYWhGWWVzT0Fpbm1sanAwTFBPRVJoR254eXhzOU8yRjNqSUU1aXAtOWxVRUwwb1laa0dRVGFGWXBYYWVO?oc=5",
+   "source": "글로벌이코노믹",
+   "published": "Mon, 02 Nov 2026 21:44:04 GMT",
+   "snippet": "스텔란티스, 칩 부족으로 피아트 생산 차질…연말까지 지속 글로벌이코노믹",
    "score": 9.0,
-   "why": "중소 제조사의 부품 수급 및 품귀 대응",
+   "why": "부품 수급과 생산 차질 문제",
    "category_hint": "부품·공급망",
-   "summary": "소형 전자기기 제조업체들이 부품 부족 현상을 예방하는 방법에 대한 내용입니다. 공급망 관리와 리스크 대응 방안을 다루고 있습니다.",
+   "summary": "스텔란티스가 차량용 반도체 부족 현상으로 인해 피아트 모델의 생산에 차질을 빚고 있으며, 이 문제가 연말까지 이어질 전망입니다.",
    "category": "부품·공급망",
    "ai_lenses": [
     "부품 수급"
    ],
    "extracted": {
-    "companies": [],
+    "companies": [
+     {
+      "value": "스텔란티스",
+      "evidence": "스텔란티스, 칩 부족으로 피아트 생산 차질"
+     },
+     {
+      "value": "피아트",
+      "evidence": "스텔란티스, 칩 부족으로 피아트 생산 차질"
+     }
+    ],
     "stage": null,
     "numbers": []
    },
    "estimated": {
     "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 구체적인 양산 난이도나 수치 정보가 없다.",
-     "confidence": "낮음"
+     "value": "높음",
+     "reason": "핵심 칩 부품 공급 부족으로 인해 완성차 생산 라인 가동과 납기에 직접적인 차질이 발생하고 있다.",
+     "confidence": "높음"
     },
     "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 병목 현상을 유추할 수 있는 내용이 없다.",
-     "confidence": "낮음"
+     "value": "칩 부족",
+     "reason": "원문에 칩 부족으로 생산에 차질이 생기고 연말까지 지속된다고 명시되어 있다.",
+     "confidence": "높음"
     }
    },
    "program_ids": [],
-   "failure_case": null,
-   "review_question": "실제 소형 제조사들이 부품 수급난을 막기 위해 가장 먼저 점검하는 대체품 리스트 기준은 무엇일까?",
+   "failure_case": {
+    "cause_tags": [
+     "부품수급",
+     "납기지연"
+    ],
+    "evidence": "칩 부족으로 피아트 생산 차질…연말까지 지속"
+   },
+   "review_question": "특정 반도체 부품의 품귀 현상이 다른 모델의 생산 라인까지 확산될 가능성이 있을까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": [
@@ -45,67 +60,109 @@
    ]
   },
   {
-   "id": "53171faaae55",
-   "title": "[AI 특집] 세계 최대 전자제품 위탁생산 기업 폭스콘, 200개 넘는 공장에 AI 에이전트… 생산계획 인력 시간 25%·금형 교체 작업 50% 줄였다 - CEO경제신문",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9md1V3UkpsWU93LVpjODByTEVJdWtOU0VrRFBGYzlmZTNLRWd4ZFBMeW1qdE1xZkhQX2V2UC1ZUDFWajU0UV9SMTB4TDFIQ0ZBbUVVV2NOZXpqeG9CblVHamRKZ20xeDBkMHUtQg?oc=5",
-   "source": "CEO경제신문",
-   "published": "Sun, 01 Nov 2026 02:09:13 GMT",
-   "snippet": "[AI 특집] 세계 최대 전자제품 위탁생산 기업 폭스콘, 200개 넘는 공장에 AI 에이전트… 생산계획 인력 시간 25%·금형 교체 작업 50% 줄였다 CEO경제신문",
-   "score": 8.0,
-   "why": "위탁생산 공장의 AI 도입과 금형 교체 효율화",
-   "category_hint": "외주생산·EMS",
-   "summary": "폭스콘이 200개 이상의 공장에 AI 에이전트를 도입하여 생산 계획 인력의 작업 시간을 단축하고 금형 교체 효율성을 대폭 개선했습니다. 제조 현장의 공정 자동화와 스마트 팩토리 전환이 가속화되고 있습니다.",
-   "category": "외주생산·EMS",
+   "id": "9c6048a1924b",
+   "title": "\"양산되는 로봇주라더니\"…HL만도, 넉 달 반 만에 '반토막' [종목+] - 한국경제",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1faU5vRm43WDlFU0VTeFVtb2NpWmVRVC0xMXVVN1hvb2FuTnVJV3NBZWR4TVpVVkdKWG9zRlJLNXljZU9uaS1LOXRoUGtLNEQyRHN0andnLVZEQQ?oc=5",
+   "source": "한국경제",
+   "published": "Mon, 02 Nov 2026 21:30:01 GMT",
+   "snippet": "\"양산되는 로봇주라더니\"…HL만도, 넉 달 반 만에 '반토막' [종목+] 한국경제",
+   "score": 3.0,
+   "why": "주가 및 시황 중심 기사",
+   "category_hint": "기타",
+   "summary": "양산 로봇주로 기대를 모았던 HL만도의 주가가 넉 달 반 만에 절반 수준으로 하락했다. 시장의 기대와 달리 주가 부진이 이어지며 투자자들의 우려가 커지고 있다.",
+   "category": "로봇",
    "ai_lenses": [
-    "외주 조립·납기"
+    "수요·시장성"
    ],
    "extracted": {
     "companies": [
      {
-      "value": "폭스콘",
-      "evidence": "세계 최대 전자제품 위탁생산 기업 폭스콘"
+      "value": "HL만도",
+      "evidence": "HL만도, 넉 달 반 만에 '반토막'"
      }
     ],
     "stage": {
      "value": "양산",
-     "evidence": "200개 넘는 공장에 AI 에이전트"
+     "evidence": "\"양산되는 로봇주라더니\""
     },
     "numbers": [
      {
-      "value": "200개",
-      "evidence": "200개 넘는 공장에"
-     },
-     {
-      "value": "25%",
-      "evidence": "생산계획 인력 시간 25%"
-     },
-     {
-      "value": "50%",
-      "evidence": "금형 교체 작업 50% 줄였다"
+      "value": "넉 달 반",
+      "evidence": "넉 달 반 만에 '반토막'"
      }
     ]
    },
    "estimated": {
     "production_difficulty": {
-     "value": "중간",
-     "reason": "전 세계 수많은 공장에 AI 솔루션을 동시 적용하고 기존 생산라인과 연동하는 과정에서 시스템 정합성 확보가 까다로울 수 있습니다.",
-     "confidence": "중간"
+     "value": "판단불가",
+     "reason": "원문에 생산 공정이나 기술적 난이도에 대한 정보가 없다.",
+     "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "원문에 구체적인 병목 구간에 대한 언급이 없습니다.",
+     "reason": "원문에 병목 현상에 대한 언급이 없다.",
      "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "폭스콘처럼 다품종 대량생산 체인에서 AI로 금형 교체를 줄일 때, 현장 작업자의 실제 작업 표준과 시스템 예측값 간의 오차는 어떻게 잡을까?",
+   "review_question": "실제 로봇 부품 양산 실적이 주가 하락을 방어할 만큼 가시화되고 있을까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": [
-    "외주 조립·납기",
-    "양산 단가"
+    "수요·시장성"
    ]
+  },
+  {
+   "id": "60d125be790c",
+   "title": "[유미's 픽] \"이재용이 콕 찍은 구미\"…삼성 60조 투자 시동, 다음은 오픈AI? - 지디넷코리아",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CTS1HZGJQQzZBZVZtUkYzd2pabnZ4MjY3bGRtajg2NVpwVjZ3Yk9IN3NHTHRXclVEb1VIdnVYZnFKVGxtSlN3M3E5d1duN0w5aFEwWnhn?oc=5",
+   "source": "지디넷코리아",
+   "published": "Mon, 02 Nov 2026 08:28:22 GMT",
+   "snippet": "[유미's 픽] \"이재용이 콕 찍은 구미\"…삼성 60조 투자 시동, 다음은 오픈AI? 지디넷코리아",
+   "score": 2.0,
+   "why": "투자 및 제휴 관련 홍보성 기사",
+   "category_hint": "기타",
+   "summary": "삼성전자가 구미를 중심으로 대규모 투자에 시동을 걸었으며, 향후 오픈AI와의 협력 가능성이 주목받고 있다. 관련한 구체적인 양산 계획이나 수치 정보는 원문에 언급되지 않았다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "삼성",
+      "evidence": "삼성 60조 투자 시동"
+     },
+     {
+      "value": "오픈AI",
+      "evidence": "다음은 오픈AI?"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "60조",
+      "evidence": "삼성 60조 투자 시동"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "제조 공정이나 양산 관련 구체적인 기술 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정을 유추할 수 있는 세부 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "60조 투자 계획 중 구체적인 제조 라인과 양산 시점은 언제인가?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
   }
  ]
 }
