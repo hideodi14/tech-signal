@@ -1,19 +1,112 @@
 {
- "date": "2026-11-03",
- "generated_at": "2026-11-03T07:02+09:00",
+ "date": "2026-11-04",
+ "generated_at": "2026-11-04T07:08+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "40587d8362e1",
-   "title": "스텔란티스, 칩 부족으로 피아트 생산 차질…연말까지 지속 - 글로벌이코노믹",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb2k2YlNna2phZmhKZ1RqaFBKalRBa0VPOFBkU3lOSmtmekdENG1XWGhhRkRhYlBxSUdvTmJmN3NrVDVORVhnSTlsM0FDYWhGWWVzT0Fpbm1sanAwTFBPRVJoR254eXhzOU8yRjNqSUU1aXAtOWxVRUwwb1laa0dRVGFGWXBYYWVO?oc=5",
-   "source": "글로벌이코노믹",
-   "published": "Mon, 02 Nov 2026 21:44:04 GMT",
-   "snippet": "스텔란티스, 칩 부족으로 피아트 생산 차질…연말까지 지속 글로벌이코노믹",
+   "id": "46909ac34e15",
+   "title": "中 베이징휴머노이드 로봇 양산 본격화···내년 1월 신제품 2종 출하 목표 - 시사저널e",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvMFJpdThRZkR1RUVaOXJYbVFDVlhNUDZoTk90R1dldHZRTXRnUVE4UVBYc1psd20yVi1qbUI0WlJnd0syN2JTWVRfUWRTSVNRNjFQNTB4aUl6Vk9TNkFSNlI2QTNnN0xJcnRzTXBsNThlNVFEcXfSAXZBVV95cUxQbzBSaXU4UWZEdUVFWjlyWG1RQ1ZYTVA2aE5PdEdXZXR2UU10Z1FROFFQWHNabHdtMlYtam1CNFpSZ3dLMjdiU1lUX1FkU0lTUTYxUDUweGlJelZPUzZBUjZSNkEzZzdMSXJ0c01wbDU4ZTVRRHF3?oc=5",
+   "source": "시사저널e",
+   "published": "Tue, 03 Nov 2026 07:42:15 GMT",
+   "snippet": "中 베이징휴머노이드 로봇 양산 본격화···내년 1월 신제품 2종 출하 목표 시사저널e",
    "score": 9.0,
-   "why": "부품 수급과 생산 차질 문제",
+   "why": "로봇 양산 및 출하 일정 본격화",
+   "category_hint": "로봇",
+   "summary": "중국 베이징이 휴머노이드 로봇 양산에 본격적으로 돌입하며 내년 1월 신제품 2종 출하를 목표로 하고 있습니다. 로봇 생산 및 공급망 확대에 따른 양산 추이가 주목됩니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 양산 본격화"
+    },
+    "numbers": [
+     {
+      "value": "2종",
+      "evidence": "신제품 2종 출하 목표"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산 과정의 기술적 난이도나 공정 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정이나 부품 수급 관련 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "내년 1월까지 신제품 2종을 실제 출하하려면 부품 조달과 조립 라인 셋업이 어느 단계까지 끝나 있어야 할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "820f30db2bd0",
+   "title": "“로봇 밀도 세계 1위 한국, 양산 속도는 중국에 밀렸다”…경기연구원, 피지컬 AI 대응 전략 제안 - 쓰담미디어",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE96UldoREJ2cGVWZm1zTDhzVEFkUTg2QldFcGZRblZucmg3ZXRhbHZibmFfWGJvMUJvYnBHRG81M3NpRTYyRmR5ZnZQbDdndkp5eEtLak5Bbld3UHpYY3VPLUw5b2ZZaVU?oc=5",
+   "source": "쓰담미디어",
+   "published": "Mon, 02 Nov 2026 22:25:03 GMT",
+   "snippet": "“로봇 밀도 세계 1위 한국, 양산 속도는 중국에 밀렸다”…경기연구원, 피지컬 AI 대응 전략 제안 쓰담미디어",
+   "score": 8.0,
+   "why": "국내외 로봇 양산 속도 비교",
+   "category_hint": "로봇",
+   "summary": "한국은 로봇 밀도가 세계 1위이나 양산 속도 측면에서는 중국에 밀리고 있는 상황이다. 이에 따라 경기연구원은 피지컬 AI 대응 전략을 제안했다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "양산 단가"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "양산",
+     "evidence": "양산 속도는 중국에 밀렸다"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 제조 공정이나 설계 난이도에 대한 근거가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 병목 공정에 대한 언급이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "중국과의 양산 속도 차이가 부품 공급망 때문인지 외주 조립 라인의 생산성 때문인지 확인할 수 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "설계 양산성",
+    "양산 단가"
+   ]
+  },
+  {
+   "id": "3258e63f596d",
+   "title": "NH證 “에이엘로봇, 일본 공급 확대·휴머노이드 센서로 성장 기대” - 팝콘뉴스",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBuM0hqZDQ0MG9kTDNHbl9QSVFhamloLVpNNW5jSWNMZDkyYkhwVWhuRmJQY21pa2NWckRFbF90TUVuOGp5NDY4MlFMT1NlcG1GYXNMUGJ0UENaZlZZQkkzOU1xanpVR2sxLS0zYzFPRdIBckFVX3lxTE05ekNfR1JBOURPLXh6THdhaDBYRk8zYlZseW1ta25jeEQ3TldHQTVqSndzR1Jhb1JrWGM0QWltUmpwLUd0VjJvTFFUeGw4R1ZueTBPOVVaTzkyUy1CRUJWc1VRNXJqM2E0bHRVdmFNcVlDUQ?oc=5",
+   "source": "팝콘뉴스",
+   "published": "Mon, 02 Nov 2026 23:26:12 GMT",
+   "snippet": "NH證 “에이엘로봇, 일본 공급 확대·휴머노이드 센서로 성장 기대” 팝콘뉴스",
+   "score": 6.0,
+   "why": "부품 공급 및 센서 탑재 기대",
    "category_hint": "부품·공급망",
-   "summary": "스텔란티스가 차량용 반도체 부족 현상으로 인해 피아트 모델의 생산에 차질을 빚고 있으며, 이 문제가 연말까지 이어질 전망입니다.",
+   "summary": "NH투자증권은 에이엘로봇이 일본 공급 확대와 휴머노이드 센서 탑재를 통해 성장을 이어갈 것으로 전망했다. 해외 시장 다변화와 신사업 확장이 기업 가치에 긍정적인 영향을 미칠 것으로 보인다.",
    "category": "부품·공급망",
    "ai_lenses": [
     "부품 수급"
@@ -21,12 +114,12 @@
    "extracted": {
     "companies": [
      {
-      "value": "스텔란티스",
-      "evidence": "스텔란티스, 칩 부족으로 피아트 생산 차질"
+      "value": "에이엘로봇",
+      "evidence": "에이엘로봇, 일본 공급 확대"
      },
      {
-      "value": "피아트",
-      "evidence": "스텔란티스, 칩 부족으로 피아트 생산 차질"
+      "value": "NH투자증권",
+      "evidence": "NH證 “에이엘로봇"
      }
     ],
     "stage": null,
@@ -34,132 +127,56 @@
    },
    "estimated": {
     "production_difficulty": {
-     "value": "높음",
-     "reason": "핵심 칩 부품 공급 부족으로 인해 완성차 생산 라인 가동과 납기에 직접적인 차질이 발생하고 있다.",
-     "confidence": "높음"
-    },
-    "likely_bottleneck": {
-     "value": "칩 부족",
-     "reason": "원문에 칩 부족으로 생산에 차질이 생기고 연말까지 지속된다고 명시되어 있다.",
-     "confidence": "높음"
-    }
-   },
-   "program_ids": [],
-   "failure_case": {
-    "cause_tags": [
-     "부품수급",
-     "납기지연"
-    ],
-    "evidence": "칩 부족으로 피아트 생산 차질…연말까지 지속"
-   },
-   "review_question": "특정 반도체 부품의 품귀 현상이 다른 모델의 생산 라인까지 확산될 가능성이 있을까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": [
-    "부품 수급"
-   ]
-  },
-  {
-   "id": "9c6048a1924b",
-   "title": "\"양산되는 로봇주라더니\"…HL만도, 넉 달 반 만에 '반토막' [종목+] - 한국경제",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1faU5vRm43WDlFU0VTeFVtb2NpWmVRVC0xMXVVN1hvb2FuTnVJV3NBZWR4TVpVVkdKWG9zRlJLNXljZU9uaS1LOXRoUGtLNEQyRHN0andnLVZEQQ?oc=5",
-   "source": "한국경제",
-   "published": "Mon, 02 Nov 2026 21:30:01 GMT",
-   "snippet": "\"양산되는 로봇주라더니\"…HL만도, 넉 달 반 만에 '반토막' [종목+] 한국경제",
-   "score": 3.0,
-   "why": "주가 및 시황 중심 기사",
-   "category_hint": "기타",
-   "summary": "양산 로봇주로 기대를 모았던 HL만도의 주가가 넉 달 반 만에 절반 수준으로 하락했다. 시장의 기대와 달리 주가 부진이 이어지며 투자자들의 우려가 커지고 있다.",
-   "category": "로봇",
-   "ai_lenses": [
-    "수요·시장성"
-   ],
-   "extracted": {
-    "companies": [
-     {
-      "value": "HL만도",
-      "evidence": "HL만도, 넉 달 반 만에 '반토막'"
-     }
-    ],
-    "stage": {
-     "value": "양산",
-     "evidence": "\"양산되는 로봇주라더니\""
-    },
-    "numbers": [
-     {
-      "value": "넉 달 반",
-      "evidence": "넉 달 반 만에 '반토막'"
-     }
-    ]
-   },
-   "estimated": {
-    "production_difficulty": {
      "value": "판단불가",
-     "reason": "원문에 생산 공정이나 기술적 난이도에 대한 정보가 없다.",
+     "reason": "원문에 양산 난이도를 가늠할 수 있는 구체적인 공정이나 수율 정보가 없다.",
      "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "원문에 병목 현상에 대한 언급이 없다.",
+     "reason": "원문에 공급망이나 생산 공정상의 병목을 유추할 만한 내용이 없다.",
      "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "실제 로봇 부품 양산 실적이 주가 하락을 방어할 만큼 가시화되고 있을까?",
+   "review_question": "에이엘로봇이 일본 공급을 늘릴 때 기존 부품 수급 라인과 품질 관리는 어떻게 대응할 예정인가?",
    "dropped": 0,
    "programs": [],
-   "ai_lenses_baseline": [
-    "수요·시장성"
-   ]
+   "ai_lenses_baseline": []
   },
   {
-   "id": "60d125be790c",
-   "title": "[유미's 픽] \"이재용이 콕 찍은 구미\"…삼성 60조 투자 시동, 다음은 오픈AI? - 지디넷코리아",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CTS1HZGJQQzZBZVZtUkYzd2pabnZ4MjY3bGRtajg2NVpwVjZ3Yk9IN3NHTHRXclVEb1VIdnVYZnFKVGxtSlN3M3E5d1duN0w5aFEwWnhn?oc=5",
-   "source": "지디넷코리아",
-   "published": "Mon, 02 Nov 2026 08:28:22 GMT",
-   "snippet": "[유미's 픽] \"이재용이 콕 찍은 구미\"…삼성 60조 투자 시동, 다음은 오픈AI? 지디넷코리아",
+   "id": "f594c7f9ee7a",
+   "title": "“피지컬 AI·로봇자동화부터 국가 R&D 활용까지“...양산시, 제조혁신 방향 모색 - 내외경제TV",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1yRm1qeWdxNTgyVVQtS1BjZGZBLVgzUURKcTl2TnpFVUtFdDdGdWRQc0tTdG1PZTM5RXpjNzdIdVhQRXctTWJKT2RlZlRWNG41RnppX3FRWkRHSHk0WHRDX29yU2JwdjZDMVFR?oc=5",
+   "source": "내외경제TV",
+   "published": "Tue, 03 Nov 2026 07:40:42 GMT",
+   "snippet": "“피지컬 AI·로봇자동화부터 국가 R&D 활용까지“...양산시, 제조혁신 방향 모색 내외경제TV",
    "score": 2.0,
-   "why": "투자 및 제휴 관련 홍보성 기사",
+   "why": "지자체 홍보성 기사임",
    "category_hint": "기타",
-   "summary": "삼성전자가 구미를 중심으로 대규모 투자에 시동을 걸었으며, 향후 오픈AI와의 협력 가능성이 주목받고 있다. 관련한 구체적인 양산 계획이나 수치 정보는 원문에 언급되지 않았다.",
-   "category": "기타",
+   "summary": "양산시는 피지컬 AI와 로봇 자동화 기술을 도입하고 국가 R&D를 활용하는 제조혁신 방향을 모색했다. 지역 제조 현장의 스마트화를 촉진하기 위한 방안들이 논의되었다.",
+   "category": "정책·인증",
    "ai_lenses": [],
    "extracted": {
-    "companies": [
-     {
-      "value": "삼성",
-      "evidence": "삼성 60조 투자 시동"
-     },
-     {
-      "value": "오픈AI",
-      "evidence": "다음은 오픈AI?"
-     }
-    ],
+    "companies": [],
     "stage": null,
-    "numbers": [
-     {
-      "value": "60조",
-      "evidence": "삼성 60조 투자 시동"
-     }
-    ]
+    "numbers": []
    },
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "제조 공정이나 양산 관련 구체적인 기술 정보가 없다.",
+     "reason": "원문에 개별 제조 공정이나 양산 난이도를 파악할 수 있는 구체적인 내용이 없다.",
      "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "병목 공정을 유추할 수 있는 세부 내용이 없다.",
+     "reason": "원문에 생산 병목 현상에 대한 언급이 없다.",
      "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "60조 투자 계획 중 구체적인 제조 라인과 양산 시점은 언제인가?",
+   "review_question": "지자체의 제조혁신 방향 모색이 실제 부품 수급이나 현장 조립 공정 개선으로 어떻게 이어질까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": []
