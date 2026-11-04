@@ -1,182 +1,208 @@
 {
- "date": "2026-11-04",
- "generated_at": "2026-11-04T07:08+09:00",
+ "date": "2026-11-05",
+ "generated_at": "2026-11-05T07:09+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "46909ac34e15",
-   "title": "中 베이징휴머노이드 로봇 양산 본격화···내년 1월 신제품 2종 출하 목표 - 시사저널e",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvMFJpdThRZkR1RUVaOXJYbVFDVlhNUDZoTk90R1dldHZRTXRnUVE4UVBYc1psd20yVi1qbUI0WlJnd0syN2JTWVRfUWRTSVNRNjFQNTB4aUl6Vk9TNkFSNlI2QTNnN0xJcnRzTXBsNThlNVFEcXfSAXZBVV95cUxQbzBSaXU4UWZEdUVFWjlyWG1RQ1ZYTVA2aE5PdEdXZXR2UU10Z1FROFFQWHNabHdtMlYtam1CNFpSZ3dLMjdiU1lUX1FkU0lTUTYxUDUweGlJelZPUzZBUjZSNkEzZzdMSXJ0c01wbDU4ZTVRRHF3?oc=5",
-   "source": "시사저널e",
-   "published": "Tue, 03 Nov 2026 07:42:15 GMT",
-   "snippet": "中 베이징휴머노이드 로봇 양산 본격화···내년 1월 신제품 2종 출하 목표 시사저널e",
+   "id": "229280ed580b",
+   "title": "원익로보틱스, 휴머노이드 양산시설 구축에 3500억 투입 - CNews",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Vb3lMR1Z0c2ZCZEotQXdQbFN2U2djdEVQMzJsS3NxWkVTcWthb3ZiTmJmTkgwa2pveG5LNkIzank0VWFaWERGalFpSHk2LU81ZWRQQU1XTzFNbEpWNW0yRHI3Tzh6NnZraXFkNUJEaUJmT0xuR1Zj?oc=5",
+   "source": "CNews",
+   "published": "Wed, 04 Nov 2026 00:53:07 GMT",
+   "snippet": "원익로보틱스, 휴머노이드 양산시설 구축에 3500억 투입 CNews",
    "score": 9.0,
-   "why": "로봇 양산 및 출하 일정 본격화",
+   "why": "휴머노이드 양산 시설 투자 직접 언급",
    "category_hint": "로봇",
-   "summary": "중국 베이징이 휴머노이드 로봇 양산에 본격적으로 돌입하며 내년 1월 신제품 2종 출하를 목표로 하고 있습니다. 로봇 생산 및 공급망 확대에 따른 양산 추이가 주목됩니다.",
+   "summary": "원익로보틱스가 휴머노이드 로봇 양산시설을 구축하기 위해 3500억 원을 투입한다. 대규모 생산 인프라 투자를 통해 본격적인 양산 체제 준비에 나섰다.",
    "category": "로봇",
    "ai_lenses": [
-    "외주 조립·납기"
+    "외주 조립·납기",
+    "설계 양산성"
    ],
    "extracted": {
-    "companies": [],
+    "companies": [
+     {
+      "value": "원익로보틱스",
+      "evidence": "원익로보틱스, 휴머노이드 양산시설"
+     }
+    ],
     "stage": {
      "value": "양산",
-     "evidence": "로봇 양산 본격화"
+     "evidence": "휴머노이드 양산시설 구축"
     },
     "numbers": [
      {
-      "value": "2종",
-      "evidence": "신제품 2종 출하 목표"
+      "value": "3500억",
+      "evidence": "3500억 투입"
      }
     ]
    },
    "estimated": {
     "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 양산 과정의 기술적 난이도나 공정 정보가 없다.",
-     "confidence": "낮음"
+     "value": "높음",
+     "reason": "휴머노이드 로봇 양산을 위한 신규 시설 구축 단계로, 복잡한 조립 공정과 정밀 제어 부품 수급 등 양산 안정화까지 난도가 높을 것으로 예상된다.",
+     "confidence": "중간"
     },
     "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "병목 공정이나 부품 수급 관련 단서가 없다.",
-     "confidence": "낮음"
+     "value": "양산시설 구축 및 공정 안정화",
+     "reason": "3500억 규모의 대규모 시설 투자가 집행되는 초기 단계여서 설비 셋업과 부품 공급망 확보가 주요 병목이 될 수 있다.",
+     "confidence": "중간"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "내년 1월까지 신제품 2종을 실제 출하하려면 부품 조달과 조립 라인 셋업이 어느 단계까지 끝나 있어야 할까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": []
-  },
-  {
-   "id": "820f30db2bd0",
-   "title": "“로봇 밀도 세계 1위 한국, 양산 속도는 중국에 밀렸다”…경기연구원, 피지컬 AI 대응 전략 제안 - 쓰담미디어",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE96UldoREJ2cGVWZm1zTDhzVEFkUTg2QldFcGZRblZucmg3ZXRhbHZibmFfWGJvMUJvYnBHRG81M3NpRTYyRmR5ZnZQbDdndkp5eEtLak5Bbld3UHpYY3VPLUw5b2ZZaVU?oc=5",
-   "source": "쓰담미디어",
-   "published": "Mon, 02 Nov 2026 22:25:03 GMT",
-   "snippet": "“로봇 밀도 세계 1위 한국, 양산 속도는 중국에 밀렸다”…경기연구원, 피지컬 AI 대응 전략 제안 쓰담미디어",
-   "score": 8.0,
-   "why": "국내외 로봇 양산 속도 비교",
-   "category_hint": "로봇",
-   "summary": "한국은 로봇 밀도가 세계 1위이나 양산 속도 측면에서는 중국에 밀리고 있는 상황이다. 이에 따라 경기연구원은 피지컬 AI 대응 전략을 제안했다.",
-   "category": "로봇",
-   "ai_lenses": [
-    "외주 조립·납기",
-    "양산 단가"
-   ],
-   "extracted": {
-    "companies": [],
-    "stage": {
-     "value": "양산",
-     "evidence": "양산 속도는 중국에 밀렸다"
-    },
-    "numbers": []
-   },
-   "estimated": {
-    "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 구체적인 제조 공정이나 설계 난이도에 대한 근거가 없다.",
-     "confidence": "낮음"
-    },
-    "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 구체적인 병목 공정에 대한 언급이 없다.",
-     "confidence": "낮음"
-    }
-   },
-   "program_ids": [],
-   "failure_case": null,
-   "review_question": "중국과의 양산 속도 차이가 부품 공급망 때문인지 외주 조립 라인의 생산성 때문인지 확인할 수 있을까?",
+   "review_question": "3500억 원을 투입해 새로 짓는 양산시설에서 휴머노이드 초도 물량을 뽑아낼 때 부품 수급과 조립 라인 셋업 중 어디가 더 오래 걸릴까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": [
-    "설계 양산성",
     "양산 단가"
    ]
   },
   {
-   "id": "3258e63f596d",
-   "title": "NH證 “에이엘로봇, 일본 공급 확대·휴머노이드 센서로 성장 기대” - 팝콘뉴스",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBuM0hqZDQ0MG9kTDNHbl9QSVFhamloLVpNNW5jSWNMZDkyYkhwVWhuRmJQY21pa2NWckRFbF90TUVuOGp5NDY4MlFMT1NlcG1GYXNMUGJ0UENaZlZZQkkzOU1xanpVR2sxLS0zYzFPRdIBckFVX3lxTE05ekNfR1JBOURPLXh6THdhaDBYRk8zYlZseW1ta25jeEQ3TldHQTVqSndzR1Jhb1JrWGM0QWltUmpwLUd0VjJvTFFUeGw4R1ZueTBPOVVaTzkyUy1CRUJWc1VRNXJqM2E0bHRVdmFNcVlDUQ?oc=5",
-   "source": "팝콘뉴스",
-   "published": "Mon, 02 Nov 2026 23:26:12 GMT",
-   "snippet": "NH證 “에이엘로봇, 일본 공급 확대·휴머노이드 센서로 성장 기대” 팝콘뉴스",
-   "score": 6.0,
-   "why": "부품 공급 및 센서 탑재 기대",
-   "category_hint": "부품·공급망",
-   "summary": "NH투자증권은 에이엘로봇이 일본 공급 확대와 휴머노이드 센서 탑재를 통해 성장을 이어갈 것으로 전망했다. 해외 시장 다변화와 신사업 확장이 기업 가치에 긍정적인 영향을 미칠 것으로 보인다.",
-   "category": "부품·공급망",
+   "id": "d85049df8a9f",
+   "title": "칩스앤미디어, 모빌린트 AI 반도체 양산 본격화…휴머노이드·로봇 시장 진출 - 이투데이",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1xRjB1dXZjUDFCNGlNQmhXdjFRWERxYlU4bHgyb0ZBQ3hHczVCSnlvZUxjR3hjQ1E2azI5RjBFaEdYLTBQeHpMalU0N1NjSndxOVJKSw?oc=5",
+   "source": "이투데이",
+   "published": "Tue, 03 Nov 2026 23:52:00 GMT",
+   "snippet": "칩스앤미디어, 모빌린트 AI 반도체 양산 본격화…휴머노이드·로봇 시장 진출 이투데이",
+   "score": 8.0,
+   "why": "엣지 AI 칩 양산 및 로봇 탑재",
+   "category_hint": "엣지AI·칩",
+   "summary": "칩스앤미디어와 모빌린트가 협력하여 AI 반도체 양산을 본격화하며 휴머노이드와 로봇 시장에 진출합니다. 두 기업의 협업을 통해 엣지 AI 반도체 공급이 확대될 것으로 기대됩니다.",
+   "category": "엣지AI·칩",
    "ai_lenses": [
     "부품 수급"
    ],
    "extracted": {
     "companies": [
      {
-      "value": "에이엘로봇",
-      "evidence": "에이엘로봇, 일본 공급 확대"
+      "value": "칩스앤미디어",
+      "evidence": "칩스앤미디어"
      },
      {
-      "value": "NH투자증권",
-      "evidence": "NH證 “에이엘로봇"
+      "value": "모빌린트",
+      "evidence": "모빌린트"
      }
     ],
-    "stage": null,
+    "stage": {
+     "value": "양산",
+     "evidence": "양산 본격화"
+    },
     "numbers": []
    },
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "원문에 양산 난이도를 가늠할 수 있는 구체적인 공정이나 수율 정보가 없다.",
+     "reason": "원문에 칩 제조 수율이나 공정 난이도에 대한 구체적인 언급이 없다.",
      "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "원문에 공급망이나 생산 공정상의 병목을 유추할 만한 내용이 없다.",
+     "reason": "원문에 양산 과정에서의 병목 현상에 대한 단서가 없다.",
      "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "에이엘로봇이 일본 공급을 늘릴 때 기존 부품 수급 라인과 품질 관리는 어떻게 대응할 예정인가?",
+   "review_question": "팹리스 양산 단계에서 파운드리 웨이퍼 수급과 초도 물량 불량률은 어떻게 관리하고 있을까?",
    "dropped": 0,
    "programs": [],
-   "ai_lenses_baseline": []
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
   },
   {
-   "id": "f594c7f9ee7a",
-   "title": "“피지컬 AI·로봇자동화부터 국가 R&D 활용까지“...양산시, 제조혁신 방향 모색 - 내외경제TV",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1yRm1qeWdxNTgyVVQtS1BjZGZBLVgzUURKcTl2TnpFVUtFdDdGdWRQc0tTdG1PZTM5RXpjNzdIdVhQRXctTWJKT2RlZlRWNG41RnppX3FRWkRHSHk0WHRDX29yU2JwdjZDMVFR?oc=5",
-   "source": "내외경제TV",
-   "published": "Tue, 03 Nov 2026 07:40:42 GMT",
-   "snippet": "“피지컬 AI·로봇자동화부터 국가 R&D 활용까지“...양산시, 제조혁신 방향 모색 내외경제TV",
-   "score": 2.0,
-   "why": "지자체 홍보성 기사임",
+   "id": "0123dc22b1e2",
+   "title": "칩스앤미디어·모빌린트, AI 반도체 양산으로 로봇 시장 공략 - 뉴스타운",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42bzJ5RWt5Y2lfVUpJb1ZlanNWb0VLdTJnTEhlTkFrX0E0VUtTWUpYUnNhSjVid0VGeUpJRzR4MlRqbkpleVBsVnhkN3VxMm5qTnUtVmpXSDVLMkFQLXFOUHl1c01uRTg5b19xVDN3?oc=5",
+   "source": "뉴스타운",
+   "published": "Tue, 03 Nov 2026 23:46:00 GMT",
+   "snippet": "칩스앤미디어·모빌린트, AI 반도체 양산으로 로봇 시장 공략 뉴스타운",
+   "score": 7.0,
+   "why": "AI 반도체 양산 및 로봇 시장 적용",
+   "category_hint": "엣지AI·칩",
+   "summary": "칩스앤미디어와 모빌린트가 AI 반도체 양산을 통해 로봇 시장 공략에 나선다. 두 기업의 협력을 기반으로 로봇용 엣지 AI 칩 공급 확대가 기대된다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [
+    "부품 수급",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "칩스앤미디어",
+      "evidence": "칩스앤미디어·모빌린트"
+     },
+     {
+      "value": "모빌린트",
+      "evidence": "칩스앤미디어·모빌린트"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "AI 반도체 양산으로 로봇 시장 공략"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 칩 양산 공정이나 수율에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문 제목 외에 병목 구간을 유추할 세부 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "두 회사의 AI 반도체가 실제 로봇 양산 라인에 채택될 때 파운드리 수율과 리드타임은 얼마나 안정적일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "a9d9f459fb95",
+   "title": "Steam Review Delay: Up to 12 Business Days [2026] - https://tech-insider.org/",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSXNfOUc1TVFhQ3hIMXA3bGd5ZUJndzhrY09YZFp0aUcwcXJrdk9UemdlaVVteHEzTHlyM0ZQM0FyUEhrdjV6M0pYMjNxd0c0c05wdnN5MjJPUzNZeXNZZGxISF80amlfanZ1UEZCLU5vWXJKMmNjNnVUVFU5a3NrTW91TVh2RU5iMWhxdmZJNmY?oc=5",
+   "source": "https://tech-insider.org/",
+   "published": "Wed, 04 Nov 2026 20:01:04 GMT",
+   "snippet": "Steam Review Delay: Up to 12 Business Days [2026] https://tech-insider.org/",
+   "score": 0.0,
+   "why": "하드웨어 양산과 무관한 플랫폼 리뷰",
    "category_hint": "기타",
-   "summary": "양산시는 피지컬 AI와 로봇 자동화 기술을 도입하고 국가 R&D를 활용하는 제조혁신 방향을 모색했다. 지역 제조 현장의 스마트화를 촉진하기 위한 방안들이 논의되었다.",
-   "category": "정책·인증",
+   "summary": "밸브의 스팀 게임 심사 지연이 최대 12영업일까지 길어지고 있다. 콘텐츠 검수와 출시 일정 관리에 차질이 생길 수 있다.",
+   "category": "기타",
    "ai_lenses": [],
    "extracted": {
     "companies": [],
     "stage": null,
-    "numbers": []
+    "numbers": [
+     {
+      "value": "12 Business Days",
+      "evidence": "Up to 12 Business Days [2026]"
+     }
+    ]
    },
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "원문에 개별 제조 공정이나 양산 난이도를 파악할 수 있는 구체적인 내용이 없다.",
-     "confidence": "낮음"
+     "reason": "제조 및 양산 공정과 관련 없는 소프트웨어 플랫폼의 심사 지연 건이다.",
+     "confidence": "높음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "원문에 생산 병목 현상에 대한 언급이 없다.",
-     "confidence": "낮음"
+     "reason": "하드웨어 조립이나 부품 수급 문제가 아니다.",
+     "confidence": "높음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "지자체의 제조혁신 방향 모색이 실제 부품 수급이나 현장 조립 공정 개선으로 어떻게 이어질까?",
+   "review_question": "플랫폼 심사 지연이 하드웨어 번들 게임이나 전용 기기 런칭 일정에 얼마나 타격을 줄까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": []

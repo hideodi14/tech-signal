@@ -1,0 +1,211 @@
+{
+ "date": "2026-11-05",
+ "generated_at": "2026-11-05T07:09+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "229280ed580b",
+   "title": "원익로보틱스, 휴머노이드 양산시설 구축에 3500억 투입 - CNews",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Vb3lMR1Z0c2ZCZEotQXdQbFN2U2djdEVQMzJsS3NxWkVTcWthb3ZiTmJmTkgwa2pveG5LNkIzank0VWFaWERGalFpSHk2LU81ZWRQQU1XTzFNbEpWNW0yRHI3Tzh6NnZraXFkNUJEaUJmT0xuR1Zj?oc=5",
+   "source": "CNews",
+   "published": "Wed, 04 Nov 2026 00:53:07 GMT",
+   "snippet": "원익로보틱스, 휴머노이드 양산시설 구축에 3500억 투입 CNews",
+   "score": 9.0,
+   "why": "휴머노이드 양산 시설 투자 직접 언급",
+   "category_hint": "로봇",
+   "summary": "원익로보틱스가 휴머노이드 로봇 양산시설을 구축하기 위해 3500억 원을 투입한다. 대규모 생산 인프라 투자를 통해 본격적인 양산 체제 준비에 나섰다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "원익로보틱스",
+      "evidence": "원익로보틱스, 휴머노이드 양산시설"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "휴머노이드 양산시설 구축"
+    },
+    "numbers": [
+     {
+      "value": "3500억",
+      "evidence": "3500억 투입"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "휴머노이드 로봇 양산을 위한 신규 시설 구축 단계로, 복잡한 조립 공정과 정밀 제어 부품 수급 등 양산 안정화까지 난도가 높을 것으로 예상된다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "양산시설 구축 및 공정 안정화",
+     "reason": "3500억 규모의 대규모 시설 투자가 집행되는 초기 단계여서 설비 셋업과 부품 공급망 확보가 주요 병목이 될 수 있다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "3500억 원을 투입해 새로 짓는 양산시설에서 휴머노이드 초도 물량을 뽑아낼 때 부품 수급과 조립 라인 셋업 중 어디가 더 오래 걸릴까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "양산 단가"
+   ]
+  },
+  {
+   "id": "d85049df8a9f",
+   "title": "칩스앤미디어, 모빌린트 AI 반도체 양산 본격화…휴머노이드·로봇 시장 진출 - 이투데이",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1xRjB1dXZjUDFCNGlNQmhXdjFRWERxYlU4bHgyb0ZBQ3hHczVCSnlvZUxjR3hjQ1E2azI5RjBFaEdYLTBQeHpMalU0N1NjSndxOVJKSw?oc=5",
+   "source": "이투데이",
+   "published": "Tue, 03 Nov 2026 23:52:00 GMT",
+   "snippet": "칩스앤미디어, 모빌린트 AI 반도체 양산 본격화…휴머노이드·로봇 시장 진출 이투데이",
+   "score": 8.0,
+   "why": "엣지 AI 칩 양산 및 로봇 탑재",
+   "category_hint": "엣지AI·칩",
+   "summary": "칩스앤미디어와 모빌린트가 협력하여 AI 반도체 양산을 본격화하며 휴머노이드와 로봇 시장에 진출합니다. 두 기업의 협업을 통해 엣지 AI 반도체 공급이 확대될 것으로 기대됩니다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "칩스앤미디어",
+      "evidence": "칩스앤미디어"
+     },
+     {
+      "value": "모빌린트",
+      "evidence": "모빌린트"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "양산 본격화"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 칩 제조 수율이나 공정 난이도에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 양산 과정에서의 병목 현상에 대한 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "팹리스 양산 단계에서 파운드리 웨이퍼 수급과 초도 물량 불량률은 어떻게 관리하고 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "0123dc22b1e2",
+   "title": "칩스앤미디어·모빌린트, AI 반도체 양산으로 로봇 시장 공략 - 뉴스타운",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42bzJ5RWt5Y2lfVUpJb1ZlanNWb0VLdTJnTEhlTkFrX0E0VUtTWUpYUnNhSjVid0VGeUpJRzR4MlRqbkpleVBsVnhkN3VxMm5qTnUtVmpXSDVLMkFQLXFOUHl1c01uRTg5b19xVDN3?oc=5",
+   "source": "뉴스타운",
+   "published": "Tue, 03 Nov 2026 23:46:00 GMT",
+   "snippet": "칩스앤미디어·모빌린트, AI 반도체 양산으로 로봇 시장 공략 뉴스타운",
+   "score": 7.0,
+   "why": "AI 반도체 양산 및 로봇 시장 적용",
+   "category_hint": "엣지AI·칩",
+   "summary": "칩스앤미디어와 모빌린트가 AI 반도체 양산을 통해 로봇 시장 공략에 나선다. 두 기업의 협력을 기반으로 로봇용 엣지 AI 칩 공급 확대가 기대된다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [
+    "부품 수급",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "칩스앤미디어",
+      "evidence": "칩스앤미디어·모빌린트"
+     },
+     {
+      "value": "모빌린트",
+      "evidence": "칩스앤미디어·모빌린트"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "AI 반도체 양산으로 로봇 시장 공략"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 칩 양산 공정이나 수율에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문 제목 외에 병목 구간을 유추할 세부 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "두 회사의 AI 반도체가 실제 로봇 양산 라인에 채택될 때 파운드리 수율과 리드타임은 얼마나 안정적일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "a9d9f459fb95",
+   "title": "Steam Review Delay: Up to 12 Business Days [2026] - https://tech-insider.org/",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSXNfOUc1TVFhQ3hIMXA3bGd5ZUJndzhrY09YZFp0aUcwcXJrdk9UemdlaVVteHEzTHlyM0ZQM0FyUEhrdjV6M0pYMjNxd0c0c05wdnN5MjJPUzNZeXNZZGxISF80amlfanZ1UEZCLU5vWXJKMmNjNnVUVFU5a3NrTW91TVh2RU5iMWhxdmZJNmY?oc=5",
+   "source": "https://tech-insider.org/",
+   "published": "Wed, 04 Nov 2026 20:01:04 GMT",
+   "snippet": "Steam Review Delay: Up to 12 Business Days [2026] https://tech-insider.org/",
+   "score": 0.0,
+   "why": "하드웨어 양산과 무관한 플랫폼 리뷰",
+   "category_hint": "기타",
+   "summary": "밸브의 스팀 게임 심사 지연이 최대 12영업일까지 길어지고 있다. 콘텐츠 검수와 출시 일정 관리에 차질이 생길 수 있다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "12 Business Days",
+      "evidence": "Up to 12 Business Days [2026]"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "제조 및 양산 공정과 관련 없는 소프트웨어 플랫폼의 심사 지연 건이다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "하드웨어 조립이나 부품 수급 문제가 아니다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "플랫폼 심사 지연이 하드웨어 번들 게임이나 전용 기기 런칭 일정에 얼마나 타격을 줄까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
