@@ -1,19 +1,19 @@
 {
- "date": "2026-11-05",
- "generated_at": "2026-11-05T07:09+09:00",
+ "date": "2026-11-06",
+ "generated_at": "2026-11-06T07:10+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "229280ed580b",
-   "title": "원익로보틱스, 휴머노이드 양산시설 구축에 3500억 투입 - CNews",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Vb3lMR1Z0c2ZCZEotQXdQbFN2U2djdEVQMzJsS3NxWkVTcWthb3ZiTmJmTkgwa2pveG5LNkIzank0VWFaWERGalFpSHk2LU81ZWRQQU1XTzFNbEpWNW0yRHI3Tzh6NnZraXFkNUJEaUJmT0xuR1Zj?oc=5",
-   "source": "CNews",
-   "published": "Wed, 04 Nov 2026 00:53:07 GMT",
-   "snippet": "원익로보틱스, 휴머노이드 양산시설 구축에 3500억 투입 CNews",
-   "score": 9.0,
-   "why": "휴머노이드 양산 시설 투자 직접 언급",
-   "category_hint": "로봇",
-   "summary": "원익로보틱스가 휴머노이드 로봇 양산시설을 구축하기 위해 3500억 원을 투입한다. 대규모 생산 인프라 투자를 통해 본격적인 양산 체제 준비에 나섰다.",
+   "id": "18f68e0967cd",
+   "title": "삼성 로봇 ‘투트랙’ 가속…레인보우, 양팔로봇 내년 중반 양산 목표 - 아시아투데이",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9taFpNdW14ZFBCOEtrTDJNTGxfOEgyN2FiS1FSR0xJeDJTbHRzS2NjaU9VZmwxcUVKcjlMT2lrRFlOOFd0YjVWSFdMc0wtY3RSOFJUOWpyWUFaY1k5cGdNaG9vRVhTZTk0NVRHckp3?oc=5",
+   "source": "아시아투데이",
+   "published": "Thu, 05 Nov 2026 08:54:21 GMT",
+   "snippet": "삼성 로봇 ‘투트랙’ 가속…레인보우, 양팔로봇 내년 중반 양산 목표 아시아투데이",
+   "score": 0.0,
+   "why": "",
+   "category_hint": "기타",
+   "summary": "삼성의 투트랙 로봇 전략에 따라 레인보우로보틱스가 내년 중반 양산을 목표로 양팔로봇 개발에 속도를 내고 있습니다. 구체적인 부품 수급이나 라인 구축 상황은 추가 확인이 필요합니다.",
    "category": "로봇",
    "ai_lenses": [
     "외주 조립·납기",
@@ -22,187 +22,341 @@
    "extracted": {
     "companies": [
      {
-      "value": "원익로보틱스",
-      "evidence": "원익로보틱스, 휴머노이드 양산시설"
+      "value": "삼성",
+      "evidence": "삼성 로봇 ‘투트랙’ 가속"
+     },
+     {
+      "value": "레인보우로보틱스",
+      "evidence": "레인보우, 양팔로봇 내년 중반 양산 목표"
      }
     ],
     "stage": {
      "value": "양산",
-     "evidence": "휴머노이드 양산시설 구축"
+     "evidence": "내년 중반 양산 목표"
     },
-    "numbers": [
-     {
-      "value": "3500억",
-      "evidence": "3500억 투입"
-     }
-    ]
+    "numbers": []
    },
    "estimated": {
     "production_difficulty": {
-     "value": "높음",
-     "reason": "휴머노이드 로봇 양산을 위한 신규 시설 구축 단계로, 복잡한 조립 공정과 정밀 제어 부품 수급 등 양산 안정화까지 난도가 높을 것으로 예상된다.",
-     "confidence": "중간"
+     "value": "중간",
+     "reason": "양팔로봇의 구조적 복잡성과 정밀 제어 요소로 인해 양산 전환 과정에서 조립 및 캘리브레이션 공정의 난도가 높을 것으로 예상됩니다.",
+     "confidence": "낮음"
     },
     "likely_bottleneck": {
-     "value": "양산시설 구축 및 공정 안정화",
-     "reason": "3500억 규모의 대규모 시설 투자가 집행되는 초기 단계여서 설비 셋업과 부품 공급망 확보가 주요 병목이 될 수 있다.",
-     "confidence": "중간"
+     "value": "판단불가",
+     "reason": "원문에 병목 공정이나 부품 수급에 대한 구체적인 언급이 없습니다.",
+     "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "3500억 원을 투입해 새로 짓는 양산시설에서 휴머노이드 초도 물량을 뽑아낼 때 부품 수급과 조립 라인 셋업 중 어디가 더 오래 걸릴까?",
+   "review_question": "내년 중반 양산을 맞추려면 현재 시제품 설계에서 양산용 금형과 검사 지그는 어느 단계까지 준비되어 있을까?",
    "dropped": 0,
    "programs": [],
-   "ai_lenses_baseline": [
-    "양산 단가"
-   ]
+   "ai_lenses_baseline": []
   },
   {
-   "id": "d85049df8a9f",
-   "title": "칩스앤미디어, 모빌린트 AI 반도체 양산 본격화…휴머노이드·로봇 시장 진출 - 이투데이",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1xRjB1dXZjUDFCNGlNQmhXdjFRWERxYlU4bHgyb0ZBQ3hHczVCSnlvZUxjR3hjQ1E2azI5RjBFaEdYLTBQeHpMalU0N1NjSndxOVJKSw?oc=5",
-   "source": "이투데이",
-   "published": "Tue, 03 Nov 2026 23:52:00 GMT",
-   "snippet": "칩스앤미디어, 모빌린트 AI 반도체 양산 본격화…휴머노이드·로봇 시장 진출 이투데이",
-   "score": 8.0,
-   "why": "엣지 AI 칩 양산 및 로봇 탑재",
-   "category_hint": "엣지AI·칩",
-   "summary": "칩스앤미디어와 모빌린트가 협력하여 AI 반도체 양산을 본격화하며 휴머노이드와 로봇 시장에 진출합니다. 두 기업의 협업을 통해 엣지 AI 반도체 공급이 확대될 것으로 기대됩니다.",
-   "category": "엣지AI·칩",
+   "id": "226bfaeac4f1",
+   "title": "씨앤엠, 오픈패스로보틱스와 2030년까지 사족보행 로봇용 액추에이터 공급 - 더스탁(The Stock)",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5fQm5XU3cweW92bzYtc3diVTFIYzF4Y2NNbm1xWUdkVkN3aGpTMXlFV0IyTVgyN1dDS0RzdVk1bU84NkdJdkpjaTYyUEdWbWxhY2JacVp0YTFZelllRjJCUUpiRjlKaFQxTUE?oc=5",
+   "source": "더스탁(The Stock)",
+   "published": "Thu, 05 Nov 2026 06:01:05 GMT",
+   "snippet": "씨앤엠, 오픈패스로보틱스와 2030년까지 사족보행 로봇용 액추에이터 공급 더스탁(The Stock)",
+   "score": 0.0,
+   "why": "",
+   "category_hint": "기타",
+   "summary": "씨앤엠이 오픈패스로보틱스와 2030년까지 사족보행 로봇용 액추에이터 공급 계약을 체결했다. 장기 공급 계약을 통해 로봇 핵심 부품의 판로를 확보했다.",
+   "category": "로봇",
    "ai_lenses": [
     "부품 수급"
    ],
    "extracted": {
     "companies": [
      {
-      "value": "칩스앤미디어",
-      "evidence": "칩스앤미디어"
+      "value": "씨앤엠",
+      "evidence": "씨앤엠"
      },
      {
-      "value": "모빌린트",
-      "evidence": "모빌린트"
+      "value": "오픈패스로보틱스",
+      "evidence": "오픈패스로보틱스"
      }
     ],
     "stage": {
      "value": "양산",
-     "evidence": "양산 본격화"
+     "evidence": "2030년까지 사족보행 로봇용 액추에이터 공급"
     },
-    "numbers": []
-   },
-   "estimated": {
-    "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 칩 제조 수율이나 공정 난이도에 대한 구체적인 언급이 없다.",
-     "confidence": "낮음"
-    },
-    "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 양산 과정에서의 병목 현상에 대한 단서가 없다.",
-     "confidence": "낮음"
-    }
-   },
-   "program_ids": [],
-   "failure_case": null,
-   "review_question": "팹리스 양산 단계에서 파운드리 웨이퍼 수급과 초도 물량 불량률은 어떻게 관리하고 있을까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": [
-    "수요·시장성"
-   ]
-  },
-  {
-   "id": "0123dc22b1e2",
-   "title": "칩스앤미디어·모빌린트, AI 반도체 양산으로 로봇 시장 공략 - 뉴스타운",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42bzJ5RWt5Y2lfVUpJb1ZlanNWb0VLdTJnTEhlTkFrX0E0VUtTWUpYUnNhSjVid0VGeUpJRzR4MlRqbkpleVBsVnhkN3VxMm5qTnUtVmpXSDVLMkFQLXFOUHl1c01uRTg5b19xVDN3?oc=5",
-   "source": "뉴스타운",
-   "published": "Tue, 03 Nov 2026 23:46:00 GMT",
-   "snippet": "칩스앤미디어·모빌린트, AI 반도체 양산으로 로봇 시장 공략 뉴스타운",
-   "score": 7.0,
-   "why": "AI 반도체 양산 및 로봇 시장 적용",
-   "category_hint": "엣지AI·칩",
-   "summary": "칩스앤미디어와 모빌린트가 AI 반도체 양산을 통해 로봇 시장 공략에 나선다. 두 기업의 협력을 기반으로 로봇용 엣지 AI 칩 공급 확대가 기대된다.",
-   "category": "엣지AI·칩",
-   "ai_lenses": [
-    "부품 수급",
-    "설계 양산성"
-   ],
-   "extracted": {
-    "companies": [
-     {
-      "value": "칩스앤미디어",
-      "evidence": "칩스앤미디어·모빌린트"
-     },
-     {
-      "value": "모빌린트",
-      "evidence": "칩스앤미디어·모빌린트"
-     }
-    ],
-    "stage": {
-     "value": "양산",
-     "evidence": "AI 반도체 양산으로 로봇 시장 공략"
-    },
-    "numbers": []
-   },
-   "estimated": {
-    "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 칩 양산 공정이나 수율에 대한 구체적인 언급이 없다.",
-     "confidence": "낮음"
-    },
-    "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문 제목 외에 병목 구간을 유추할 세부 정보가 없다.",
-     "confidence": "낮음"
-    }
-   },
-   "program_ids": [],
-   "failure_case": null,
-   "review_question": "두 회사의 AI 반도체가 실제 로봇 양산 라인에 채택될 때 파운드리 수율과 리드타임은 얼마나 안정적일까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": [
-    "수요·시장성"
-   ]
-  },
-  {
-   "id": "a9d9f459fb95",
-   "title": "Steam Review Delay: Up to 12 Business Days [2026] - https://tech-insider.org/",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSXNfOUc1TVFhQ3hIMXA3bGd5ZUJndzhrY09YZFp0aUcwcXJrdk9UemdlaVVteHEzTHlyM0ZQM0FyUEhrdjV6M0pYMjNxd0c0c05wdnN5MjJPUzNZeXNZZGxISF80amlfanZ1UEZCLU5vWXJKMmNjNnVUVFU5a3NrTW91TVh2RU5iMWhxdmZJNmY?oc=5",
-   "source": "https://tech-insider.org/",
-   "published": "Wed, 04 Nov 2026 20:01:04 GMT",
-   "snippet": "Steam Review Delay: Up to 12 Business Days [2026] https://tech-insider.org/",
-   "score": 0.0,
-   "why": "하드웨어 양산과 무관한 플랫폼 리뷰",
-   "category_hint": "기타",
-   "summary": "밸브의 스팀 게임 심사 지연이 최대 12영업일까지 길어지고 있다. 콘텐츠 검수와 출시 일정 관리에 차질이 생길 수 있다.",
-   "category": "기타",
-   "ai_lenses": [],
-   "extracted": {
-    "companies": [],
-    "stage": null,
     "numbers": [
      {
-      "value": "12 Business Days",
-      "evidence": "Up to 12 Business Days [2026]"
+      "value": "2030년까지",
+      "evidence": "2030년까지 사족보행 로봇용 액추에이터 공급"
      }
     ]
    },
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "제조 및 양산 공정과 관련 없는 소프트웨어 플랫폼의 심사 지연 건이다.",
+     "reason": "액추에이터 공급 계약 내용만 언급되어 있으며 양산 난이도를 파악할 수 있는 구체적인 정보가 없다.",
      "confidence": "높음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "하드웨어 조립이나 부품 수급 문제가 아니다.",
+     "reason": "병목 공정을 유추할 수 있는 공정별 리드타임이나 수율 정보가 없다.",
      "confidence": "높음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "플랫폼 심사 지연이 하드웨어 번들 게임이나 전용 기기 런칭 일정에 얼마나 타격을 줄까?",
+   "review_question": "2030년까지 장기 공급하는 물량의 단가 변동이나 부품 수급 리스크는 어떻게 관리할 계획일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "d73447af5b14",
+   "title": "중국 로봇 양산 공세… 한국은 '제조·물류' 맞불 - 컨슈머타임스",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDeU5ad0Q2ZzFLT1hDOHZHWUJzSWgyNkFqVWpVRzFVRF9CTHlfbUlVX2xORUZvVGFZN2VpM002cmJBd0VOd3UyZ1dKUE5jUnBwcVIwS3FseVBleVBSMlZvOGIyV1hQX0FOUEE?oc=5",
+   "source": "컨슈머타임스",
+   "published": "Wed, 04 Nov 2026 23:02:12 GMT",
+   "snippet": "중국 로봇 양산 공세… 한국은 '제조·물류' 맞불 컨슈머타임스",
+   "score": 0.0,
+   "why": "",
+   "category_hint": "기타",
+   "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+  },
+  {
+   "id": "94537395e3b4",
+   "title": "씨앤엠, 오픈패스로보틱스와 로봇 부품 공급계약 - 핀포인트뉴스",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1JVEJPTWJkUDVyZjlvTzhDRWJ0U2JkOEhyS0hwaVd3eUNHN2FYajNUVkJoRm1fVVZrNVFXWTFjQnRZVVdxV3B0cERxVFBnRkRBX0tkYmRQZzZTTHRzbVVuUnBXVG9tVDc5cUFFeW1xMGJrd0nSAXdBVV95cUxPMUlFVVpOWGJvX0VoOFc5ZllvNVJ4QWlmTWswdHlqOE5MOF92YlJSZTAwT1BMRFFjVW9WNDVLX1EwUW5tYWJadHRyeE1XUXdfcVd3NzN4enVwZUdoaEIxYWpyejVxbk5LTlRFcDhROU96dHdnQjBwaw?oc=5",
+   "source": "핀포인트뉴스",
+   "published": "Wed, 04 Nov 2026 23:48:58 GMT",
+   "snippet": "씨앤엠, 오픈패스로보틱스와 로봇 부품 공급계약 핀포인트뉴스",
+   "score": 0.0,
+   "why": "",
+   "category_hint": "기타",
+   "summary": "씨앤엠이 오픈패스로보틱스와 로봇 부품 공급계약을 체결했다. 로봇 제작에 필요한 부품의 수급 및 공급이 진행될 예정이다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "씨앤엠",
+      "evidence": "씨앤엠, 오픈패스로보틱스와 로봇 부품 공급계약"
+     },
+     {
+      "value": "오픈패스로보틱스",
+      "evidence": "씨앤엠, 오픈패스로보틱스와 로봇 부품 공급계약"
+     }
+    ],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 생산 난이도를 판단할 수 있는 구체적인 수량이나 공정 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유추할 수 있는 정보가 원문에 포함되어 있지 않다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이번 공급 계약 물량을 소화할 때 부품 리드타임이나 초도품 수급에 차질이 생길 가능성은 없을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  },
+  {
+   "id": "e1652a451ab5",
+   "title": "The 7 Best BOM Management Software Options for Lean Hardware Teams in 2026 - OpenTools",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaFNwTkY2OUpMdUhmbnNOcEVNNkV4c2xCLXAwU19uZmYyVmVUdkJGSWpQbi1rYWJ5alVfZkg5ZHk1TjE1ZVB4VGNLd3J0dWh6VDZ0aWdNMVpiZG9Ma3dOc3pvTkJQVFVzZC1Wcm4wREl1Tlhrdi0tRWl4SkNFM0xuOXFxMTVuYlNqMWJBUDdYMkNWNVpDVkhwdWU2LWs0T21jRFE?oc=5",
+   "source": "OpenTools",
+   "published": "Wed, 04 Nov 2026 23:21:42 GMT",
+   "snippet": "The 7 Best BOM Management Software Options for Lean Hardware Teams in 2026 OpenTools",
+   "score": 0.0,
+   "why": "",
+   "category_hint": "기타",
+   "summary": "2026년을 위한 7가지 최고의 BOM 관리 소프트웨어 옵션을 소개하는 기사입니다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 난이도에 대한 판단 근거가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상에 대한 언급이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이 소프트웨어 도입이 실제 BOM 관리와 부품 수급 단계를 얼마나 효율화할 수 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "양산 단가",
+    "설계 양산성"
+   ]
+  },
+  {
+   "id": "daaf15e8f94a",
+   "title": "SanDisk Stock Price Forecast: Slowing New Data Center Demand May Reverse Storage Price Rally, Technicals Signal Drop to $750 - TradingKey",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPR2FzNWhsTVY2QkpLU2t6STBwWkxOWDhsV2hqOVQ3U2FuZTgyTlRaZ0hKSWVPOU0yNHhTenlkWTRIXzdBc3dDSG0yQS1MQk0wWGpkVk9IaWZlZlVRLWFVSEg1TDJBZm5BMnFNYlVhaEkxdlYwX0Vod2hwODNjMGw4aEpwamE2akNPSVhRb2lEVnpjVUdmR2tyRzd5a2pJdUpfMlhQUmRnMjhZOENpd3FremZ6eXZIYjhfLTAxWXJQckx5NnFzeDlaRVNHS3hQSm9OdlN4anJGb1Jsb1BMUWRlTEQwdGVMdDg?oc=5",
+   "source": "TradingKey",
+   "published": "Thu, 05 Nov 2026 17:03:23 GMT",
+   "snippet": "SanDisk Stock Price Forecast: Slowing New Data Center Demand May Reverse Storage Price Rally, Technicals Signal Drop to $750 TradingKey",
+   "score": 0.0,
+   "why": "",
+   "category_hint": "기타",
+   "summary": "샌디스크의 주가 전망과 관련하여, 데이터 센터의 신규 수요 둔화가 스토리지 가격 상승세를 반전시킬 수 있다는 분석이 제기되었습니다. 기술적 지표들은 주가가 750달러까지 하락할 가능성을 시사하고 있습니다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "SanDisk",
+      "evidence": "SanDisk Stock Price Forecast"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "750",
+      "evidence": "Signal Drop to $750"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 생산 공정이나 양산 난이도에 대한 내용이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "데이터 센터의 수요 둔화가 실제 부품 단가와 스토리지 공급망 전반에 어느 정도 시차를 두고 영향을 미칠까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "2d05c8a64764",
+   "title": "Nothing Screen-Free AI Device: Dec 2026 Launch [2026] - https://tech-insider.org/",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR1AtTDVaTW0wU1FONEU2OEhmWlJrQk1vYXFfeUlkVFdlOGp4ZHdrMWpGSFp0TTdHQ0xEWTJIZVJNX2lLLWcySF9ndFBtX0NVUEd2RDZwU2pBbzZkdElHUmV0cndCWkZqcTQ0ZUJGSHdibWh4NnRoYm5uS0ctRzFiMlBGcHJsY1U?oc=5",
+   "source": "https://tech-insider.org/",
+   "published": "Thu, 05 Nov 2026 03:39:50 GMT",
+   "snippet": "Nothing Screen-Free AI Device: Dec 2026 Launch [2026] https://tech-insider.org/",
+   "score": 0.0,
+   "why": "",
+   "category_hint": "기타",
+   "summary": "낫싱이 스크린이 없는 새로운 AI 기기를 2026년 12월에 출시할 예정이다.",
+   "category": "AI기기·가전",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Nothing",
+      "evidence": "Nothing Screen-Free AI Device"
+     }
+    ],
+    "stage": {
+     "value": "상용판매",
+     "evidence": "Dec 2026 Launch"
+    },
+    "numbers": [
+     {
+      "value": "2026",
+      "evidence": "Dec 2026 Launch [2026]"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "출시 일정 외에 구체적인 하드웨어 스펙이나 제조 공정 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유추할 수 있는 공급망이나 부품 관련 정보가 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "화면이 없는 AI 기기의 경우 음성 인식 및 응답 지연 문제를 양산 단계에서 어떻게 해결할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "6e56228362b1",
+   "title": "Uber Fulfilled Just 4 Rides From AI Agents [2026] - https://tech-insider.org/",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMC1pYWdfZVB4blduQXdIV2h5N0EyYXcyaDRWdmhBanh5UWRXeDF5ek5hd2IxTkxKWERtYl9wdEhhamJ4Rkc5QUxIM2M1V2xDMFZ1RUNmOUlpLWc3SWs3N2dRWXFyckZOOVFITWlWdDZhN3JJbXhtSTRXVlRmRzMzWQ?oc=5",
+   "source": "https://tech-insider.org/",
+   "published": "Wed, 04 Nov 2026 16:20:29 GMT",
+   "snippet": "Uber Fulfilled Just 4 Rides From AI Agents [2026] https://tech-insider.org/",
+   "score": 0.0,
+   "why": "",
+   "category_hint": "기타",
+   "summary": "우버가 AI 에이전트를 통해 단 4건의 탑승 서비스만을 처리한 것으로 나타났다. 신기술 도입 초기 단계에서 실효성과 구체적인 양산 적용 여부는 아직 지켜봐야 한다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Uber",
+      "evidence": "Uber Fulfilled Just 4 Rides"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "4",
+      "evidence": "Just 4 Rides"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 AI 에이전트를 통한 서비스 처리 건수 외에 하드웨어 양산이나 제조 공정에 대한 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유추할 수 있는 구체적인 운영 데이터나 공급망 정보가 원문에 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이 정도 초기 처리 건수라면 시스템 연동 오류가 문제였을까, 아니면 애초에 수요가 없었던 것일까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": []
