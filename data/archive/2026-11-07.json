@@ -1,0 +1,223 @@
+{
+ "date": "2026-11-07",
+ "generated_at": "2026-11-07T07:00+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "24911669ad07",
+   "title": "[2026 로보월드] 韓 휴머노이드, '연구실서 현장으로'…레인보우 \"내년 양산\" - 로봇신문",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBmSUNoaGFFd1JDazRSS251OG5uUDdWWG8zTXJ6VGFuRzI5cjVGX0VwdjZ3QWJVcXpLSzhBUGkwWTgtTFBvMEg1M3owc2Z2TXRXd2MtdGFFUDRVdjNtTUNwMmgwSnhFZUlkVnNDNQ?oc=5",
+   "source": "로봇신문",
+   "published": "Fri, 06 Nov 2026 13:59:43 GMT",
+   "snippet": "[2026 로보월드] 韓 휴머노이드, '연구실서 현장으로'…레인보우 \"내년 양산\" 로봇신문",
+   "score": 9.0,
+   "why": "휴머노이드 로봇 내년 양산 계획",
+   "category_hint": "로봇",
+   "summary": "레인보우로보틱스가 내년 휴머노이드 로봇 양산을 목표로 연구실을 넘어 현장 투입을 준비하고 있다. 로보월드 전시를 통해 상용화를 위한 구체적인 양산 일정에 박차를 가하는 모습이다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "레인보우",
+      "evidence": "레인보우 \"내년 양산\""
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "레인보우 \"내년 양산\""
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "휴머노이드 로봇을 연구실 단계에서 내년 양산으로 전환하는 과정은 조립 공정과 부품 수급 측면에서 난도가 높다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 병목 공정에 대한 언급이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "내년 양산을 시작하면 초기 조립 라인에서 수율을 어떻게 잡을 것인가?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "127e2df26176",
+   "title": "[현장] 에스피지, 로봇 핵심 구동 모듈 ‘SDD’ 12월 첫 양산 - 파이낸스스코프",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jaVZqM1k3MUc2R1A3cVFJOWcxQlZLamtwM1F6dm5TSkJ1YmZSSFJqeVRwM0N3dE9qRlBoTHpBM09RMTdSVklVbEs3R3YtZWQzb3I4amhVWFVxVk5QLWNNTkd2LXlFSEIyTlE?oc=5",
+   "source": "파이낸스스코프",
+   "published": "Fri, 06 Nov 2026 03:20:00 GMT",
+   "snippet": "[현장] 에스피지, 로봇 핵심 구동 모듈 ‘SDD’ 12월 첫 양산 파이낸스스코프",
+   "score": 9.0,
+   "why": "로봇 핵심 부동 모듈 12월 첫 양산",
+   "category_hint": "부품·공급망",
+   "summary": "에스피지가 로봇 핵심 구동 모듈인 'SDD'의 첫 양산을 12월에 시작한다. 이번 양산을 통해 로봇 부품 공급망 강화에 나설 것으로 보인다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "에스피지",
+      "evidence": "에스피지, 로봇 핵심 구동 모듈 ‘SDD’ 12월 첫 양산"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "12월 첫 양산"
+    },
+    "numbers": [
+     {
+      "value": "12월",
+      "evidence": "12월 첫 양산"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "중간",
+     "reason": "신규 구동 모듈의 첫 양산 단계이므로 초기 공정 안정화와 수율 확보가 관건이다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "초기 양산 라인 세팅 및 핵심 부품 수급",
+     "reason": "첫 양산 시점에서 부품 정합성과 초기 불량률 대응이 병목이 될 수 있다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "첫 양산 물량이 본격 출하될 때 기존 라인과 비교해 부품 수급이나 조립 공정에서 가장 먼저 부딪힐 문제는 무엇일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "08f6afe0cf81",
+   "title": "Cybertruck’s 11 Recalls, 2-Year Delay Itemized [2026] - shattered.io",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPczJXZnZTLWFNcFVZZFJTLWpZZ3o3ZG9BQVJ0LXdjaENfTVV0OTdNSUcwdnotZ181emxyOGlyS1NSbFZaNE1IaldBV0hUOEVNSjFYVkZpbE9NamtJNk1QWjVxbHJIZDF2cFp4T3doa0RRRDlEM0QtcXgtNzNxd29HRGVpR3Y?oc=5",
+   "source": "shattered.io",
+   "published": "Fri, 06 Nov 2026 19:18:33 GMT",
+   "snippet": "Cybertruck’s 11 Recalls, 2-Year Delay Itemized [2026] shattered.io",
+   "score": 9.0,
+   "why": "양산 지연 및 리콜 이력 분석",
+   "category_hint": "부품·공급망",
+   "summary": "테슬라의 사이버트럭이 11회의 리콜과 2년의 출시 지연을 겪었다는 내용이다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "불량·수율"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "테슬라",
+      "evidence": "Cybertruck"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "2-Year Delay"
+    },
+    "numbers": [
+     {
+      "value": "11 Recalls",
+      "evidence": "11 Recalls"
+     },
+     {
+      "value": "2-Year Delay",
+      "evidence": "2-Year Delay"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정상의 난이도에 대한 내용이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 공정이나 부품에 대한 언급이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": {
+    "cause_tags": [
+     "불량·리콜",
+     "납기지연"
+    ],
+    "evidence": "11 Recalls, 2-Year Delay"
+   },
+   "review_question": "이렇게 연이은 리콜과 지연이 발생했을 때 현장에서는 설계 변경과 기존 재고 처리를 어떻게 조율했을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "불량·수율",
+    "설계 양산성"
+   ]
+  },
+  {
+   "id": "361e6f818714",
+   "title": "Meta Buys Conductor as Cloud Shuts Nov. 20 [2026] - tech-insider.org",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOb21FVEZncF91R0IzUmRyN2RJZXBDNVdid05WTklBa19EdUJCUVNWNUxSQXZnLTh1Q21OOHNTTjNUWlBUS2pBZTVXNnYtQ0pMZmFBejRUcUtwRXhwUmtYVVpESXhoQjBkdERkU1FwTkhESENjeTNyTTJDLUtCckRwcA?oc=5",
+   "source": "tech-insider.org",
+   "published": "Thu, 05 Nov 2026 11:15:29 GMT",
+   "snippet": "Meta Buys Conductor as Cloud Shuts Nov. 20 [2026] tech-insider.org",
+   "score": 1.0,
+   "why": "소프트웨어 및 클라우드 종료 기사",
+   "category_hint": "기타",
+   "summary": "메타가 콘덕터를 인수하며 클라우드 서비스는 2026년 11월 20일에 종료될 예정입니다. 관련 기업과 일정 외에 구체적인 양산이나 부품 정보는 원문에 없습니다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Meta",
+      "evidence": "Meta Buys Conductor"
+     },
+     {
+      "value": "Conductor",
+      "evidence": "Meta Buys Conductor"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "Nov. 20 [2026]",
+      "evidence": "Cloud Shuts Nov. 20 [2026]"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 하드웨어 양산이나 제조 공정에 대한 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유추할 수 있는 운영 데이터나 텍스트가 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "클라우드 서비스 종료와 인수 건이 기존 인프라 장비나 공급망에 어떤 영향을 미칠까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
