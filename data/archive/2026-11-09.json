@@ -1,0 +1,111 @@
+{
+ "date": "2026-11-09",
+ "generated_at": "2026-11-09T06:57+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "1d8f63209e19",
+   "title": "삼성전기 'MLCC' 품귀… 가격 올려도 장기계약 몰린다 - 파이낸셜뉴스",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RWXFvWnVZMDF5UHRmelZCWXU4ckJiYjVIcEhiOE5xZDJrdVAzdVN5c2lla2VNRHVjOWR4SGRmVXN6dTRQRVNTSTM4UkhtUFEtbmh0dDBCUVA5QQ?oc=5",
+   "source": "파이낸셜뉴스",
+   "published": "Sun, 08 Nov 2026 09:25:21 GMT",
+   "snippet": "삼성전기 'MLCC' 품귀… 가격 올려도 장기계약 몰린다 파이낸셜뉴스",
+   "score": 9.0,
+   "why": "부품 수급과 리드타임 이슈 직결",
+   "category_hint": "부품·공급망",
+   "summary": "삼성전기의 적층세라믹콘덴서(MLCC)에 품귀 현상이 발생하며 가격 상승에도 불구하고 장기 계약이 몰리고 있다. 핵심 부품의 수급 불안정이 가중되면서 제조 현장의 자재 확보 경쟁이 치열해지고 있다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "삼성전기",
+      "evidence": "삼성전기 'MLCC' 품귀"
+     }
+    ],
+    "stage": {
+     "value": "상용판매",
+     "evidence": "가격 올려도 장기계약 몰린다"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "핵심 수동부품인 MLCC의 품귀 현상으로 인해 완제품 생산 라인에 필요한 자재 확보 자체가 어려워지고 있다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "MLCC 품귀 및 수급 불안정",
+     "reason": "원문에 품귀 현상과 장기계약 집중이 언급되어 있어 특정 부품의 물량 확보가 전체 생산의 병목이 될 수 있다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": {
+    "cause_tags": [
+     "부품수급"
+    ],
+    "evidence": "삼성전기 'MLCC' 품귀"
+   },
+   "review_question": "삼성전기 MLCC 품귀로 단기 물량을 구하지 못하면 당장 대체품으로 전환할 수 있는 사양인가?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  },
+  {
+   "id": "fa9b4ed7c2e6",
+   "title": "중국 유니트리, 로봇 양산에도 조립은 여전히 사람 중심…자동화 초기 단계 - 로봇신문",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLcDNnQzh1ckhfUFd0QUVjcEhFUG9mREtPUU4yU2tOQVBPc0xDNVZHYnNvUHd1c3g3Vl9kNVZTWGNzaGV5V0hrNWlHM29oeEU1Vmh2YUlCamZhYTg2NjVOZnUySFktRlFIUW45dw?oc=5",
+   "source": "로봇신문",
+   "published": "Sun, 08 Nov 2026 14:43:24 GMT",
+   "snippet": "중국 유니트리, 로봇 양산에도 조립은 여전히 사람 중심…자동화 초기 단계 로봇신문",
+   "score": 8.0,
+   "why": "로봇 양산 공정과 조립 현실",
+   "category_hint": "로봇",
+   "summary": "중국 유니트리가 로봇 양산에 돌입했음에도 불구하고 조립 공정은 여전히 사람 중심의 수작업으로 진행되어 자동화 초기 단계에 머물러 있습니다. 외주 조립 라인에서 숙련공 의존도가 높을 경우 생산 속도와 품질 편차 관리가 중요해집니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "불량·수율"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "유니트리",
+      "evidence": "중국 유니트리"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 양산에도"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "조립 공정이 사람 중심의 수작업 단계에 머물러 있어 물량이 늘어날 때 수율 유지와 납기 맞추기가 어렵습니다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "사람 중심의 수작업 조립 공정",
+     "reason": "자동화가 미흡하여 작업자 숙련도에 따라 생산성과 불량률이 크게 좌우될 수 있습니다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "사람 손으로 조립하는 비중이 높다면 수천 대 규모로 물량이 터졌을 때 작업자 숙련도에 따른 불량률과 납기를 어떻게 감당할 것인가?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기"
+   ]
+  }
+ ]
+}

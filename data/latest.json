@@ -1,70 +1,19 @@
 {
- "date": "2026-11-08",
- "generated_at": "2026-11-08T06:56+09:00",
+ "date": "2026-11-09",
+ "generated_at": "2026-11-09T06:57+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "973998cc4a69",
-   "title": "Morpho, The Best Contract Manufacturer for Hardware Products in China, Takes Prototypes to Production - USA Today",
-   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPNjhqSlJEUEQybFhEQmdJeGlTTHF1SU1Sa3hYZ0piTGNfcVZUaE9BZTdjSmNkdy1wb0lpek1saXktaWJHN3ltY29UdmNRdG1raTFSZHBhOVZUbm9OOE80MlRwdHpSUVZ2WllLTldhUURyVnQyRWxlRzFwX1BFOXJkVWoySGY0cUpHUE9rdHBXb3NoaTY0cy1zMWNHVnJrOUpPSlp5YmRMbzNUUTYxRE1uU2RSMlQ0a294RzRvQnh2bVFOU0VqMDdqRUxZLVpRLTd0WnM2aHBhTS1mS2U3UnNldzNXSEhIZw?oc=5",
-   "source": "USA Today",
-   "published": "Sat, 07 Nov 2026 08:39:03 GMT",
-   "snippet": "Morpho, The Best Contract Manufacturer for Hardware Products in China, Takes Prototypes to Production USA Today",
+   "id": "1d8f63209e19",
+   "title": "삼성전기 'MLCC' 품귀… 가격 올려도 장기계약 몰린다 - 파이낸셜뉴스",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RWXFvWnVZMDF5UHRmelZCWXU4ckJiYjVIcEhiOE5xZDJrdVAzdVN5c2lla2VNRHVjOWR4SGRmVXN6dTRQRVNTSTM4UkhtUFEtbmh0dDBCUVA5QQ?oc=5",
+   "source": "파이낸셜뉴스",
+   "published": "Sun, 08 Nov 2026 09:25:21 GMT",
+   "snippet": "삼성전기 'MLCC' 품귀… 가격 올려도 장기계약 몰린다 파이낸셜뉴스",
    "score": 9.0,
-   "why": "시제품에서 양산으로 넘어가는 EMS 계약",
-   "category_hint": "외주생산·EMS",
-   "summary": "모포는 중국 내 하드웨어 제품을 위한 계약 제조업체로서 시제품을 양산 단계로 전환하는 서비스를 제공합니다. 미국 언론을 통해 하드웨어 제품 양산 전문성이 강조되었습니다.",
-   "category": "외주생산·EMS",
-   "ai_lenses": [
-    "외주 조립·납기",
-    "설계 양산성"
-   ],
-   "extracted": {
-    "companies": [
-     {
-      "value": "Morpho",
-      "evidence": "Morpho, The Best Contract Manufacturer"
-     }
-    ],
-    "stage": {
-     "value": "양산",
-     "evidence": "Takes Prototypes to Production"
-    },
-    "numbers": []
-   },
-   "estimated": {
-    "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 구체적인 양산 난이도나 공정 정보가 없다.",
-     "confidence": "낮음"
-    },
-    "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 병목 현상에 대한 단서가 없다.",
-     "confidence": "낮음"
-    }
-   },
-   "program_ids": [],
-   "failure_case": null,
-   "review_question": "이 업체를 통해 시제품을 양산 라인으로 넘길 때 국내 공정 관리와 비교해 품질 검증은 어떻게 조율해야 할까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": [
-    "외주 조립·납기",
-    "설계 양산성"
-   ]
-  },
-  {
-   "id": "89a9f8a3ac52",
-   "title": "Nvidia Chip Selloff Hides a Supply Shortage, Not a Demand Collapse - Startup Fortune",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM042SVJFQ1FtQkVTNFJzNVhIUXdBRDM4T01aXzdfR3h1blhyRW5WeHBFMkw2RFFUWWdEaTU5X3pCX1dxNk9Ca0ZndExPWkJFOTJhZUFTUjBNcFlVdEw2Z0pOZWJwSVVPVEY3UmVwd2FaUTFweEFwMUpJRWxwdnNCRWFSdXZLV3BsUWgzM19ocnl5azdhbVV1Ng?oc=5",
-   "source": "Startup Fortune",
-   "published": "Fri, 06 Nov 2026 10:17:48 GMT",
-   "snippet": "Nvidia Chip Selloff Hides a Supply Shortage, Not a Demand Collapse Startup Fortune",
-   "score": 8.0,
-   "why": "핵심 칩 부품 수급 및 공급 부족 이슈",
+   "why": "부품 수급과 리드타임 이슈 직결",
    "category_hint": "부품·공급망",
-   "summary": "엔비디아 칩의 매도세는 수요 감소가 아니라 공급 부족을 가리고 있는 현상입니다.",
+   "summary": "삼성전기의 적층세라믹콘덴서(MLCC)에 품귀 현상이 발생하며 가격 상승에도 불구하고 장기 계약이 몰리고 있다. 핵심 부품의 수급 불안정이 가중되면서 제조 현장의 자재 확보 경쟁이 치열해지고 있다.",
    "category": "부품·공급망",
    "ai_lenses": [
     "부품 수급"
@@ -72,28 +21,36 @@
    "extracted": {
     "companies": [
      {
-      "value": "Nvidia",
-      "evidence": "Nvidia"
+      "value": "삼성전기",
+      "evidence": "삼성전기 'MLCC' 품귀"
      }
     ],
-    "stage": null,
+    "stage": {
+     "value": "상용판매",
+     "evidence": "가격 올려도 장기계약 몰린다"
+    },
     "numbers": []
    },
    "estimated": {
     "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 구체적인 양산 난이도나 수치 정보가 없다.",
-     "confidence": "낮음"
+     "value": "높음",
+     "reason": "핵심 수동부품인 MLCC의 품귀 현상으로 인해 완제품 생산 라인에 필요한 자재 확보 자체가 어려워지고 있다.",
+     "confidence": "중간"
     },
     "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 병목 현상을 특정할 구체적인 내용이 없다.",
-     "confidence": "낮음"
+     "value": "MLCC 품귀 및 수급 불안정",
+     "reason": "원문에 품귀 현상과 장기계약 집중이 언급되어 있어 특정 부품의 물량 확보가 전체 생산의 병목이 될 수 있다.",
+     "confidence": "중간"
     }
    },
    "program_ids": [],
-   "failure_case": null,
-   "review_question": "칩 공급 부족이 지속되면 우리 물량 배정과 리드타임은 어떻게 흔들릴까?",
+   "failure_case": {
+    "cause_tags": [
+     "부품수급"
+    ],
+    "evidence": "삼성전기 'MLCC' 품귀"
+   },
+   "review_question": "삼성전기 MLCC 품귀로 단기 물량을 구하지 못하면 당장 대체품으로 전환할 수 있는 사양인가?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": [
@@ -101,49 +58,54 @@
    ]
   },
   {
-   "id": "27c8c21d243b",
-   "title": "Apple @ Work: Mac admins are shipping AI-written code with mistakes, but fixing the problems is taking days - 9to5Mac",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQzBxanRHNGJ4a0JqX21heThrQVdCeWJJckdGUzgzM3FZai1WRWx3UFZnOVAxdEI1dWhqeDhzRWFEa2ZucUtZejdDUlZRdHU5VXJlaWNQdHVsUFM5ekJaeFVWODNaTjE4a3IwZU85UFpfNjNTRTJMeE5fNkJTMDA3aHlWemIzRUJPc2pZSERhZFp6UlhEQVhJZm5kTUQ4dUZkZl82QjRZdWlNWWVXNGp0YjRjQXU?oc=5",
-   "source": "9to5Mac",
-   "published": "Sat, 07 Nov 2026 14:06:00 GMT",
-   "snippet": "Apple @ Work: Mac admins are shipping AI-written code with mistakes, but fixing the problems is taking days 9to5Mac",
-   "score": 1.0,
-   "why": "순수 소프트웨어 및 코딩 오류 이야기",
-   "category_hint": "기타",
-   "summary": "맥 관리자들이 AI가 작성한 코드의 오류로 인해 문제 해결에 수일씩 소요되는 겪고 있습니다. AI 생성 코드의 검수와 유지보수에서 생산성 저하와 품질 관리 문제가 발생하고 있습니다.",
-   "category": "기타",
+   "id": "fa9b4ed7c2e6",
+   "title": "중국 유니트리, 로봇 양산에도 조립은 여전히 사람 중심…자동화 초기 단계 - 로봇신문",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLcDNnQzh1ckhfUFd0QUVjcEhFUG9mREtPUU4yU2tOQVBPc0xDNVZHYnNvUHd1c3g3Vl9kNVZTWGNzaGV5V0hrNWlHM29oeEU1Vmh2YUlCamZhYTg2NjVOZnUySFktRlFIUW45dw?oc=5",
+   "source": "로봇신문",
+   "published": "Sun, 08 Nov 2026 14:43:24 GMT",
+   "snippet": "중국 유니트리, 로봇 양산에도 조립은 여전히 사람 중심…자동화 초기 단계 로봇신문",
+   "score": 8.0,
+   "why": "로봇 양산 공정과 조립 현실",
+   "category_hint": "로봇",
+   "summary": "중국 유니트리가 로봇 양산에 돌입했음에도 불구하고 조립 공정은 여전히 사람 중심의 수작업으로 진행되어 자동화 초기 단계에 머물러 있습니다. 외주 조립 라인에서 숙련공 의존도가 높을 경우 생산 속도와 품질 편차 관리가 중요해집니다.",
+   "category": "로봇",
    "ai_lenses": [
-    "불량·수율",
-    "설계 양산성"
+    "외주 조립·납기",
+    "불량·수율"
    ],
    "extracted": {
     "companies": [
      {
-      "value": "Apple",
-      "evidence": "Apple @ Work"
+      "value": "유니트리",
+      "evidence": "중국 유니트리"
      }
     ],
-    "stage": null,
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 양산에도"
+    },
     "numbers": []
    },
    "estimated": {
     "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 하드웨어 제조나 대량 생산에 대한 구체적인 공정 난이도 정보가 없습니다.",
-     "confidence": "낮음"
+     "value": "높음",
+     "reason": "조립 공정이 사람 중심의 수작업 단계에 머물러 있어 물량이 늘어날 때 수율 유지와 납기 맞추기가 어렵습니다.",
+     "confidence": "중간"
     },
     "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "병목 현상을 유추할 수 있는 구체적인 공정 상의 데이터나 텍스트가 부족합니다.",
-     "confidence": "낮음"
+     "value": "사람 중심의 수작업 조립 공정",
+     "reason": "자동화가 미흡하여 작업자 숙련도에 따라 생산성과 불량률이 크게 좌우될 수 있습니다.",
+     "confidence": "중간"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "AI가 작성한 코드의 오류를 검수하고 수정하는 데 걸리는 시간을 줄이기 위해 어떤 품질 검증 프로세스를 도입해야 할까?",
+   "review_question": "사람 손으로 조립하는 비중이 높다면 수천 대 규모로 물량이 터졌을 때 작업자 숙련도에 따른 불량률과 납기를 어떻게 감당할 것인가?",
    "dropped": 0,
    "programs": [],
-   "ai_lenses_baseline": []
+   "ai_lenses_baseline": [
+    "외주 조립·납기"
+   ]
   }
  ]
 }
