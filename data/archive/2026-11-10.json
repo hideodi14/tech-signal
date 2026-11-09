@@ -1,0 +1,217 @@
+{
+ "date": "2026-11-10",
+ "generated_at": "2026-11-10T07:07+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "81f5251dd3f5",
+   "title": "中 소비자용 휴머노이드 로봇 '프라임봇' 1만 대 생산 달성 - 로봇신문",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13ZHNfNmFSZFpYTEFPVVpzcmstWmtXZ2ItSG95NUlac29RSE84dmhYeHVlSlpUMGNmLU5GdF9QMTF2cERtUUdHSWtfam80bmFFcmFrQTk4NXl5N2ZFSk5LWHlxeGNYTW1KSmhZSw?oc=5",
+   "source": "로봇신문",
+   "published": "Mon, 09 Nov 2026 09:08:20 GMT",
+   "snippet": "中 소비자용 휴머노이드 로봇 '프라임봇' 1만 대 생산 달성 로봇신문",
+   "score": 9.0,
+   "why": "로봇 1만대 양산 달성",
+   "category_hint": "로봇",
+   "summary": "중국의 소비자용 휴머노이드 로봇 '프라임봇'이 1만 대 생산을 달성했다. 로봇 양산 체제 구축에 속도를 내고 있는 모습이다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "양산",
+     "evidence": "1만 대 생산 달성"
+    },
+    "numbers": [
+     {
+      "value": "1만 대",
+      "evidence": "1만 대 생산 달성"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "생산량 수치 외에 공정이나 부품 수급에 대한 구체적인 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정을 유추할 만한 원문 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "소비자용 휴머노이드 1만 대를 생산했다면 초기 불량과 수율은 어느 수준으로 잡혔을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "e37aedd071be",
+   "title": "Pebble Round 2 shipments trail schedule after six-month delay - news.lavx.hu",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcGQ2azZCakxBeVViOTNJbDlQbUtfTmR4ZEhKTXRuOEVWT0JXcjVlUE4xOTIzNms3TEZFWWJPSTl1Y2hpMmxXMW5OVGx2MXNUcl9RcFI2MEVlYS1hWXc2R2tGMVAtaGlGaldSRE9Rckt3ZGJLeERxalZqT0tVVGxBN1F5anNmTkM1YlNyYTF1eWdIaXhl?oc=5",
+   "source": "news.lavx.hu",
+   "published": "Mon, 09 Nov 2026 20:35:16 GMT",
+   "snippet": "Pebble Round 2 shipments trail schedule after six-month delay news.lavx.hu",
+   "score": 9.0,
+   "why": "양산 및 선적 지연 사례",
+   "category_hint": "HW스타트업",
+   "summary": "Pebble Round 2 스마트워치의 배송이 6개월의 지연을 겪은 후 예정보다 늦어지고 있습니다. 초기 양산 및 물류 단계에서 일정 차질이 발생한 것으로 보입니다.",
+   "category": "HW스타트업",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Pebble",
+      "evidence": "Pebble Round 2"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "shipments trail schedule"
+    },
+    "numbers": [
+     {
+      "value": "6개월",
+      "evidence": "six-month delay"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "6개월이라는 장기 지연이 발생한 것으로 미루어 양산 및 공급망 관리에 큰 난항이 있었던 것으로 추정됩니다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "외주 조립·납기",
+     "reason": "출하(shipment)가 일정보다 뒤처져 있다는 점에서 완제품 조립이나 물류 납기 단계에 병목이 발생했습니다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": {
+    "cause_tags": [
+     "납기지연",
+     "외주·조립"
+    ],
+    "evidence": "shipments trail schedule after six-month delay"
+   },
+   "review_question": "6개월 지연의 원인이 협력사 조립 문제였을까, 아니면 특정 부품 수급 차질이었을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "2880bd1301b1",
+   "title": "온디바이스 AI 스마트폰 확산…대덕전자·제이앤티씨 러브콜 봇물 - 핀포인트뉴스",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBUOXJ2bHRyMkUxUFhGVFd0cVlWV1AzTDhuX29jTDZlZVZZLUlHek9UcDBUdTQwRmgycGFJSUVZSXZsVG90M2Y1bno0N3A5QVZsWlRMRGM5TGpHM3htdEowdXdzYXZwb3FVdFFzOTg4NnBKZi1MNi1Z0gF3QVVfeXFMUFQ5cnZsdHIyRTFQWEZUV3RxWVZXUDNMOG5fb2NMNmVlVlktSUd6T1RwMFR1NDBGaDJwYUlJRVlJdmxUb3QzZjVuejQ3cDlBVmxaVExEYzlMakczeG10SjB1d3NhdnBvcVV0UXM5ODg2cEpmLUw2LVk?oc=5",
+   "source": "핀포인트뉴스",
+   "published": "Mon, 09 Nov 2026 05:11:58 GMT",
+   "snippet": "온디바이스 AI 스마트폰 확산…대덕전자·제이앤티씨 러브콜 봇물 핀포인트뉴스",
+   "score": 8.0,
+   "why": "부품 수급과 양산 직결",
+   "category_hint": "부품·공급망",
+   "summary": "온디바이스 AI 스마트폰이 확산되면서 관련 부품 공급사인 대덕전자와 제이앤티씨로 공급 문의가 집중되고 있습니다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "대덕전자",
+      "evidence": "대덕전자·제이앤티씨 러브콜 봇물"
+     },
+     {
+      "value": "제이앤티씨",
+      "evidence": "대덕전자·제이앤티씨 러브콜 봇물"
+     }
+    ],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 기술적 난이도에 대한 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 공급 병목이나 생산 차질에 대한 구체적인 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "주문 급증에 맞춰 부품사들이 실제 라인 증설이나 수율 안정화를 제때 끝낼 수 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급",
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "f815889369d2",
+   "title": "레인보우로보틱스 5.45% 하락…협동로봇 양산 계약 주목 - 잡포스트",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TVUtieUt6aHd0aHRZUGdpWlRDQVF1bzkwTG90S2t2eHRveGdXREh4VDJNSkpCQWlFb21KRXZLVXg0S2FpdjRFYXdDd2xzT1FXOXNFb3RDS0l0M2tKSkg2ZkRPUnhManR2emxGMWJ30gFyQVVfeXFMUDN4Qi1UdHlQbUpRTUVyUUFsOXFCdV9MakNjYjloSm9PR1NNQWZTNzhCTmkwbWVkT0pSTGpuSkRxbUZnT0JEdkpoYnB5enZNeUNvNjlOT3RMNnlHbTFnVG9xQU1FNFZLSEJzcVpYdkdGWHFn?oc=5",
+   "source": "잡포스트",
+   "published": "Mon, 09 Nov 2026 06:03:15 GMT",
+   "snippet": "레인보우로보틱스 5.45% 하락…협동로봇 양산 계약 주목 잡포스트",
+   "score": 8.0,
+   "why": "협동로봇 양산 계약",
+   "category_hint": "로봇",
+   "summary": "레인보우로보틱스 주가가 하락세를 보인 가운데 협동로봇 양산 계약에 시장의 관심이 집중되고 있습니다. 관련 주가 변동과 함께 협동로봇의 대량 생산 체계 구축 여부가 주목됩니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "레인보우로보틱스",
+      "evidence": "레인보우로보틱스 5.45% 하락"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "협동로봇 양산 계약 주목"
+    },
+    "numbers": [
+     {
+      "value": "5.45%",
+      "evidence": "레인보우로보틱스 5.45% 하락"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 부품 수급 상황에 대한 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정을 유추할 수 있는 정보가 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "협동로봇 양산 계약 물량이 늘어날 때 자체 공장과 외주 협력사 중 어디서 생산 병목이 먼저 생길까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
