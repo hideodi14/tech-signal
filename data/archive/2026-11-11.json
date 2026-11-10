@@ -1,0 +1,437 @@
+{
+ "date": "2026-11-11",
+ "generated_at": "2026-11-11T07:02+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "11cff58298ce",
+   "title": "\"위너스일렉, 웨어러블 로봇 양산 진출…제조 역량 확장\" - CMIR - 뉴스핌",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uaDRobnFqX1BjMk83cm9oY05EUk1RVmdZc2VBVjVINEloM1hHZ0VFTlItbUt5UTdpeHhDRUg0bm5mRHdac1JIS05Kem9YOXlVMmJJUnpKVVFISUFy?oc=5",
+   "source": "뉴스핌",
+   "published": "Tue, 10 Nov 2026 00:41:00 GMT",
+   "snippet": "\"위너스일렉, 웨어러블 로봇 양산 진출…제조 역량 확장\" - CMIR 뉴스핌",
+   "score": 9.0,
+   "why": "웨어러블 로봇 양산 진출 및 제조 역량",
+   "category_hint": "로봇",
+   "summary": "위너스일렉이 웨어러블 로봇 양산에 진출하며 제조 역량을 확장합니다. 로봇 제조 및 부품 조립 과정에서의 양산 체계 구축이 핵심이 될 것입니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "위너스일렉",
+      "evidence": "위너스일렉, 웨어러블 로봇 양산 진출"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "웨어러블 로봇 양산 진출"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "중간",
+     "reason": "신규 웨어러블 로봇의 양산 진출에 따라 초기 조립 공정 및 부품 정밀도 확보가 필요합니다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 병목 공정에 대한 언급이 없습니다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "위너스일렉이 웨어러블 로봇 양산을 시작할 때 기존 생산라인과 비교해 어떤 조립 공정과 검사 장비가 추가로 필요할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ]
+  },
+  {
+   "id": "84bb7b08a85b",
+   "title": "‘철판 벽 타는 로봇’ 조선소로…내년 양산 본격화 - 이데일리",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYWVQc1d5eTRpRjhYZFQ0Wk5DdjhZdjRMc1U4ekpISkRnZGtQNjJ5OU1vU3Y3c2otZ2JJWjdPbERTbjhsNUNqSks2R2tkel8tV2FkR2E0ZTZqZzdJa1RiajNsQ0ZETEQ5RzZGY2hWZHViNUFCVmtranR4RmUwbjFUSw?oc=5",
+   "source": "이데일리",
+   "published": "Tue, 10 Nov 2026 07:52:41 GMT",
+   "snippet": "‘철판 벽 타는 로봇’ 조선소로…내년 양산 본격화 이데일리",
+   "score": 9.0,
+   "why": "조선소 투입 및 본격 양산 돌입",
+   "category_hint": "로봇",
+   "summary": "조선소 작업용 철판 벽 타는 로봇이 내년 양산을 본격화할 예정이다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "양산 단가"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "양산",
+     "evidence": "내년 양산 본격화"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산 과정에서의 기술적 난이도나 공정 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문이 짧아 병목 구간을 추정할 근거가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "조선소 현장에서 요구하는 방수·방진 등 특수 환경 인증과 내구성 기준을 맞추는 데 어떤 부품이 가장 까다로울까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "8d4aad4863b2",
+   "title": "CMIR \"위너스일렉, 웨어러블 로봇 양산 진출\" - 컨슈머타임스",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1OExjN3lhNTZzU2FiczBhWHNvaHAyQ1pPVXlCNWJTcm0zWl94dkZKZ01DdDNOZWVNaXcyN3JQUDdDRDhzdmJVZlgtWHJyYVZJMmJ2Q25MbUs5MkUwOGZFbmRqNGNNLXFUc3c?oc=5",
+   "source": "컨슈머타임스",
+   "published": "Tue, 10 Nov 2026 00:41:51 GMT",
+   "snippet": "CMIR \"위너스일렉, 웨어러블 로봇 양산 진출\" 컨슈머타임스",
+   "score": 9.0,
+   "why": "웨어러블 로봇 양산 진출 소식",
+   "category_hint": "로봇",
+   "summary": "위너스일렉이 웨어러블 로봇 양산 사업에 진출한다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "위너스일렉",
+      "evidence": "위너스일렉, 웨어러블 로봇 양산 진출"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "웨어러블 로봇 양산 진출"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산 과정이나 설비에 대한 구체적인 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정을 유추할 만한 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "위너스일렉이 기존에 가전이나 타 제품을 만들던 라인을 웨어러블 로봇 조립용으로 전환하는 과정에서 수삽 공정이나 검사 장비 세팅에 문제가 생기지 않을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ]
+  },
+  {
+   "id": "a76479414aee",
+   "title": "글로벌 부품사의 로봇 실증 경쟁, 부품 공급을 넘어선 양산 현장 전면 개방 - 글로벌이코노믹",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMV9BZVpYZDFQaXd6N0d1NTllSDlZZEg3UW1nYjVjN3dzaUNvTHR0aVl3UzZUblFvci0zNjQwekdlV1UwVk54S0JJYjR5U2xlMk9TMGdCT3JqNm5nRWtRRUMzMTMyTE1SV3I3MGFiR1VPR2loNmdqR2VoNzFwTklURHpiaXFXX3li?oc=5",
+   "source": "글로벌이코노믹",
+   "published": "Tue, 10 Nov 2026 18:50:00 GMT",
+   "snippet": "글로벌 부품사의 로봇 실증 경쟁, 부품 공급을 넘어선 양산 현장 전면 개방 글로벌이코노믹",
+   "score": 8.0,
+   "why": "양산 현장 전면 개방과 부품 공급",
+   "category_hint": "로봇",
+   "summary": "글로벌 부품사들이 로봇 실증 경쟁을 벌이며 양산 현장을 전면 개방하고 있다. 부품 공급을 넘어 실제 양산 환경에서의 검증이 확대되는 추세다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 수치에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문 제목 외에 세부 내용이 없어 병목 구간을 파악할 수 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "부품사들이 양산 현장을 전면 개방할 때 우리 부품의 스펙 유출이나 공급망 종속 리스크는 어떻게 대응해야 할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  },
+  {
+   "id": "2a77ddd74409",
+   "title": "[국회와 경제] 로봇산업 법체계 전면 개편 시동··· '지능형 로봇산업 진흥법'이 바꿀 것들 - 폴리뉴스 Polinews",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8zclJBQmlyTUFJNkNjQWVfbThRaUExNWJLMnViSzR0UFFUN0dacHE2MXdGby1aVzlsRFdYRGJBekw1LUsxeWdRNkRtcGNzb2x4NS1GMTFCMUROR24tODFQUXJETmEyR2xib2xId2Jn?oc=5",
+   "source": "폴리뉴스 Polinews",
+   "published": "Tue, 10 Nov 2026 01:50:26 GMT",
+   "snippet": "[국회와 경제] 로봇산업 법체계 전면 개편 시동··· '지능형 로봇산업 진흥법'이 바꿀 것들 폴리뉴스 Polinews",
+   "score": 6.0,
+   "why": "로봇산업 관련 법체계 개편",
+   "category_hint": "정책·인증",
+   "summary": "로봇산업의 급격한 성장에 발맞추어 기존 '지능형 로봇산업 진흥법'의 전면 개편이 추진된다. 이번 법체계 개편은 로봇 산업 전반의 제도적 기반을 새롭게 정비하는 계기가 될 것으로 보인다.",
+   "category": "정책·인증",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 기술적 난이도에 대한 언급이 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 생산 병목 현상을 유추할 만한 내용이 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이번 법 개정안에 실제 양산 현장이나 부품 수급에 직접 영향을 미치는 규제 완화 조치가 포함되어 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "인증·규제"
+   ]
+  },
+  {
+   "id": "e000084d92e7",
+   "title": "김장호 구미시장, 중국 휴머노이드 산업현장 방문…구미 제조업 로봇산업 전환 속도 - 미디어디펜스",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5uM084THM5MG9Kb0JESURnLUhKWmE1WDZ1aG5OaldYWGlVYkcwblhvY1hySHF3eXdLdk5lTVpORDh5cmtjTHRJZUpCNlhzNmhFT3laSlpIaHI5VzlpWFdGekwxdThxcU9uc0dN?oc=5",
+   "source": "미디어디펜스",
+   "published": "Tue, 10 Nov 2026 21:50:48 GMT",
+   "snippet": "김장호 구미시장, 중국 휴머노이드 산업현장 방문…구미 제조업 로봇산업 전환 속도 미디어디펜스",
+   "score": 3.0,
+   "why": "지자체의 산업현장 방문 단순 보도",
+   "category_hint": "로봇",
+   "summary": "김장호 구미시장이 중국 휴머노이드 산업현장을 방문하여 구미 제조업의 로봇산업 전환 속도를 높이고 있습니다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 생산 공정이나 기술 스펙이 언급되지 않아 판단할 수 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상에 대한 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "지자체의 산업현장 방문이 실제 구미 제조기업들의 로봇 부품 공급망 구축이나 양산 전환에 어떤 구체적인 지원으로 이어질까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "f11210414c0a",
+   "title": "‘제조업 50년 역사’ 구미시, 휴머노이드 승부수 띄운다…中 로봇산업 현장 방문 - 더나은미래",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1oaVhySDV1aEVUT1ZOYnNzazAtcVdHeEdYdkVEU2xQY3ZjZjdQSWVCSFRjdTk0d1MyRjUwaUQ5elozTmU1RUhCWmcxa09xYXlqZ1E?oc=5",
+   "source": "더나은미래",
+   "published": "Tue, 10 Nov 2026 09:45:00 GMT",
+   "snippet": "‘제조업 50년 역사’ 구미시, 휴머노이드 승부수 띄운다…中 로봇산업 현장 방문 더나은미래",
+   "score": 3.0,
+   "why": "지자체의 산업현장 방문 단순 보도",
+   "category_hint": "로봇",
+   "summary": "구미시가 휴머노이드 로봇 산업 육성을 위해 중국 로봇산업 현장을 방문하며 본격적인 행보에 나섰다. 제조업 기반을 바탕으로 새로운 로봇 산업 생태계 조성을 추진하고 있다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 기술 수준에 대한 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 만한 생산 관련 내용이 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "지자체의 중국 로봇산업 현장 방문이 실제 관내 제조기업의 부품 공급망이나 양산 협력으로 이어질 수 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "49cf6d6ee3fc",
+   "title": "전자·반도체 50년 구미, 다음 먹거리는 휴머노이드…중국 로봇 현장 찾았다 - 경북일보",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8yRFdkcDFYa2xOeVB3V2JQa0ROVVlQdUthWjBBcUZYTE1rVjFhN05sV2VRVkNvMTVsM1VLUzVmR3VVelFxU1hqZC00ZFd4aUhCRFBXOHZsTWhtVHhvdllRLXZYSjN3RDEzOU85TmJZRQ?oc=5",
+   "source": "경북일보",
+   "published": "Tue, 10 Nov 2026 08:43:06 GMT",
+   "snippet": "전자·반도체 50년 구미, 다음 먹거리는 휴머노이드…중국 로봇 현장 찾았다 경북일보",
+   "score": 3.0,
+   "why": "지자체의 산업현장 방문 단순 보도",
+   "category_hint": "로봇",
+   "summary": "구미시가 기존 전자 및 반도체 산업을 넘어 휴머노이드 로봇을 신산업으로 육성하기 위해 중국 로봇 현장을 방문했다. 지자체 차원에서 로봇 산업 생태계 조성을 위한 움직임을 보이고 있다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 계획이나 기술적 난이도에 대한 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유추할 수 있는 제조 현장이나 부품 수급 관련 세부 내용이 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "구미가 중국 로봇 현장을 시찰했다고 하는데, 실제 부품 공급망과 외주 조립 라인을 어디와 손잡고 꾸릴 계획인지 구체적인 로드맵이 나왔을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "ad29dfaac870",
+   "title": "삼성 19조 투자에 中 기술협력까지…구미, 휴머노이드 산업 육성 가속 - 경북매일",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0M1FibTA2U0EwVE1GRHdkaVV6X3FaSUtmNDlQeG5JOG9ZM0FMTkh1VXlHTkhWeUZvemdnRzk0RGxxSjBPZzJuM3FSOUVhOTRHSkpEV2pqWmk3QQ?oc=5",
+   "source": "경북매일",
+   "published": "Tue, 10 Nov 2026 07:49:00 GMT",
+   "snippet": "삼성 19조 투자에 中 기술협력까지…구미, 휴머노이드 산업 육성 가속 경북매일",
+   "score": 3.0,
+   "why": "지자체 투자 및 산업 육성 계획",
+   "category_hint": "로봇",
+   "summary": "구미시가 삼성의 대규모 투자와 중국과의 기술 협력을 바탕으로 휴머노이드 로봇 산업 육성에 속도를 내고 있습니다. 지역 내 제조 인프라와 연계하여 로봇 양산 및 공급망 구축을 추진할 것으로 보입니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "삼성",
+      "evidence": "삼성 19조 투자"
+     }
+    ],
+    "stage": {
+     "value": "연구",
+     "evidence": "휴머노이드 산업 육성 가속"
+    },
+    "numbers": [
+     {
+      "value": "19조",
+      "evidence": "삼성 19조 투자"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "구체적인 양산 공정이나 부품 스펙에 대한 언급이 없어 난이도를 판단할 수 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유발할 구체적인 공급망이나 기술적 제약 사항이 기재되지 않았다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "구미의 기존 전자·제조 인프라가 휴머노이드 조립 라인으로 전환될 때 어떤 공정에서 외주 협력사와의 마찰이 생길까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "f6062cb331f9",
+   "title": "구미시, 중국 휴머노이드 산업 현장 방문…로봇 공급망 진출 모색 - 신아일보",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jV3JmTTlubFh6Y09kcXJTWUh3V3NYVExYd2NTSnJoOWQtaWNSbW5UNndkaU5aLXNuelZ6TTNhVmxTdlF5dE45WkxoYmVzRGZnUUx5akdCM3BEcmdoQ1JhZ0RiTjBEVVE0LWVpQUp3WWM?oc=5",
+   "source": "신아일보",
+   "published": "Tue, 10 Nov 2026 06:15:37 GMT",
+   "snippet": "구미시, 중국 휴머노이드 산업 현장 방문…로봇 공급망 진출 모색 신아일보",
+   "score": 3.0,
+   "why": "지자체 방문 및 공급망 모색",
+   "category_hint": "로봇",
+   "summary": "구미시가 중국의 휴머노이드 산업 현장을 방문하여 로봇 공급망 진출 방안을 모색하고 있다. 지자체 차원에서 글로벌 로봇 부품 및 공급망 협력을 추진하는 모습이다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 제조 공정이나 스펙에 대한 언급이 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "공급망 진출 모색 단계 외에 구체적인 병목 구간을 유추할 근거가 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "중국 로봇 공급망에 진출할 때 국내 부품사들이 겪을 가장 큰 리스크는 품질 검증일까, 아니면 단가 경쟁일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  }
+ ]
+}
