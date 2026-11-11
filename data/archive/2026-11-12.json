@@ -1,0 +1,163 @@
+{
+ "date": "2026-11-12",
+ "generated_at": "2026-11-12T07:22+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "75f572a97b40",
+   "title": "AI 로봇 양산 가로막는 건 알고리즘 아닌 제조 현장 - 바이라인네트워크",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE14M05hU2Y2UG13WXJzT0o3eHktVk1PQUtfVUVSYmhrelZmaUN4eTVoZ3RtWnZxU0ZlU2tCN1lJdkpXMUdvR3FXMl91STFjLU0?oc=5",
+   "source": "바이라인네트워크",
+   "published": "Wed, 11 Nov 2026 14:34:54 GMT",
+   "snippet": "AI 로봇 양산 가로막는 건 알고리즘 아닌 제조 현장 바이라인네트워크",
+   "score": 10.0,
+   "why": "제조 현장의 양산 한계 직시",
+   "category_hint": "로봇",
+   "summary": "AI 로봇의 양산을 가로막는 주된 요인이 알고리즘이 아닌 제조 현장에 있다는 지적이다. 하드웨어 생산과 조립 과정에서 현실적인 제조 한계가 걸림돌로 작용하고 있다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "양산",
+     "evidence": "AI 로봇 양산 가로막는"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "AI 로봇 양산이 제조 현장에서 가로막히고 있어 대량 생산 과정의 난도가 높음을 시사한다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "제조 현장",
+     "reason": "원문에서 양산을 가로막는 원인으로 제조 현장을 지목하고 있다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": {
+    "cause_tags": [
+     "양산전환",
+     "외주·조립"
+    ],
+    "evidence": "AI 로봇 양산 가로막는 건 알고리즘 아닌 제조 현장"
+   },
+   "review_question": "알고리즘 외에 제조 현장에서 양산을 가로막는 구체적인 공정상 문제나 부품 조립의 한계는 무엇일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "설계 양산성",
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "de5a656282dd",
+   "title": "하이젠알앤엠, 휴머노이드 액추에이터 6종 개발 완료··고객사 로봇 양산 대응에 CAPA 확대한다 - 데이터투자",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1JSVhrSEpTZUNGZWhPZ1NOS2JZV19uZU1RMUhYY2VYc2RzTFFMM19kUlN5VXZJMEVIUDZINHVwNVZFQkhWQVFXXzRPQlBSX19wRlR3OVFhRmc1X1NLOHFLOWs4YV8wX29zUmpPRGNCc3BIVDg?oc=5",
+   "source": "데이터투자",
+   "published": "Wed, 11 Nov 2026 03:48:49 GMT",
+   "snippet": "하이젠알앤엠, 휴머노이드 액추에이터 6종 개발 완료··고객사 로봇 양산 대응에 CAPA 확대한다 데이터투자",
+   "score": 9.0,
+   "why": "부품사 CAPA 확대와 양산 대응",
+   "category_hint": "부품·공급망",
+   "summary": "하이젠알앤엠이 휴머노이드 액추에이터 6종 개발을 완료하고 고객사 로봇 양산에 대응하기 위해 생산 능력을 확대합니다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "하이젠알앤엠",
+      "evidence": "하이젠알앤엠"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "고객사 로봇 양산 대응"
+    },
+    "numbers": [
+     {
+      "value": "6종",
+      "evidence": "휴머노이드 액추에이터 6종 개발 완료"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "액추에이터 6종 개발 완료 및 CAPA 확대 계획이 언급되었으나 구체적인 양산 공정 난이도는 알 수 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정에 대한 언급이 원문에 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "액추에이터 6종의 양산 라인을 증설할 때 부품 수급과 조립 공정 중 어느 쪽에서 리드타임이 길어질까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기",
+    "양산 단가"
+   ]
+  },
+  {
+   "id": "ca702d85ec6b",
+   "title": "정부, 로봇 구동기 2029년 양산 추진…휴머노이드 배터리도 개발 - 아주경제",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB1T3NVbGZqU1RSb3M5c0E1Y0FSQmFQVFg4VUJIbTZGYUdKbzdaM3h0d19ldTBMZWlSdkp5ZWlQMHpXYzZKMmlycUd5Yi1WX3hFV05nRjBKSWs4Z9IBWEFVX3lxTFBPSlJNcFZya2ZWY2E1dWN5VEtITWtMS2VCamhmQ0t0cG5zSnNuanFhbHRVdktfN3dBLVl1ZERFOFlZd05RVllxV0YzZmJIMmxwY1FCMWhnblE?oc=5",
+   "source": "아주경제",
+   "published": "Wed, 11 Nov 2026 00:00:00 GMT",
+   "snippet": "정부, 로봇 구동기 2029년 양산 추진…휴머노이드 배터리도 개발 아주경제",
+   "score": 8.0,
+   "why": "부품 양산 및 정부 정책 반영",
+   "category_hint": "부품·공급망",
+   "summary": "정부가 2029년 양산을 목표로 로봇 구동기 개발을 추진하며, 휴머노이드 배터리 개발도 함께 진행한다. 장기적인 부품 공급망 및 기술 자립을 노리는 정책적 움직임이다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "연구",
+     "evidence": "2029년 양산 추진"
+    },
+    "numbers": [
+     {
+      "value": "2029년",
+      "evidence": "2029년 양산 추진"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "로봇 구동기와 휴머노이드 전용 배터리는 고도의 정밀 기술과 신뢰성이 요구되어 양산 전환 난이도가 높다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "부품 수급",
+     "reason": "핵심 구동 부품과 배터리 기술 국산화 및 안정적 공급망 구축 과정에서 병목이 발생할 수 있다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "2029년 양산 목표까지 핵심 구동 부품의 국산화와 안정적인 공급망을 어떤 방식으로 확보할 계획일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
