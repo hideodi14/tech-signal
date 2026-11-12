@@ -1,72 +1,20 @@
 {
- "date": "2026-11-12",
- "generated_at": "2026-11-12T07:22+09:00",
+ "date": "2026-11-13",
+ "generated_at": "2026-11-13T07:09+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "75f572a97b40",
-   "title": "AI 로봇 양산 가로막는 건 알고리즘 아닌 제조 현장 - 바이라인네트워크",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE14M05hU2Y2UG13WXJzT0o3eHktVk1PQUtfVUVSYmhrelZmaUN4eTVoZ3RtWnZxU0ZlU2tCN1lJdkpXMUdvR3FXMl91STFjLU0?oc=5",
-   "source": "바이라인네트워크",
-   "published": "Wed, 11 Nov 2026 14:34:54 GMT",
-   "snippet": "AI 로봇 양산 가로막는 건 알고리즘 아닌 제조 현장 바이라인네트워크",
-   "score": 10.0,
-   "why": "제조 현장의 양산 한계 직시",
-   "category_hint": "로봇",
-   "summary": "AI 로봇의 양산을 가로막는 주된 요인이 알고리즘이 아닌 제조 현장에 있다는 지적이다. 하드웨어 생산과 조립 과정에서 현실적인 제조 한계가 걸림돌로 작용하고 있다.",
-   "category": "로봇",
-   "ai_lenses": [
-    "외주 조립·납기",
-    "설계 양산성"
-   ],
-   "extracted": {
-    "companies": [],
-    "stage": {
-     "value": "양산",
-     "evidence": "AI 로봇 양산 가로막는"
-    },
-    "numbers": []
-   },
-   "estimated": {
-    "production_difficulty": {
-     "value": "높음",
-     "reason": "AI 로봇 양산이 제조 현장에서 가로막히고 있어 대량 생산 과정의 난도가 높음을 시사한다.",
-     "confidence": "중간"
-    },
-    "likely_bottleneck": {
-     "value": "제조 현장",
-     "reason": "원문에서 양산을 가로막는 원인으로 제조 현장을 지목하고 있다.",
-     "confidence": "중간"
-    }
-   },
-   "program_ids": [],
-   "failure_case": {
-    "cause_tags": [
-     "양산전환",
-     "외주·조립"
-    ],
-    "evidence": "AI 로봇 양산 가로막는 건 알고리즘 아닌 제조 현장"
-   },
-   "review_question": "알고리즘 외에 제조 현장에서 양산을 가로막는 구체적인 공정상 문제나 부품 조립의 한계는 무엇일까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": [
-    "설계 양산성",
-    "외주 조립·납기"
-   ]
-  },
-  {
-   "id": "de5a656282dd",
-   "title": "하이젠알앤엠, 휴머노이드 액추에이터 6종 개발 완료··고객사 로봇 양산 대응에 CAPA 확대한다 - 데이터투자",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1JSVhrSEpTZUNGZWhPZ1NOS2JZV19uZU1RMUhYY2VYc2RzTFFMM19kUlN5VXZJMEVIUDZINHVwNVZFQkhWQVFXXzRPQlBSX19wRlR3OVFhRmc1X1NLOHFLOWs4YV8wX29zUmpPRGNCc3BIVDg?oc=5",
-   "source": "데이터투자",
-   "published": "Wed, 11 Nov 2026 03:48:49 GMT",
-   "snippet": "하이젠알앤엠, 휴머노이드 액추에이터 6종 개발 완료··고객사 로봇 양산 대응에 CAPA 확대한다 데이터투자",
+   "id": "0dd37a78bd38",
+   "title": "\"삼현, 휴머노이드 관절 액추에이터 양산 단계 진입\" - CMIR - 뉴스핌",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBfSk1yd2ZFR05rYUV4bEFIV3hQMUl5ZjRlNE0wbkRWU0VSYTdGcWVzYzczXzRlWkFxQ1R5M05vY3VzOVpuYWQtdlc5NHBpX29udWNISUh3N2ZIMUpk?oc=5",
+   "source": "뉴스핌",
+   "published": "Thu, 12 Nov 2026 00:18:00 GMT",
+   "snippet": "\"삼현, 휴머노이드 관절 액추에이터 양산 단계 진입\" - CMIR 뉴스핌",
    "score": 9.0,
-   "why": "부품사 CAPA 확대와 양산 대응",
-   "category_hint": "부품·공급망",
-   "summary": "하이젠알앤엠이 휴머노이드 액추에이터 6종 개발을 완료하고 고객사 로봇 양산에 대응하기 위해 생산 능력을 확대합니다.",
-   "category": "부품·공급망",
+   "why": "핵심 부품 양산 단계 진입",
+   "category_hint": "로봇",
+   "summary": "삼현이 휴머노이드 로봇에 사용되는 관절 액추에이터의 양산 단계에 진입했다. 로봇 구동의 핵심 부품인 액추에이터의 대량 생산 체제 구축 여부가 관건이다.",
+   "category": "로봇",
    "ai_lenses": [
     "부품 수급",
     "외주 조립·납기"
@@ -74,87 +22,412 @@
    "extracted": {
     "companies": [
      {
-      "value": "하이젠알앤엠",
-      "evidence": "하이젠알앤엠"
+      "value": "삼현",
+      "evidence": "삼현, 휴머노이드 관절 액추에이터"
      }
     ],
     "stage": {
      "value": "양산",
-     "evidence": "고객사 로봇 양산 대응"
+     "evidence": "양산 단계 진입"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "휴머노이드 관절 액추에이터는 정밀 제어와 높은 토크를 요구하여 양산 공정 난도가 높다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "핵심 부품 수급 및 정밀 조립 수율",
+     "reason": "휴머노이드 관절용 액추에이터는 부품 정밀도가 높아 초기 양산 시 수율 확보가 어렵기 때문이다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "휴머노이드 관절 액추에이터 양산 라인에서 요구하는 정밀 부품 수급과 조립 수율은 안정적으로 확보되고 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "1e94f86857af",
+   "title": "CMIR \"삼현, 북미 휴머노이드 양산 공급망 진입\" - 컨슈머타임스",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kVGVHQkdCRW9hZERDZXJDcFlpd01iRHYtZFpYdUZjTG1MWlJDQTA2bWg5Q1RqSjNkcXZ2OGpBM3ZUYWhNb1dxVFhHUGhFQ3JodGF5TWFNTXA2clVwQVlHUGFJbEkwZEN5WWc?oc=5",
+   "source": "컨슈머타임스",
+   "published": "Thu, 12 Nov 2026 00:14:57 GMT",
+   "snippet": "CMIR \"삼현, 북미 휴머노이드 양산 공급망 진입\" 컨슈머타임스",
+   "score": 9.0,
+   "why": "해외 로봇 양산 공급망 진입",
+   "category_hint": "로봇",
+   "summary": "삼현이 북미 휴머노이드 로봇의 양산 공급망에 진입했다고 전해졌다. 향후 로봇 부품의 안정적인 수급과 양산 대응 능력이 중요해질 것으로 보인다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "삼현",
+      "evidence": "삼현, 북미 휴머노이드 양산 공급망 진입"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "휴머노이드 양산 공급망 진입"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 스펙에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "공급망 진입 외에 병목 구간을 유추할 수 있는 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "북미 휴머노이드 양산 물량에 맞춰 부품 리드타임과 초도 불량률을 어떻게 잡을 계획일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "081b1b246a27",
+   "title": "World's largest electronics contract manufacturer: Tech giant Foxconn beats forecasts with third-quarter profit jump - RTL Today",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaFFoSkI5dzJseXQwOFBsT2E2YWxudlFWVGplLTZTcXhLZnZPSklTOU1BUG9LalRMQzN4VHBQWUZ1R2hHNzREc0F5WjA1SzdkeEFNYm41THhKb3ZqNUlhdnpxUm5peGwwRzB6SWduZnFVS2RxNkxUNlNsZEVwdi1JdDdHc1VEYjBtZnZDQlpYWlozamltLXRlYkV1SjBiMG5DTGhIX01mMmsyaUFTT01aUEZ0dDdndER3X2p6UA?oc=5",
+   "source": "RTL Today",
+   "published": "Thu, 12 Nov 2026 12:20:04 GMT",
+   "snippet": "World's largest electronics contract manufacturer: Tech giant Foxconn beats forecasts with third-quarter profit jump RTL Today",
+   "score": 7.0,
+   "why": "대형 EMS 실적 및 위탁 생산",
+   "category_hint": "외주생산·EMS",
+   "summary": "세계 최대 전자제품 위탁생산 업체인 폭스콘이 3분기 실적 호조를 기록했습니다. 구체적인 양산 수량이나 부품 수급 상황은 원문에 언급되지 않았습니다.",
+   "category": "외주생산·EMS",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Foxconn",
+      "evidence": "Tech giant Foxconn beats forecasts"
+     }
+    ],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 수천 대 단위 양산의 난이도를 판단할 수 있는 구체적인 공정이나 설계 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상이나 공급망 제약에 대한 언급이 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "폭스콘의 이익 증가가 특정 대형 고객사 물량 집중 때문이라면, 하반기 성수기 라인 가동과 납기 대응에 무리가 없을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "febc011f4025",
+   "title": "정부, 국산 AI 칩 8종 개발에 8000억 투입… 삼성 파운드리가 시제품 지원 - 파이낸셜포스트",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE15Y1A5d3hENWJXRFdFcFdCZGt3clVTOFVwVnZMNGcxeTFCSlNVYkktQ2dZNk9XNFV2dVNVdlRIWG4wSVA4T0FYek0zVVZuWW15b01hR3JUdHZ6TVdVNzkwQ1ZXWm1QeGFsZHYxaTRnc2V0VHl1?oc=5",
+   "source": "파이낸셜포스트",
+   "published": "Thu, 12 Nov 2026 06:23:38 GMT",
+   "snippet": "정부, 국산 AI 칩 8종 개발에 8000억 투입… 삼성 파운드리가 시제품 지원 파이낸셜포스트",
+   "score": 6.0,
+   "why": "파운드리 시제품 지원 언급 포함",
+   "category_hint": "엣지AI·칩",
+   "summary": "정부가 국산 AI 칩 개발에 대규모 예산을 투입하며, 삼성 파운드리가 시제품 제작을 지원할 예정이다. 이를 통해 국내 AI 반도체 생태계의 경쟁력 강화를 도모한다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "삼성 파운드리",
+      "evidence": "삼성 파운드리가 시제품 지원"
+     }
+    ],
+    "stage": {
+     "value": "시제품",
+     "evidence": "시제품 지원"
     },
     "numbers": [
      {
-      "value": "6종",
-      "evidence": "휴머노이드 액추에이터 6종 개발 완료"
+      "value": "8종",
+      "evidence": "국산 AI 칩 8종 개발"
+     },
+     {
+      "value": "8000억",
+      "evidence": "8000억 투입"
      }
     ]
    },
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "액추에이터 6종 개발 완료 및 CAPA 확대 계획이 언급되었으나 구체적인 양산 공정 난이도는 알 수 없다.",
+     "reason": "원문에 칩의 구체적인 공정 난이도나 양산 수율에 대한 정보가 없다.",
      "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "병목 공정에 대한 언급이 원문에 없다.",
+     "reason": "병목 현상이나 공급망 제약 요소에 대한 언급이 없다.",
      "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "액추에이터 6종의 양산 라인을 증설할 때 부품 수급과 조립 공정 중 어느 쪽에서 리드타임이 길어질까?",
+   "review_question": "정부 지원으로 개발된 8종의 국산 AI 칩이 실제 삼성 파운드리 공정에서 시제품을 거쳐 양산 단계로 넘어갈 때 수율을 맞출 수 있을까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": [
-    "외주 조립·납기",
     "양산 단가"
    ]
   },
   {
-   "id": "ca702d85ec6b",
-   "title": "정부, 로봇 구동기 2029년 양산 추진…휴머노이드 배터리도 개발 - 아주경제",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB1T3NVbGZqU1RSb3M5c0E1Y0FSQmFQVFg4VUJIbTZGYUdKbzdaM3h0d19ldTBMZWlSdkp5ZWlQMHpXYzZKMmlycUd5Yi1WX3hFV05nRjBKSWs4Z9IBWEFVX3lxTFBPSlJNcFZya2ZWY2E1dWN5VEtITWtMS2VCamhmQ0t0cG5zSnNuanFhbHRVdktfN3dBLVl1ZERFOFlZd05RVllxV0YzZmJIMmxwY1FCMWhnblE?oc=5",
-   "source": "아주경제",
-   "published": "Wed, 11 Nov 2026 00:00:00 GMT",
-   "snippet": "정부, 로봇 구동기 2029년 양산 추진…휴머노이드 배터리도 개발 아주경제",
-   "score": 8.0,
-   "why": "부품 양산 및 정부 정책 반영",
-   "category_hint": "부품·공급망",
-   "summary": "정부가 2029년 양산을 목표로 로봇 구동기 개발을 추진하며, 휴머노이드 배터리 개발도 함께 진행한다. 장기적인 부품 공급망 및 기술 자립을 노리는 정책적 움직임이다.",
-   "category": "부품·공급망",
+   "id": "ae9b8e73120a",
+   "title": "'K-온디바이스 AI반도체'에 산·학·연 힘 모은다···2030년까지 10종 개발 - 서울파이낸스",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFByaHpDcERLT29tZGtudEpRbFBGcnNLWXpPRlAtOXBMRmVNc3VNdkFwX3E0cVZ1ZWVaUU40eXozNGpWNURWWTBfZ2hZMjN1N2QxMjFtTmZic083Y0xUTFRoYmxaclM0QXF2R2c?oc=5",
+   "source": "서울파이낸스",
+   "published": "Thu, 12 Nov 2026 02:00:00 GMT",
+   "snippet": "'K-온디바이스 AI반도체'에 산·학·연 힘 모은다···2030년까지 10종 개발 서울파이낸스",
+   "score": 3.0,
+   "why": "양산보다 장기 개발 계획 기사임",
+   "category_hint": "엣지AI·칩",
+   "summary": "산학연이 협력하여 2030년까지 K-온디바이스 AI반도체 10종을 개발할 계획이다. 국내 반도체 기술 경쟁력을 높이기 위한 공동 개발 노력이 본격화된다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "2030년",
+      "evidence": "2030년까지 10종 개발"
+     },
+     {
+      "value": "10종",
+      "evidence": "2030년까지 10종 개발"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "반도체 10종 개발 계획만 언급되었을 뿐 구체적인 양산 공정이나 수율에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "초기 개발 단계의 선언적 내용으로 병목 구간을 유추할 근거가 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "2030년까지 개발한다는 10종의 AI 반도체가 어떤 응용처를 타겟으로 하며, 실제 파운드리 공정 확보는 원활할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "8ee05c061c6b",
+   "title": "국산 온디바이스 AI반도체 10종 개발…민관 컨트롤타워 출범 - 전기신문",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhOHE0cTBsd202QTItSThsTkhwQU1sTERaSkhqeHE0WWphV3ZSYzdXSU1kVVVNV3ZtbzZ3bkxZVXA3RDZnTXlWMExfR0wwS0F2SXRBRDRuYUdxblBGaXhpbVc0VGs0VlA1aUFLb04zRHDSAXBBVV95cUxQYThxNHEwbHdtNkEyLUk4bE5IcEFNbExEWkpIanhxNFlqYVd2UmM3V0lNZFVVTVd2bW82d25MWVVwN0Q2Z015VjBMX0dMMEtBdkl0QUQ0bmFHcW5QRml4aW1XNFRrNFZQNWlBS29OM0Rw?oc=5",
+   "source": "전기신문",
+   "published": "Thu, 12 Nov 2026 02:01:02 GMT",
+   "snippet": "국산 온디바이스 AI반도체 10종 개발…민관 컨트롤타워 출범 전기신문",
+   "score": 3.0,
+   "why": "컨트롤타워 출범 등 선언적 내용임",
+   "category_hint": "엣지AI·칩",
+   "summary": "정부와 민간이 협력하여 국산 온디바이스 AI반도체 10종 개발을 추진하기 위한 컨트롤타워가 출범했다. 이를 통해 국내 AI 반도체 생태계 강화와 관련 기술 상용화가 가속화될 것으로 기대된다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "10종",
+      "evidence": "국산 온디바이스 AI반도체 10종 개발"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 설계 난이도에 대한 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 만한 상세 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "개발된 10종의 칩이 실제 가전이나 엣지 디바이스에 탑재될 때 양산 단가와 호환성을 맞추는 과정에서 어떤 문제가 생길까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "246fc8ae6468",
+   "title": "K-온디바이스 AI반도체 속도…2030년까지 AI칩 등 10종 개발 - 연합뉴스",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92NjExOFZtLUoyVDRxRXBqTzhuNW1iZ3pTNzJqNFJaNVdQcXJEQllDZUZ3QUFKYzBlSTZEY3lYRFZZczlfSVdLZkJ1SXJUcW9vcHZTZU9wNTFOQlXSAWBBVV95cUxNVVZEVTdtdFVrcU92RFBHaVFwYTNMNmJRcUh2bE1wSW9FMy01OHRpLVJ6ZHFiTlQ3eGJlZFNxNXJEczRqaXFGZTBBMlYwSjY5Um90SlRfSTIzVTBaYjVJTWg?oc=5",
+   "source": "연합뉴스",
+   "published": "Thu, 12 Nov 2026 02:00:01 GMT",
+   "snippet": "K-온디바이스 AI반도체 속도…2030년까지 AI칩 등 10종 개발 연합뉴스",
+   "score": 3.0,
+   "why": "실제 양산보다 개발 속도 관련 기사",
+   "category_hint": "엣지AI·칩",
+   "summary": "정부가 2030년까지 온디바이스 AI 반도체 10종 개발을 추진하며 기술 경쟁력 강화에 나선다. 국내 AI 칩 생태계 조성을 위한 본격적인 지원이 이루어질 전망이다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "2030년",
+      "evidence": "2030년까지 AI칩 등 10종 개발"
+     },
+     {
+      "value": "10종",
+      "evidence": "2030년까지 AI칩 등 10종 개발"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 칩 스펙에 대한 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정을 유추할 만한 현장 정보나 수급 상황이 언급되지 않았다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "2030년까지 개발한다는 AI칩 10종의 타겟 공정과 파운드리 협력선은 어디로 잡혀 있는가?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "005ac4d7a116",
+   "title": "8000억 K온디바이스 AI반도체 10종 로드맵 확정… 반도체 생태계 '원팀' 상생 - 한국일보",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE90V3BuZ1YyVm1HSDdpcEZraUlvWUNiRTJPZUVZQm1jVTA2TGtpelJSczNWTUtiZ0paX3BDd2FwQ3RHRGtKSFlZUTJiZXlRTXcwdGlaaGlIQ09RYkVLN3luV3l1SXBpbHp6Y0J0OUo1dlBRLTjSAXNBVV95cUxPdFdwbmdWMlZtR0g3aXBGa2lJb1lDYkUyT2VFWUJtY1UwNkxraXpSUnMzVk1LYmdKWl9wQ3dhcEN0R0RrSkhZWVEyYmV5UU13MHRpWmhpSENPUWJFSzd5bld5dUlwaWx6emNCdDlKNXZQUS04?oc=5",
+   "source": "한국일보",
+   "published": "Thu, 12 Nov 2026 05:40:00 GMT",
+   "snippet": "8000억 K온디바이스 AI반도체 10종 로드맵 확정… 반도체 생태계 '원팀' 상생 한국일보",
+   "score": 3.0,
+   "why": "정부 로드맵 발표 위주임",
+   "category_hint": "엣지AI·칩",
+   "summary": "정부가 8000억 원 규모의 온디바이스 AI 반도체 10종 개발 로드맵을 확정하고 생태계 상생 방안을 마련했다. 국내 반도체 기업들이 협력하여 관련 기술 경쟁력을 강화할 계획이다.",
+   "category": "엣지AI·칩",
    "ai_lenses": [
     "부품 수급",
     "설계 양산성"
    ],
    "extracted": {
     "companies": [],
-    "stage": {
-     "value": "연구",
-     "evidence": "2029년 양산 추진"
-    },
+    "stage": null,
     "numbers": [
      {
-      "value": "2029년",
-      "evidence": "2029년 양산 추진"
+      "value": "8000억",
+      "evidence": "8000억 K온디바이스 AI반도체"
+     },
+     {
+      "value": "10종",
+      "evidence": "AI반도체 10종 로드맵 확정"
      }
     ]
    },
    "estimated": {
     "production_difficulty": {
-     "value": "높음",
-     "reason": "로봇 구동기와 휴머노이드 전용 배터리는 고도의 정밀 기술과 신뢰성이 요구되어 양산 전환 난이도가 높다.",
-     "confidence": "중간"
+     "value": "판단불가",
+     "reason": "로드맵 확정 단계로 구체적인 양산 공정과 설계 데이터가 제시되지 않았다.",
+     "confidence": "낮음"
     },
     "likely_bottleneck": {
-     "value": "부품 수급",
-     "reason": "핵심 구동 부품과 배터리 기술 국산화 및 안정적 공급망 구축 과정에서 병목이 발생할 수 있다.",
+     "value": "판단불가",
+     "reason": "초기 기획 단계의 보도 자료로 세부적인 공급망이나 제조 병목 요소를 파악하기 어렵다.",
      "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "2029년 양산 목표까지 핵심 구동 부품의 국산화와 안정적인 공급망을 어떤 방식으로 확보할 계획일까?",
+   "review_question": "정부가 발표한 10종의 온디바이스 AI 반도체 스펙이 실제 하드웨어 제조사의 양산 원가와 전력 요구치를 충족할 수 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "df3fc1ddcc16",
+   "title": "[거래소 기관] SK하이닉스 팔고 삼성전자 담았다… 수급에서 드러난 변화 보니 - 핀포인트뉴스",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5INUExc0phQWM3ZWRwYU8ya1lwSFkxSWN1eHhqZU4zbmxJTGhVck1UaU51NEJFVG1jaVFCbGQ5RVByVkR1UDZ5N1R2a1B5SmxpSGNmWnlHMl9MMmtnZlVzbnFwamtWVU0zWVlTbERaa21TTk3SAXdBVV95cUxNUEstNVgwOFpUaTFzU0h6dGNDWXN0a1Y4aTg2SGtkMmRJWG9MajNyclpuenI0MDdmbkxJNWdMeThtWmEwSVNPcDQxQmpSWGhNUlQxX1pucWVwdFB2MnhOQ1M3YVRIS3FnNzcyVGJEc29wb2IzbFNqTQ?oc=5",
+   "source": "핀포인트뉴스",
+   "published": "Thu, 12 Nov 2026 06:58:38 GMT",
+   "snippet": "[거래소 기관] SK하이닉스 팔고 삼성전자 담았다… 수급에서 드러난 변화 보니 핀포인트뉴스",
+   "score": 0.0,
+   "why": "주가 및 수급 관련 금융 기사",
+   "category_hint": "기타",
+   "summary": "기관 투자자들이 SK하이닉스를 매도하고 삼성전자를 매수하는 등 수급 변화를 보였다. 이는 증시 내 반도체 종목별 자금 이동 흐름을 보여준다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "SK하이닉스",
+      "evidence": "SK하이닉스 팔고"
+     },
+     {
+      "value": "삼성전자",
+      "evidence": "삼성전자 담았다"
+     }
+    ],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "제조 및 양산 과정에 대한 구체적인 내용이 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "생산 병목을 유추할 수 있는 정보가 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "기관의 이러한 수급 이동이 실제 부품 조달이나 제조 현장의 생산 일정에 어떤 영향을 미칠까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": []
