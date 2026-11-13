@@ -1,0 +1,417 @@
+{
+ "date": "2026-11-14",
+ "generated_at": "2026-11-14T07:07+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "d8e26330187e",
+   "title": "삼현 | 북미 액추에이터 초도 양산 공급, 2028년 흑자전환의 조건 - 네이버 프리미엄콘텐츠",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbkRCR2hsWUc5dDVuVlFSVGZsem9OZ1c5V1FUcWN0Z3JkUm9pVmhOZktJNE9FZjVXWlh5QmRmekxmeHRMZlFaaTdJS280NnRxYjdzbUotQVlxVllEb1NWZllzMk83NU91a2gwa0V0SFdFVHREVUpvWndnTDdxNGxmekxGSzREc2FD?oc=5",
+   "source": "네이버 프리미엄콘텐츠",
+   "published": "Fri, 13 Nov 2026 04:16:00 GMT",
+   "snippet": "삼현 | 북미 액추에이터 초도 양산 공급, 2028년 흑자전환의 조건 네이버 프리미엄콘텐츠",
+   "score": 9.0,
+   "why": "북미 액추에이터 초도 양산",
+   "category_hint": "부품·공급망",
+   "summary": "삼현이 북미 지역에 액추에이터 초도 양산을 공급할 예정이며, 2028년 흑자전환을 목표로 하고 있다. 관련 공급망과 생산 단계에 대한 구체적인 현황 파악이 필요하다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "삼현",
+      "evidence": "삼현 | 북미 액추에이터"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "초도 양산 공급"
+    },
+    "numbers": [
+     {
+      "value": "2028년",
+      "evidence": "2028년 흑자전환"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산 공정이나 수율에 대한 상세한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "북미 공급 및 양산 과정의 병목 구간을 유추할 근거가 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "북미 초도 양산 물량을 맞추는 과정에서 현지 라인 이관이나 부품 수급 차질이 발생할 가능성은 없을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "0284b5a10017",
+   "title": "한라캐스트, 3분기 누적 매출 1427억 ‘24% 성장’…로봇 양산 확대에 실적 탄력 - 리드경제",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9VOUFqQk0tWEhyNTI1MWlFWW81UThJZGhXcjh1TXQtOFZ3ZWFSZ3RzeThBVEI0YkFmZk5fa29vbTdzaldkWUtmTnVQeUZOS2JtVENyNVBybURia1JGR19aVkQ0M2ZtMkNJa1hycUdWM0c?oc=5",
+   "source": "리드경제",
+   "published": "Fri, 13 Nov 2026 05:48:21 GMT",
+   "snippet": "한라캐스트, 3분기 누적 매출 1427억 ‘24% 성장’…로봇 양산 확대에 실적 탄력 리드경제",
+   "score": 8.0,
+   "why": "로봇 부품 양산 확대 실적",
+   "category_hint": "부품·공급망",
+   "summary": "한라캐스트가 로봇 양산 확대에 힘입어 3분기 누적 매출 1427억 원을 기록하며 24% 성장했습니다.",
+   "category": "부품·공급망",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "한라캐스트",
+      "evidence": "한라캐스트, 3분기 누적 매출"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 양산 확대에 실적 탄력"
+    },
+    "numbers": [
+     {
+      "value": "3분기 누적 매출 1427억",
+      "evidence": "3분기 누적 매출 1427억"
+     },
+     {
+      "value": "24% 성장",
+      "evidence": "‘24% 성장’"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산 과정의 기술적 난이도나 세부 공정에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 생산 병목이나 공급망 이슈를 가늠할 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "로봇 부품 물량이 늘어나면서 다이캐스팅 주조 공정에서 수율 저하나 금형 마모 문제가 발생하지 않을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "791ed79b67a4",
+   "title": "Google AI Glasses Open Preorders at $395, Dec. 10 Ship - shattered.io",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYVZ4WFlEQjdMMlA0Szh0T0EzN3BWNUFLWUlQb3ExWGFkZ0xHSTViaUpDNl82WkdvM2ZOQV81Y05EOVpFM1E2VVhvRlhWeloyWV8zV1AtVUotaUlDN1haOWlGOW56Ry1OcUFFYTlvdTNfV0FRNE92dTdPOVBHdFNjNGlGTEpFQQ?oc=5",
+   "source": "shattered.io",
+   "published": "Fri, 13 Nov 2026 14:55:35 GMT",
+   "snippet": "Google AI Glasses Open Preorders at $395, Dec. 10 Ship shattered.io",
+   "score": 8.0,
+   "why": "AI 기기 예약판매 및 선적",
+   "category_hint": "AI기기·가전",
+   "summary": "구글의 AI 안경이 395달러의 가격으로 사전 주문을 시작했으며 12월 10일에 배송될 예정이다. 양산 및 출시 일정이 구체화되어 상용 단계에 진입했다.",
+   "category": "AI기기·가전",
+   "ai_lenses": [
+    "양산 단가",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Google",
+      "evidence": "Google AI Glasses"
+     }
+    ],
+    "stage": {
+     "value": "상용판매",
+     "evidence": "Open Preorders at $395, Dec. 10 Ship"
+    },
+    "numbers": [
+     {
+      "value": "$395",
+      "evidence": "$395"
+     },
+     {
+      "value": "Dec. 10",
+      "evidence": "Dec. 10 Ship"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 공정이나 양산 난이에 대한 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상에 대한 정보가 원문에 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "사전 주문 물량이 12월 10일에 차질 없이 배송되려면 초도 양산 물량의 외주 조립 납기가 이미 안정화되어 있어야 할 텐데, 생산 라인은 확보되었을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "양산 단가",
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "6616f1a1825a",
+   "title": "LG전자, 홈로봇 ‘클로이드’에 엔비디아 탑재 실증···국산칩 채택 가능성 여전 - 시사저널e",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9iTThENXN5RW9Kc216TnlocndjVUNINVJMSk0yeHVwem16bzRwekNoeWN2SU5CcmNWdmpjTUhPOUk0anV6MFZWU0lWT0Zjc0t0WWFaUnpUWS1rODM2QXlfWm9ZWkJ6YmE5bEQ2SDVCaXNid9IBdkFVX3lxTE9pQl81bUhSdVNqLXdDclVRSUp0cmdFeERsYWtMMXJHZnZMNHE3bFZ0aG94dGFQd3lXZ1N1Q2lsVC1MTnBRUlBGTTFiOHRvUFJuSnJ3czJPdTRtSlVvQ0NaODF3S2M3UURZcU8zb1dhMXd0WWViNWc?oc=5",
+   "source": "시사저널e",
+   "published": "Fri, 13 Nov 2026 00:47:20 GMT",
+   "snippet": "LG전자, 홈로봇 ‘클로이드’에 엔비디아 탑재 실증···국산칩 채택 가능성 여전 시사저널e",
+   "score": 7.0,
+   "why": "홈로봇 실증 및 칩 탑재",
+   "category_hint": "로봇",
+   "summary": "LG전자가 홈로봇 '클로이드'에 엔비디아 칩을 탑재해 실증을 진행하고 있으며, 향후 국산칩 채택 가능성도 열려 있다. AI 홈로봇의 하드웨어 스펙과 공급망 다변화 여부에 관심이 쏠린다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "LG전자",
+      "evidence": "LG전자, 홈로봇 ‘클로이드’에 엔비디아 탑재 실증"
+     }
+    ],
+    "stage": {
+     "value": "시제품",
+     "evidence": "홈로봇 ‘클로이드’에 엔비디아 탑재 실증"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 대량 생산 난이도에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 부품 조달이나 생산 병목을 유추할 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "엔비디아 칩에서 국산칩으로 메인 프로세서를 변경할 때 기판 설계 변경과 드라이버 최적화에 리드타임이 얼마나 걸릴까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급",
+    "설계 양산성"
+   ]
+  },
+  {
+   "id": "c0774e2471d9",
+   "title": "[nbn시사경제 집중분석] 2030년 국산 AI칩 8종, 일정 앞당겨도 검증 시간 확보할 수 있나? - nbn 시사경제",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tRVRReHF5dkJ2Z3k3MDhBaVFzYXdZTm40M0lXN3F1YW5pazBzazdVckdXN2Z2VjhWM1NVZ2VYRDJlenNxTXJOV0FFdHRwSG5UM3prTWp3cHNudmRqQ1dZeEJrM3dwYmtVV0E?oc=5",
+   "source": "nbn 시사경제",
+   "published": "Fri, 13 Nov 2026 01:19:04 GMT",
+   "snippet": "[nbn시사경제 집중분석] 2030년 국산 AI칩 8종, 일정 앞당겨도 검증 시간 확보할 수 있나? nbn 시사경제",
+   "score": 6.0,
+   "why": "AI칩 검증 및 일정 관련",
+   "category_hint": "엣지AI·칩",
+   "summary": "2030년까지 국산 AI칩 8종이 개발될 예정이나 일정을 앞당길 경우 충분한 검증 시간을 확보할 수 있는지 우려가 제기된다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [
+    "불량·수율",
+    "인증·규제"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "2030년",
+      "evidence": "2030년 국산 AI칩 8종"
+     },
+     {
+      "value": "8종",
+      "evidence": "2030년 국산 AI칩 8종"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 AI칩 양산 난이도나 세부 공정에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 병목 공정에 대한 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "개발 일정을 앞당길 때 칩 검증과 신뢰성 테스트 기간이 촉박해져 초기 불량이 발생할 가능성은 없을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "930d3f7fd427",
+   "title": "온디바이스 AI 칩 국산화 ‘성큼’...2030년까지 10종 개발한다 - 우먼타임스",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tUjdLUnVQN21EY1BwYkZDNXJjazlDbFJxV2QwVFdlNmRyNVRuTzgxLVlUOHNhQng1ekxKa3BjQVhsRy1ZY2lNc2ItSldveVp4dmI4cS1IWjhKX2tfWHVFWmNCeXk4dlk0YW1kS1VmbFbSAXRBVV95cUxNUmxiVVBrZGRMM0M1djFFdnZ0NDdEMGNkdHVqQmZQbE8xcjZuV3lCRkpWQVlNei1vVWtUTW4ySkFmNHdtbXRBZmxhdGVWeGp0N1Vkd0cwdVI4T2NHbWNuTkNuay1XQjNHTDJfTUFVQzhidllRVg?oc=5",
+   "source": "우먼타임스",
+   "published": "Fri, 13 Nov 2026 05:11:38 GMT",
+   "snippet": "온디바이스 AI 칩 국산화 ‘성큼’...2030년까지 10종 개발한다 우먼타임스",
+   "score": 5.0,
+   "why": "온디바이스 AI 칩 국산화",
+   "category_hint": "엣지AI·칩",
+   "summary": "정부가 2030년까지 온디바이스 AI 칩 10종을 개발하여 국산화를 추진한다. 엣지 AI 분야의 기술 경쟁력을 높이기 위한 장기 개발 계획이 진행 중이다.",
+   "category": "엣지AI·칩",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "연구",
+     "evidence": "2030년까지 10종 개발한다"
+    },
+    "numbers": [
+     {
+      "value": "2030년까지 10종",
+      "evidence": "2030년까지 10종 개발한다"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 칩 양산 난이도나 세부 공정에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "개발 목표 연도만 제시되었을 뿐 공급망이나 제조 병목에 관한 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "2030년까지 개발한다는 국산 AI 칩이 실제 양산 단계에 들어갈 때 파운드리 캐파와 수율은 어떻게 확보할 계획일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "ede4ebd741c6",
+   "title": "\"美, 2030년 휴머노이드 로봇 생산 40만대 전망…관세부과 가능성\" - 더구루",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1yQ1Zybkl6VTdIWGRpTGhRdXVRVm91UVhKMTdsZ0V0VDJYUnNld3RtNDFtQlNhdnBKXzVXYzFmMWtzOWVraUFzX0FCaThWc1BncGI1a0NtYl9pSE5pZG90dlpjYw?oc=5",
+   "source": "더구루",
+   "published": "Fri, 13 Nov 2026 05:42:17 GMT",
+   "snippet": "\"美, 2030년 휴머노이드 로봇 생산 40만대 전망…관세부과 가능성\" 더구루",
+   "score": 4.0,
+   "why": "로봇 생산 및 관세 영향",
+   "category_hint": "정책·인증",
+   "summary": "미국이 2030년에 휴머노이드 로봇 40만 대를 생산할 것으로 전망되며, 관세가 부과될 가능성이 제기되었다.",
+   "category": "정책·인증",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "2030년 휴머노이드 로봇 생산 40만대",
+      "evidence": "2030년 휴머노이드 로봇 생산 40만대 전망"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 생산 난이도나 설계 양산성에 대한 내용이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 공정에 대한 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "미국의 관세 부과가 현실화될 경우, 부품 조달 비용과 완제품 양산 계획에 어떤 차질이 생길까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성",
+    "인증·규제"
+   ]
+  },
+  {
+   "id": "1e92f146de3b",
+   "title": "오토바이 대신 로봇 사자를 탄다?… 가와사키, 2035년 양산 추진 - 오토뷰",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9oa2dpRzN2ZWo3ZFluOW44MGtrYWluR21oSHBZckJER3B2cEdWNnBNUm9sQlVCaFpFT2tuM09LdFAtZzZ4QkljNDk2MXYxcWlySUlzQXpCc1pZc0xj?oc=5",
+   "source": "오토뷰",
+   "published": "Fri, 13 Nov 2026 09:39:00 GMT",
+   "snippet": "오토바이 대신 로봇 사자를 탄다?… 가와사키, 2035년 양산 추진 오토뷰",
+   "score": 3.0,
+   "why": "장기 양산 계획 수준",
+   "category_hint": "로봇",
+   "summary": "가와사키가 네발로 이동하는 로봇 라이딩 탈것의 양산을 2035년 목표로 추진합니다. 미래 모빌리티 형태의 로봇 개발로 양산 시점까지는 상당한 기간이 소요될 것으로 보입니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "가와사키",
+      "evidence": "가와사키, 2035년 양산 추진"
+     }
+    ],
+    "stage": {
+     "value": "연구",
+     "evidence": "2035년 양산 추진"
+    },
+    "numbers": [
+     {
+      "value": "2035년",
+      "evidence": "2035년 양산 추진"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "탑승 가능한 로봇 형태의 모빌리티를 대량 생산하기 위해서는 구동계와 제어 기술 등 복잡한 설계 양산 단계를 거쳐야 합니다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 양산 과정의 구체적인 병목 구간에 대한 정보가 없습니다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "2035년 양산을 목표로 할 때, 탑승형 로봇의 구동부 내구성 및 양산 단가를 어떤 방식으로 확보할 계획일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
