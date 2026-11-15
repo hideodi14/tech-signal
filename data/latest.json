@@ -1,6 +1,48 @@
 {
- "date": "2026-11-15",
- "generated_at": "2026-11-15T06:57+09:00",
+ "date": "2026-11-16",
+ "generated_at": "2026-11-16T06:58+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
- "items": []
+ "items": [
+  {
+   "id": "7999e928a3bc",
+   "title": "정부 로봇 액추에이터 지원 본격화…동남권 기업에 열린 ‘기회의 창’ - 국제신문",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZU8wWDlxZmRlbjNxMFlxNFkxZWY5WUdVTWkyOFJGSjRkUW1ucVNZMUhud3QycndrSmxnMWdXT285U00yTzlMbGdIZnpBbFotQ18xdWxFdGhGY0pweWx4M1dQT3BFMDJWcFFUS1JNd0UxNFNFLWN2T3BDemRuYzBVTno0dWVHSUcyTXZwcnJR?oc=5",
+   "source": "국제신문",
+   "published": "Sun, 15 Nov 2026 09:49:00 GMT",
+   "snippet": "정부 로봇 액추에이터 지원 본격화…동남권 기업에 열린 ‘기회의 창’ 국제신문",
+   "score": 3.0,
+   "why": "지원 사업은 양산 직결되지 않음",
+   "category_hint": "로봇",
+   "summary": "정부가 로봇 액추에이터 지원 사업을 본격화하면서 동남권 관련 기업들에게 새로운 기회가 열리고 있다. 이번 지원은 지역 로봇 산업의 경쟁력을 높이는 계기가 될 것으로 기대된다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 액추에이터 양산 난이도나 세부 공정에 대한 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 구간을 유추할 만한 구체적인 공급망이나 제조 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "정부 지원금이 실제 부품 국산화와 양산 원가 절감으로 이어질 수 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "양산 단가"
+   ]
+  }
+ ]
 }
