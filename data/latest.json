@@ -1,23 +1,180 @@
 {
- "date": "2026-11-16",
- "generated_at": "2026-11-16T06:58+09:00",
+ "date": "2026-11-17",
+ "generated_at": "2026-11-17T07:10+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "7999e928a3bc",
-   "title": "정부 로봇 액추에이터 지원 본격화…동남권 기업에 열린 ‘기회의 창’ - 국제신문",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZU8wWDlxZmRlbjNxMFlxNFkxZWY5WUdVTWkyOFJGSjRkUW1ucVNZMUhud3QycndrSmxnMWdXT285U00yTzlMbGdIZnpBbFotQ18xdWxFdGhGY0pweWx4M1dQT3BFMDJWcFFUS1JNd0UxNFNFLWN2T3BDemRuYzBVTno0dWVHSUcyTXZwcnJR?oc=5",
-   "source": "국제신문",
-   "published": "Sun, 15 Nov 2026 09:49:00 GMT",
-   "snippet": "정부 로봇 액추에이터 지원 본격화…동남권 기업에 열린 ‘기회의 창’ 국제신문",
-   "score": 3.0,
-   "why": "지원 사업은 양산 직결되지 않음",
-   "category_hint": "로봇",
-   "summary": "정부가 로봇 액추에이터 지원 사업을 본격화하면서 동남권 관련 기업들에게 새로운 기회가 열리고 있다. 이번 지원은 지역 로봇 산업의 경쟁력을 높이는 계기가 될 것으로 기대된다.",
-   "category": "로봇",
+   "id": "68a05ecaeb49",
+   "title": "Cape EMS Secures Three-Year Manufacturing Agreement With Thermo Fischer Scientific - BusinessToday Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVkhmUEliRGFmUTI0V2VsZnJ2R2pleElGazkzWkJBYUpYam1oaUxMcVk2ZVlQZE1jV1ROak5ESHh0a2tlR3hpanJmSzBKOUhBb2wxd3AtMzhxSnFWQ1NzWUhHRTNCUmpOQnN1RU9UMW1ubWJ6dXMwXzJ6V0xKRjl3Sko4R3NJVmZJektYWWlNYjVLeWVIQXJuQmhpT0MzT3NHR3lJd2c4M0tBTXBTX0U2bG45eE4xaldFRkMwQ0l3dm43VGlCYWc?oc=5",
+   "source": "BusinessToday Malaysia",
+   "published": "Mon, 16 Nov 2026 04:57:53 GMT",
+   "snippet": "Cape EMS Secures Three-Year Manufacturing Agreement With Thermo Fischer Scientific BusinessToday Malaysia",
+   "score": 8.0,
+   "why": "EMS 위탁 생산 계약 체결",
+   "category_hint": "외주생산·EMS",
+   "summary": "케이프 EMS가 써모 피셔 사이언티픽과 3년 간의 제조 계약을 체결했습니다. 이번 계약으로 안정적인 외주 생산 물량을 확보하며 협력 관계를 이어갑니다.",
+   "category": "외주생산·EMS",
    "ai_lenses": [
-    "부품 수급"
+    "외주 조립·납기"
    ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Cape EMS",
+      "evidence": "Cape EMS Secures Three-Year Manufacturing Agreement"
+     },
+     {
+      "value": "Thermo Fischer Scientific",
+      "evidence": "Agreement With Thermo Fischer Scientific"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "Manufacturing Agreement"
+    },
+    "numbers": [
+     {
+      "value": "3년",
+      "evidence": "Three-Year Manufacturing Agreement"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 품목이나 공정 난이도에 대한 정보가 없습니다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 생산 병목 구간이나 리스크 요인이 언급되지 않았습니다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "3년 장기 계약 물량을 소화할 때 케이프 EMS의 기존 라인 부하와 납기 대응력은 충분할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "1829f28d7793",
+   "title": "Cape EMS formalises manufacturing deal with US life-science firm - The Edge Malaysia",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1DZmVkVG1RajdkVl94bWR0dlllTjczQmpYeUxZNEhFWk1MUERjOTBBVEcySGpDN0t0U2FJcVlxZnFycHBrMW1RUTZqTFBIT25z?oc=5",
+   "source": "The Edge Malaysia",
+   "published": "Mon, 16 Nov 2026 08:10:34 GMT",
+   "snippet": "Cape EMS formalises manufacturing deal with US life-science firm The Edge Malaysia",
+   "score": 8.0,
+   "why": "미국 기업의 EMS 제조 계약",
+   "category_hint": "외주생산·EMS",
+   "summary": "Cape EMS가 미국 생명과학 기업과 제조 계약을 체결했습니다. 외주 생산을 통한 양산 협력이 본격화될 것으로 보입니다.",
+   "category": "외주생산·EMS",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Cape EMS",
+      "evidence": "Cape EMS formalises manufacturing deal"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "manufacturing deal"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 난이도나 공정 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 구간을 유추할 만한 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "미국 생명과학 기업과의 신규 제조 계약 물량이 Cape EMS의 기존 라인 부하와 납기에 어떤 영향을 줄까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "1354079121c5",
+   "title": "China’s Genbyte awards $10.5 mln contract for Vietnam electronics plant - Theinvestor",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd1ZmcHBMOV8yeGZOY2V6QkFCRjN1emR0dGcxX3JmQVgwajl3c215NDRBYW1YRUdtR2hpcTIwMzNYMmR2Y3JHSFFmaS1JWUJ2VGlTdVhDMC1vRm4yWU8xRkZYQm1TTDA0cU1yYXhvVXdIUDVJXzgtdW4tdWpuemdVeDMxczgtUWI2RlhtN04wNnNqV3hTcGpObm1ObDdPX3pqZ25qS3lR?oc=5",
+   "source": "Theinvestor",
+   "published": "Mon, 16 Nov 2026 09:13:00 GMT",
+   "snippet": "China’s Genbyte awards $10.5 mln contract for Vietnam electronics plant Theinvestor",
+   "score": 7.0,
+   "why": "베트남 전자기판 공장 투자 계약",
+   "category_hint": "외주생산·EMS",
+   "summary": "중국의 젠바이트가 베트남 전자제품 공장 건설을 위해 1,050만 달러 규모의 계약을 체결했다. 해외 생산 거점 확대와 외주 조립 인프라 구축을 위한 행보로 풀이된다.",
+   "category": "외주생산·EMS",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Genbyte",
+      "evidence": "China’s Genbyte"
+     }
+    ],
+    "stage": {
+     "value": "파일럿",
+     "evidence": "Vietnam electronics plant"
+    },
+    "numbers": [
+     {
+      "value": "$10.5 mln",
+      "evidence": "$10.5 mln contract"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "신규 공장 계약 소식만 있고 구체적인 생산 라인업이나 공정 난이도에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 수 있는 세부 공정이나 부품 수급 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "베트남 신규 공장으로 생산을 이관할 때 현지 협력업체의 부품 조달과 초기 수율 안정화는 언제쯤 가능할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "814e8184f2ef",
+   "title": "SlashVibe: open-source AI agent desk controller on Kickstarter - The Gadgeteer",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObGxVeWJKZ25XUTZfd3FGQ2w0d2NzMU9aOV9xR3hfU3BiQ1RvNVZ3N3JHVWFJZnpDT0hwQXlQa1JlNmRvUXBrb2NLWTh6SFpaQi1oUFdPd2hTUV9pRHdvSy1FZUxhWWF5Y0l5NUJVSWJJSzhsNl9sT0pGdFFETVBpVHZaZUFaMHpMWnJVeg?oc=5",
+   "source": "The Gadgeteer",
+   "published": "Sun, 15 Nov 2026 19:16:29 GMT",
+   "snippet": "SlashVibe: open-source AI agent desk controller on Kickstarter The Gadgeteer",
+   "score": 4.0,
+   "why": "크라우드 펀딩 제품 출시",
+   "category_hint": "HW스타트업",
+   "summary": "SlashVibe가 킥스펀터에 오픈소스 AI 에이전트 데스크 컨트롤러를 공개했다.",
+   "category": "HW스타트업",
+   "ai_lenses": [],
    "extracted": {
     "companies": [],
     "stage": null,
@@ -26,23 +183,65 @@
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "원문에 액추에이터 양산 난이도나 세부 공정에 대한 언급이 없다.",
+     "reason": "원문에 양산 난이도를 판단할 수 있는 구체적인 정보가 없다.",
      "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "원문에 병목 구간을 유추할 만한 구체적인 공급망이나 제조 정보가 없다.",
+     "reason": "원문에 병목 현상을 유추할 수 있는 내용이 없다.",
      "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "정부 지원금이 실제 부품 국산화와 양산 원가 절감으로 이어질 수 있을까?",
+   "review_question": "오픈소스 하드웨어를 킥스타터에서 펀딩받아 실제 양산까지 부품 수급을 어떻게 해결할 것인가?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": [
-    "양산 단가"
+    "수요·시장성"
    ]
+  },
+  {
+   "id": "b408addde11a",
+   "title": "더픽트, AI 공간인지 기술로 ‘미래국방가교기술개발사업’ 주관기관 선정 - 청년개발자신문 - 데브타임즈",
+   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BWHhheWVLbFJZeGFNaDY2dDJJSGZPamw2eWpfSzZTRHJmSmV0RnVCTGNCZVVnTTNCVy1EcHZUVURlXzA2bzVnT2ZxRGdZS28?oc=5",
+   "source": "데브타임즈",
+   "published": "Mon, 16 Nov 2026 06:57:11 GMT",
+   "snippet": "더픽트, AI 공간인지 기술로 ‘미래국방가교기술개발사업’ 주관기관 선정 - 청년개발자신문 데브타임즈",
+   "score": 2.0,
+   "why": "국방 R&D 선정으로 양산과 거리 멈",
+   "category_hint": "정책·인증",
+   "summary": "더픽트가 AI 공간인지 기술을 바탕으로 미래국방가교기술개발사업의 주관기관으로 선정되었습니다. 국방 분야 적용을 위한 기술 개발 및 검증 단계가 진행될 것으로 보입니다.",
+   "category": "정책·인증",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "더픽트",
+      "evidence": "더픽트, AI 공간인지 기술로"
+     }
+    ],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산 난이도나 제조 공정에 대한 구체적인 언급이 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 구간을 유추할 수 있는 정보가 부족하다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "국방 사업 과제로 선정된 AI 공간인지 기술을 실제 양산 장비에 탑재할 때 요구되는 국방 규격이나 환경 테스트를 통과하는 데 얼마나 걸릴까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
   }
  ]
 }
