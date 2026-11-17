@@ -1,200 +1,57 @@
 {
- "date": "2026-11-17",
- "generated_at": "2026-11-17T07:10+09:00",
+ "date": "2026-11-18",
+ "generated_at": "2026-11-18T07:16+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "68a05ecaeb49",
-   "title": "Cape EMS Secures Three-Year Manufacturing Agreement With Thermo Fischer Scientific - BusinessToday Malaysia",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVkhmUEliRGFmUTI0V2VsZnJ2R2pleElGazkzWkJBYUpYam1oaUxMcVk2ZVlQZE1jV1ROak5ESHh0a2tlR3hpanJmSzBKOUhBb2wxd3AtMzhxSnFWQ1NzWUhHRTNCUmpOQnN1RU9UMW1ubWJ6dXMwXzJ6V0xKRjl3Sko4R3NJVmZJektYWWlNYjVLeWVIQXJuQmhpT0MzT3NHR3lJd2c4M0tBTXBTX0U2bG45eE4xaldFRkMwQ0l3dm43VGlCYWc?oc=5",
-   "source": "BusinessToday Malaysia",
-   "published": "Mon, 16 Nov 2026 04:57:53 GMT",
-   "snippet": "Cape EMS Secures Three-Year Manufacturing Agreement With Thermo Fischer Scientific BusinessToday Malaysia",
-   "score": 8.0,
-   "why": "EMS 위탁 생산 계약 체결",
-   "category_hint": "외주생산·EMS",
-   "summary": "케이프 EMS가 써모 피셔 사이언티픽과 3년 간의 제조 계약을 체결했습니다. 이번 계약으로 안정적인 외주 생산 물량을 확보하며 협력 관계를 이어갑니다.",
-   "category": "외주생산·EMS",
+   "id": "e747713515e8",
+   "title": "삼현, 북미 휴머노이드 액추에이터 공급 임박…내년 로봇 매출 200억 전망-한투 - 이데일리",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUFZReW1KenA5LU5rbDJ6ZDFaRHVUNy1iUmkwa294Y0w0SExYWnBEQVQzUEM0elk2NGVpalVUdmQ5WV85RjRDMDBLeW8xN2NIakhEYklqVWdlSmM5M1VxOWQ5MVQ3MUxYYndwRXU3YkVYdDMwejktcVJTSUoxMV9qbQ?oc=5",
+   "source": "이데일리",
+   "published": "Mon, 16 Nov 2026 23:06:20 GMT",
+   "snippet": "삼현, 북미 휴머노이드 액추에이터 공급 임박…내년 로봇 매출 200억 전망-한투 이데일리",
+   "score": 9.0,
+   "why": "로봇 핵심 부품 공급 임박",
+   "category_hint": "부품·공급망",
+   "summary": "삼현이 북미 휴머노이드 로봇용 액추에이터 공급을 앞두고 있으며 내년 로봇 부문 매출이 200억 원에 이를 것으로 전망된다. 모터와 감속기 등이 통합된 핵심 부품의 양산 공급 확대를 준비하고 있다.",
+   "category": "부품·공급망",
    "ai_lenses": [
+    "부품 수급",
     "외주 조립·납기"
    ],
    "extracted": {
     "companies": [
      {
-      "value": "Cape EMS",
-      "evidence": "Cape EMS Secures Three-Year Manufacturing Agreement"
-     },
-     {
-      "value": "Thermo Fischer Scientific",
-      "evidence": "Agreement With Thermo Fischer Scientific"
+      "value": "삼현",
+      "evidence": "삼현, 북미 휴머노이드 액추에이터 공급 임박"
      }
     ],
     "stage": {
      "value": "양산",
-     "evidence": "Manufacturing Agreement"
+     "evidence": "북미 휴머노이드 액추에이터 공급 임박"
     },
     "numbers": [
      {
-      "value": "3년",
-      "evidence": "Three-Year Manufacturing Agreement"
+      "value": "200억",
+      "evidence": "내년 로봇 매출 200억 전망"
      }
     ]
    },
    "estimated": {
     "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 제조 품목이나 공정 난이도에 대한 정보가 없습니다.",
-     "confidence": "낮음"
+     "value": "높음",
+     "reason": "휴머노이드용 액추에이터는 고정밀 모터와 감속기 조립이 필요해 양산 시 초기 수율 확보가 까다롭다.",
+     "confidence": "중간"
     },
     "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 생산 병목 구간이나 리스크 요인이 언급되지 않았습니다.",
-     "confidence": "낮음"
+     "value": "핵심 부품 수급 및 초기 조립 수율 안정화",
+     "reason": "북미 향 초도 물량 납품 과정에서 품질 기준을 맞추는 공정 안정화가 병목이 될 수 있다.",
+     "confidence": "중간"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "3년 장기 계약 물량을 소화할 때 케이프 EMS의 기존 라인 부하와 납기 대응력은 충분할까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": [
-    "외주 조립·납기"
-   ]
-  },
-  {
-   "id": "1829f28d7793",
-   "title": "Cape EMS formalises manufacturing deal with US life-science firm - The Edge Malaysia",
-   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1DZmVkVG1RajdkVl94bWR0dlllTjczQmpYeUxZNEhFWk1MUERjOTBBVEcySGpDN0t0U2FJcVlxZnFycHBrMW1RUTZqTFBIT25z?oc=5",
-   "source": "The Edge Malaysia",
-   "published": "Mon, 16 Nov 2026 08:10:34 GMT",
-   "snippet": "Cape EMS formalises manufacturing deal with US life-science firm The Edge Malaysia",
-   "score": 8.0,
-   "why": "미국 기업의 EMS 제조 계약",
-   "category_hint": "외주생산·EMS",
-   "summary": "Cape EMS가 미국 생명과학 기업과 제조 계약을 체결했습니다. 외주 생산을 통한 양산 협력이 본격화될 것으로 보입니다.",
-   "category": "외주생산·EMS",
-   "ai_lenses": [
-    "외주 조립·납기"
-   ],
-   "extracted": {
-    "companies": [
-     {
-      "value": "Cape EMS",
-      "evidence": "Cape EMS formalises manufacturing deal"
-     }
-    ],
-    "stage": {
-     "value": "양산",
-     "evidence": "manufacturing deal"
-    },
-    "numbers": []
-   },
-   "estimated": {
-    "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 구체적인 양산 난이도나 공정 정보가 없다.",
-     "confidence": "낮음"
-    },
-    "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 병목 구간을 유추할 만한 단서가 없다.",
-     "confidence": "낮음"
-    }
-   },
-   "program_ids": [],
-   "failure_case": null,
-   "review_question": "미국 생명과학 기업과의 신규 제조 계약 물량이 Cape EMS의 기존 라인 부하와 납기에 어떤 영향을 줄까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": [
-    "외주 조립·납기"
-   ]
-  },
-  {
-   "id": "1354079121c5",
-   "title": "China’s Genbyte awards $10.5 mln contract for Vietnam electronics plant - Theinvestor",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd1ZmcHBMOV8yeGZOY2V6QkFCRjN1emR0dGcxX3JmQVgwajl3c215NDRBYW1YRUdtR2hpcTIwMzNYMmR2Y3JHSFFmaS1JWUJ2VGlTdVhDMC1vRm4yWU8xRkZYQm1TTDA0cU1yYXhvVXdIUDVJXzgtdW4tdWpuemdVeDMxczgtUWI2RlhtN04wNnNqV3hTcGpObm1ObDdPX3pqZ25qS3lR?oc=5",
-   "source": "Theinvestor",
-   "published": "Mon, 16 Nov 2026 09:13:00 GMT",
-   "snippet": "China’s Genbyte awards $10.5 mln contract for Vietnam electronics plant Theinvestor",
-   "score": 7.0,
-   "why": "베트남 전자기판 공장 투자 계약",
-   "category_hint": "외주생산·EMS",
-   "summary": "중국의 젠바이트가 베트남 전자제품 공장 건설을 위해 1,050만 달러 규모의 계약을 체결했다. 해외 생산 거점 확대와 외주 조립 인프라 구축을 위한 행보로 풀이된다.",
-   "category": "외주생산·EMS",
-   "ai_lenses": [
-    "외주 조립·납기"
-   ],
-   "extracted": {
-    "companies": [
-     {
-      "value": "Genbyte",
-      "evidence": "China’s Genbyte"
-     }
-    ],
-    "stage": {
-     "value": "파일럿",
-     "evidence": "Vietnam electronics plant"
-    },
-    "numbers": [
-     {
-      "value": "$10.5 mln",
-      "evidence": "$10.5 mln contract"
-     }
-    ]
-   },
-   "estimated": {
-    "production_difficulty": {
-     "value": "판단불가",
-     "reason": "신규 공장 계약 소식만 있고 구체적인 생산 라인업이나 공정 난이도에 대한 정보가 없다.",
-     "confidence": "낮음"
-    },
-    "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 병목 현상을 유추할 수 있는 세부 공정이나 부품 수급 정보가 없다.",
-     "confidence": "낮음"
-    }
-   },
-   "program_ids": [],
-   "failure_case": null,
-   "review_question": "베트남 신규 공장으로 생산을 이관할 때 현지 협력업체의 부품 조달과 초기 수율 안정화는 언제쯤 가능할까?",
-   "dropped": 0,
-   "programs": [],
-   "ai_lenses_baseline": []
-  },
-  {
-   "id": "814e8184f2ef",
-   "title": "SlashVibe: open-source AI agent desk controller on Kickstarter - The Gadgeteer",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObGxVeWJKZ25XUTZfd3FGQ2w0d2NzMU9aOV9xR3hfU3BiQ1RvNVZ3N3JHVWFJZnpDT0hwQXlQa1JlNmRvUXBrb2NLWTh6SFpaQi1oUFdPd2hTUV9pRHdvSy1FZUxhWWF5Y0l5NUJVSWJJSzhsNl9sT0pGdFFETVBpVHZaZUFaMHpMWnJVeg?oc=5",
-   "source": "The Gadgeteer",
-   "published": "Sun, 15 Nov 2026 19:16:29 GMT",
-   "snippet": "SlashVibe: open-source AI agent desk controller on Kickstarter The Gadgeteer",
-   "score": 4.0,
-   "why": "크라우드 펀딩 제품 출시",
-   "category_hint": "HW스타트업",
-   "summary": "SlashVibe가 킥스펀터에 오픈소스 AI 에이전트 데스크 컨트롤러를 공개했다.",
-   "category": "HW스타트업",
-   "ai_lenses": [],
-   "extracted": {
-    "companies": [],
-    "stage": null,
-    "numbers": []
-   },
-   "estimated": {
-    "production_difficulty": {
-     "value": "판단불가",
-     "reason": "원문에 양산 난이도를 판단할 수 있는 구체적인 정보가 없다.",
-     "confidence": "낮음"
-    },
-    "likely_bottleneck": {
-     "value": "판단불가",
-     "reason": "원문에 병목 현상을 유추할 수 있는 내용이 없다.",
-     "confidence": "낮음"
-    }
-   },
-   "program_ids": [],
-   "failure_case": null,
-   "review_question": "오픈소스 하드웨어를 킥스타터에서 펀딩받아 실제 양산까지 부품 수급을 어떻게 해결할 것인가?",
+   "review_question": "북미 향 액추에이터 초도 물량을 양산할 때 모터와 감속기 조립 라인에서 수율이 얼마나 안정적으로 나올까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": [
@@ -202,43 +59,248 @@
    ]
   },
   {
-   "id": "b408addde11a",
-   "title": "더픽트, AI 공간인지 기술로 ‘미래국방가교기술개발사업’ 주관기관 선정 - 청년개발자신문 - 데브타임즈",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BWHhheWVLbFJZeGFNaDY2dDJJSGZPamw2eWpfSzZTRHJmSmV0RnVCTGNCZVVnTTNCVy1EcHZUVURlXzA2bzVnT2ZxRGdZS28?oc=5",
-   "source": "데브타임즈",
-   "published": "Mon, 16 Nov 2026 06:57:11 GMT",
-   "snippet": "더픽트, AI 공간인지 기술로 ‘미래국방가교기술개발사업’ 주관기관 선정 - 청년개발자신문 데브타임즈",
-   "score": 2.0,
-   "why": "국방 R&D 선정으로 양산과 거리 멈",
-   "category_hint": "정책·인증",
-   "summary": "더픽트가 AI 공간인지 기술을 바탕으로 미래국방가교기술개발사업의 주관기관으로 선정되었습니다. 국방 분야 적용을 위한 기술 개발 및 검증 단계가 진행될 것으로 보입니다.",
-   "category": "정책·인증",
-   "ai_lenses": [],
+   "id": "7b6738fe08dc",
+   "title": "현대차그룹, 보스턴다이내믹스 지분 100% 확보 … 로봇 양산 채비 - 뉴데일리 경제",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9OdmlDTXhrUDhhUUtNWU5KbXZKZ3lBcUYweFNkcVcwV1VoNG1JNmxhR0hmQVEtMzE3eVlucG1BbDExeWZGaWdEckJGQWQ1eklfbGhFeXI3SUhSamM1ZnYyZ3Q1OVR4SkxNcDVsUnI3UG4tdGIxUi1TQTRIc9IBgAFBVV95cUxPZk42bmlrTDgxUFUxbTFUTmxTVVlmLW84U1lLbnFKZjUteHpJd0xoTDZVcHpiSHVmRjBuYzdoYTlfcnVHdzN5NzdKZGhmM05KREF3NU1PUzJqSmFIZkoyMlpCYjFkSHZvZjhGVllxZkhFWDliYVVwNlYtUXRYV29rOQ?oc=5",
+   "source": "뉴데일리 경제",
+   "published": "Tue, 17 Nov 2026 06:24:00 GMT",
+   "snippet": "현대차그룹, 보스턴다이내믹스 지분 100% 확보 … 로봇 양산 채비 뉴데일리 경제",
+   "score": 8.0,
+   "why": "로봇 본격 양산 채비 단계",
+   "category_hint": "로봇",
+   "summary": "현대차그룹이 보스턴다이내믹스 지분을 100% 확보하며 본격적인 로봇 양산 체제 준비에 나섰다. 그룹 차원의 전폭적인 지원을 통해 로봇 생산과 사업화 속도가 빨라질 것으로 보인다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ],
    "extracted": {
     "companies": [
      {
-      "value": "더픽트",
-      "evidence": "더픽트, AI 공간인지 기술로"
+      "value": "현대차그룹",
+      "evidence": "현대차그룹"
+     },
+     {
+      "value": "보스턴다이내믹스",
+      "evidence": "보스턴다이내믹스"
      }
     ],
-    "stage": null,
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 양산 채비"
+    },
     "numbers": []
    },
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "원문에 양산 난이도나 제조 공정에 대한 구체적인 언급이 없다.",
-     "confidence": "높음"
+     "reason": "지분 확보 내용만 언급되어 있으며 구체적인 양산 공정과 부품 수급에 대한 정보가 없다.",
+     "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "원문에 병목 구간을 유추할 수 있는 정보가 부족하다.",
-     "confidence": "높음"
+     "reason": "생산 라인이나 부품 공급망에 대한 상세 내용이 원문에 없다.",
+     "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "국방 사업 과제로 선정된 AI 공간인지 기술을 실제 양산 장비에 탑재할 때 요구되는 국방 규격이나 환경 테스트를 통과하는 데 얼마나 걸릴까?",
+   "review_question": "현대차가 100% 지분을 확보한 만큼 기존 연구 중심의 설계를 양산형 구조로 전환할 때 어떤 부품 공급망과 외주 조립 방식을 택할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "3fa9e6d77d2f",
+   "title": "현대차그룹, 보스턴다이나믹스 지분 100% 확보…로봇 양산 속도 - 파이낸셜뉴스",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkaV9sSllMOG1YczRTR3I5c0tuc21iRzI4UGU1cndpMkJ4R2RHbzktS2V4NlRYSE42cHFxNE1CeEVDN2JNdE4ydmhDWmhqMFdqZHNkZEVDMi05UQ?oc=5",
+   "source": "파이낸셜뉴스",
+   "published": "Mon, 16 Nov 2026 23:05:38 GMT",
+   "snippet": "현대차그룹, 보스턴다이나믹스 지분 100% 확보…로봇 양산 속도 파이낸셜뉴스",
+   "score": 8.0,
+   "why": "로봇 양산 속도 가속화",
+   "category_hint": "로봇",
+   "summary": "현대차그룹이 보스턴다이나믹스의 지분 100%를 확보하며 로봇 양산에 속도를 낼 전망이다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "현대차그룹",
+      "evidence": "현대차그룹, 보스턴다이나믹스"
+     },
+     {
+      "value": "보스턴다이나믹스",
+      "evidence": "보스턴다이나믹스 지분 100% 확보"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 양산 속도"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "지분 확보 소식 외에 양산 공정이나 부품 수급에 대한 구체적인 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정을 유추할 만한 원문 내용이 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "지분 100% 확보 이후 실제 양산을 위한 생산라인 구축은 어디서 맡게 될까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "78f52e2ab948",
+   "title": "[오늘의 경제뉴스] 로봇 ‘근육’ 쥔 중국…희토류 통제에 한국 ‘피지컬 AI’ 위기 - 뉴스버스",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CeEJsNm5FS0ZZSFJCcmNYY25HX1p4RVZrU29GTzlnVW1PMXFaY0g1VTJDMDVxaHNla2RHcW1KTkFOQzBkMUlXV3dMZmlWWjdkTnF2LWhxQ2JwVEZ3bDJFNGJ2QnpaRWlHbnc?oc=5",
+   "source": "뉴스버스",
+   "published": "Mon, 16 Nov 2026 21:50:42 GMT",
+   "snippet": "[오늘의 경제뉴스] 로봇 ‘근육’ 쥔 중국…희토류 통제에 한국 ‘피지컬 AI’ 위기 뉴스버스",
+   "score": 7.0,
+   "why": "부품 공급망 및 희토류 리스크",
+   "category_hint": "부품·공급망",
+   "summary": "중국의 희토류 통제로 인해 한국의 피지컬 AI 및 로봇 산업이 부품 수급에 타격을 입고 있습니다. 원자재 의존도가 높은 상황에서 안정적인 공급망 확보가 시급한 과제로 떠올랐습니다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "핵심 원자재인 희토류에 대한 중국의 통제로 인해 제조에 필요한 원부자재 조달이 어려워졌기 때문이다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "희토류 통제",
+     "reason": "로봇 생산의 기초가 되는 원자재 수급이 막히면 전체 제조 공정이 지연될 수밖에 없다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": {
+    "cause_tags": [
+     "부품수급"
+    ],
+    "evidence": "희토류 통제에 한국 ‘피지컬 AI’ 위기"
+   },
+   "review_question": "중국 외의 국가에서 대체 자원을 확보하는 데 걸리는 리드타임은 얼마나 될까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  },
+  {
+   "id": "e4b495a1f9cd",
+   "title": "음성으로 가전 10만1,000종 이상 제어…스위치봇, 스마트홈 통합 허브 출시 - 인공지능신문",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBSb3MtbkcwNVBXZkwzY1ZQWmpIa1FFQ3lBajZQenlTNGtpUkRYSmJiSTU4ZFFha01PNmVrTVZSTVRBNHZ5bzltTk41UWw2eXRfeHdtenk4ZXZsTVhzQk1IU0h2TWZZTFE?oc=5",
+   "source": "인공지능신문",
+   "published": "Tue, 17 Nov 2026 00:57:54 GMT",
+   "snippet": "음성으로 가전 10만1,000종 이상 제어…스위치봇, 스마트홈 통합 허브 출시 인공지능신문",
+   "score": 6.0,
+   "why": "스마트홈 기기 출시 사례",
+   "category_hint": "AI기기·가전",
+   "summary": "스위치봇이 다양한 음성 제어를 지원하는 스마트홈 통합 허브를 출시했습니다.",
+   "category": "AI기기·가전",
+   "ai_lenses": [
+    "수요·시장성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "스위치봇",
+      "evidence": "스위치봇, 스마트홈 통합 허브 출시"
+     }
+    ],
+    "stage": {
+     "value": "상용판매",
+     "evidence": "스마트홈 통합 허브 출시"
+    },
+    "numbers": [
+     {
+      "value": "10만1,000종 이상",
+      "evidence": "가전 10만1,000종 이상 제어"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 공정이나 양산 관련 구체적인 내용이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 생산 병목에 대한 언급이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "10만 종이 넘는 가전과의 호환성 검증과 펌웨어 업데이트 관리는 어떻게 대응하고 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "bf28eeb9d3ec",
+   "title": "일본 최대급 로봇 전문전시회 'RoboNext 2026', 12월 2일 오사카서 개막 - 로봇신문",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9FdUhEWDBERDBWc0J2SHhjcmFkaDE2R2lkV2Vqak1BWlQ0TU44YzU3OEtOdllmVWUzTXo4RjBMaVQyc2R5UHJsWDQ1bE0wVDRQaVNaYUFYcVFlZE5CT3EtMzhBd2FfaklCclU2UQ?oc=5",
+   "source": "로봇신문",
+   "published": "Tue, 17 Nov 2026 07:03:00 GMT",
+   "snippet": "일본 최대급 로봇 전문전시회 'RoboNext 2026', 12월 2일 오사카서 개막 로봇신문",
+   "score": 1.0,
+   "why": "단순 전시회 개최 홍보",
+   "category_hint": "기타",
+   "summary": "일본 최대급 로봇 전문전시회인 'RoboNext 2026'이 오는 12월 2일 오사카에서 개막할 예정이다. 이번 행사는 최신 로봇 기술과 관련 동향을 선보이는 자리가 될 것으로 보인다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "2026",
+      "evidence": "RoboNext 2026"
+     },
+     {
+      "value": "12월 2일",
+      "evidence": "12월 2일 오사카서 개막"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "전시회 개최 일정 외에 양산 난이도를 가늠할 구체적인 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "전시회 안내 기사이므로 생산 병목을 추정할 근거가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이 전시회에 출품되는 로봇들 중 실제로 양산 라인에 투입될 수 있는 사양이 얼마나 될까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": []
