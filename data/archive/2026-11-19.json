@@ -1,0 +1,360 @@
+{
+ "date": "2026-11-19",
+ "generated_at": "2026-11-19T07:14+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "8d660497a3bf",
+   "title": "제네시스 AI, 6,652억 원 투자 유치…로봇 ‘에노’ 내년 美 양산 - AI 매터스",
+   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTZU9td0RpNkEyakhCZkM5NldRa1ZPZksxMWY5VG01aTMyUTBadEU0R0ZLVEsydGpXNVlYQ1MyXzdrTXZmNGdmcjF4ZHZZbFNUcUlyZA?oc=5",
+   "source": "AI 매터스",
+   "published": "Wed, 18 Nov 2026 05:13:51 GMT",
+   "snippet": "제네시스 AI, 6,652억 원 투자 유치…로봇 ‘에노’ 내년 美 양산 AI 매터스",
+   "score": 9.0,
+   "why": "로봇 美 양산 및 투자",
+   "category_hint": "로봇",
+   "summary": "제네시스 AI가 6,652억 원의 투자를 유치하며 자사 로봇 '에노'의 내년 미국 양산 계획을 밝혔다. 대규모 자금을 바탕으로 본격적인 양산 체제 구축에 나설 것으로 보인다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "제네시스 AI",
+      "evidence": "제네시스 AI, 6,652억 원 투자 유치"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 ‘에노’ 내년 美 양산"
+    },
+    "numbers": [
+     {
+      "value": "6,652억 원",
+      "evidence": "6,652억 원 투자 유치"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "해외(미국) 현지에서 로봇 초도 물량을 양산하는 과정은 공급망과 공정 안정화 측면에서 난도가 높다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "미국 현지 생산 공장 구축 및 부품 공급망 확보",
+     "reason": "해외 양산 시 초기 라인 구축과 현지 부품 조달에서 병목이 발생하기 쉽다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "미국 현지에서 로봇을 양산할 때 국내 부품을 조달하는 것과 현지 공급망을 뚫는 것 중 어떤 쪽의 리스크가 더 클까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "ce6a46b49a89",
+   "title": "대성하이텍, 삼성전자 로봇그리퍼 공급사 테솔로 '양산 파트너'…로봇손 양산 공급망 구축 - 데이터투자",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4yaWlNT3NoVW9JcFc2OG5OY05OSUdERGVyZFlLSTV4TXhDR28xekdXbXhrcndPMVUxODRYVHluUWMxb0dEd2NRYmU0R3lWV2FWNGFLY3g0REdGNmlfQkhwSmlTQm1jTWdPWWVtNjBlU3hwUHc?oc=5",
+   "source": "데이터투자",
+   "published": "Wed, 18 Nov 2026 05:00:56 GMT",
+   "snippet": "대성하이텍, 삼성전자 로봇그리퍼 공급사 테솔로 '양산 파트너'…로봇손 양산 공급망 구축 데이터투자",
+   "score": 9.0,
+   "why": "로봇부품 양산 공급망 구축",
+   "category_hint": "부품·공급망",
+   "summary": "대성하이텍이 삼성전자에 로봇그리퍼를 공급하는 테솔로와 양산 파트너십을 맺고 로봇손 양산 공급망을 구축했다. 이번 협력을 통해 로봇 부품의 안정적인 제조 및 공급 체계를 강화할 것으로 보인다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "대성하이텍",
+      "evidence": "대성하이텍, 삼성전자 로봇그리퍼 공급사"
+     },
+     {
+      "value": "테솔로",
+      "evidence": "테솔로 '양산 파트너'…로봇손 양산 공급망 구축"
+     },
+     {
+      "value": "삼성전자",
+      "evidence": "삼성전자 로봇그리퍼 공급사 테솔로"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇손 양산 공급망 구축"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "중간",
+     "reason": "정밀 로봇그리퍼의 양산 체계를 구축하는 단계로 부품 정밀도와 조립 공정 관리의 난도가 존재한다.",
+     "confidence": "중간"
+    },
+    "likely_bottleneck": {
+     "value": "부품 수급",
+     "reason": "로봇손 양산 공급망 초기 단계에서는 핵심 부품의 수급과 정밀 조립 공정의 수율 확보가 주요 병목이 될 수 있다.",
+     "confidence": "중간"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "테솔로의 로봇그리퍼를 대성하이텍에서 양산할 때, 초기 부품 수급과 조립 수율은 어느 정도 수준으로 맞추기로 했는지 확인할 수 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "b424c077e51d",
+   "title": "에이엘로봇, 제어장치로 벌고 토크센서로 넓힌다…日 고객사 4분기 추가 양산 - 데이터투자",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zQXRxU1hvRE1RdlhhdTNHZmdoNWJDN0ZBZ25fQlZ1bjZOMThoc0hWbkI1WWR4elhycFBpNUFadmd4U2FhbHA5N1ctczNBZEhxNGJxYzlXeERrWG9TY0tCY2hZeloxeHNlakd6c3FyYk5KUTA?oc=5",
+   "source": "데이터투자",
+   "published": "Wed, 18 Nov 2026 02:31:11 GMT",
+   "snippet": "에이엘로봇, 제어장치로 벌고 토크센서로 넓힌다…日 고객사 4분기 추가 양산 데이터투자",
+   "score": 9.0,
+   "why": "고객사 부품 추가 양산",
+   "category_hint": "부품·공급망",
+   "summary": "에이엘로봇이 제어장치와 토크센서를 기반으로 사업을 확장하고 있으며, 일본 고객사를 통해 4분기 추가 양산을 진행할 예정이다. 핵심 부품 공급과 해외 양산 일정이 구체화되고 있다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "에이엘로봇",
+      "evidence": "에이엘로봇"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "4분기 추가 양산"
+    },
+    "numbers": [
+     {
+      "value": "4분기",
+      "evidence": "4분기 추가 양산"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 토크센서와 제어장치의 구체적인 양산 수율이나 공정 난이도에 대한 내용이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 일본 고객사 납기나 부품 수급 관련 병목 구간에 대한 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "일본 고객사 물량 4분기 추가 양산에 맞춰 토크센서와 제어장치 초도 부품 수급과 외주 라인 조립 일정에 차질은 없을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "b1e03ad345ec",
+   "title": "Flipper One Linux cyberdeck pulls in $11.7 million on Kickstarter in first day - BigGo Finance",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ZcE5Sdkw0OXJ0X09UY0l3Qi1CX1dlSDZjQzhzRTdkZFNwbVcwZFNIamZWanlEcHF5WUpQQldtRGI5WTkxTnlab01YRE93WmJqc0lMaWZCY3RadDBtc0kwMjdTMnQtbWI4NmFweF9heGRsUXhwemc?oc=5",
+   "source": "BigGo Finance",
+   "published": "Wed, 18 Nov 2026 20:25:00 GMT",
+   "snippet": "Flipper One Linux cyberdeck pulls in $11.7 million on Kickstarter in first day BigGo Finance",
+   "score": 7.0,
+   "why": "하드웨어 펀딩 성공 사례",
+   "category_hint": "HW스타트업",
+   "summary": "플리퍼 원 리눅스 사이버덱이 킥스타터 첫날 1,170만 달러의 투자금을 모금했습니다. 대규모 펀딩 성공을 바탕으로 하드웨어 스타트업의 양산 준비 과정이 주목됩니다.",
+   "category": "HW스타트업",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "BigGo Finance",
+      "evidence": "BigGo Finance"
+     }
+    ],
+    "stage": {
+     "value": "시제품",
+     "evidence": "pulls in $11.7 million on Kickstarter in first day"
+    },
+    "numbers": [
+     {
+      "value": "$11.7 million",
+      "evidence": "$11.7 million on Kickstarter in first day"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "중간",
+     "reason": "킥스타터에서 대규모 자금을 확보했으나 초기 양산을 위한 부품 조달과 조립 공정 세팅에 변수가 많다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "부품 수급 및 초도 물량 외주 조립",
+     "reason": "단기간에 대량 주문이 몰렸을 때 부품 리드타임과 외주 공장 납기 맞추기가 까다롭다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "첫날 모인 이 막대한 물량을 어떤 외주 공장에 넘겨야 킥스타터 약속 일정에 맞춰 납품할 수 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "d1a18ecafcc1",
+   "title": "현대차그룹, 상용로봇 중심 재편 완료…아틀라스 첫 반도체 고객 맞았다 - 이데일리",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZ0pIamRZODlMVEt0QzNwbV9NbUdxT3VMaUZxMWd4ak53akJVR1JWUFVWLW5aRWsxS25DR25XNDZZcEdmRWM3dnVoLURjWElSTTBNZ0I5YzNkTEVHZ19pVTVLUHpYc3I2UTdDN3ZOQlZqM3RUU1ZSOFRsVW93RGdaVw?oc=5",
+   "source": "이데일리",
+   "published": "Wed, 18 Nov 2026 08:17:41 GMT",
+   "snippet": "현대차그룹, 상용로봇 중심 재편 완료…아틀라스 첫 반도체 고객 맞았다 이데일리",
+   "score": 4.0,
+   "why": "상용로봇 배치 관련 소식",
+   "category_hint": "로봇",
+   "summary": "현대차그룹이 상용로봇 중심의 사업 재편을 완료하고 아틀라스의 첫 반도체 고객을 맞이했다. 로봇의 실제 현장 투입과 양산 적용 단계에 진입하고 있음을 보여준다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "현대차그룹",
+      "evidence": "현대차그룹, 상용로봇 중심 재편 완료"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "상용로봇 중심 재편 완료"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 공정이나 양산 난이도에 대한 구체적인 수치나 설명이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유추할 수 있는 세부 공급망이나 공정 정보가 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "아틀라스를 반도체 생산 현장에 투입할 때 현장 작업 환경에 맞추는 커스텀 공정과 초기 수율 안정화는 어느 정도 걸릴까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "18c76b48751f",
+   "title": "“로봇 활용 역량 높지만 경쟁력 낮아” - 정보통신신문",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tUWtzTEp3bUNIc1Z6bkhGSUdBT3VUZGJmZ1djS2tpYlFQdThxNGFEa1o1NW4xaGoyQkV4N3Q5TDRmX2w2bUxPUDNoWXZmenlELW5uVmloUWNFdHNPWXdlOW9NNUhXbV840gFsQVVfeXFMUDhTdHhEZ3RsTEZTaWtoQ1pmRWJDeE10Wmw1Q0JXYXFfVHdicFlfSTFjM2JfaG1WRnNkcTU1N19fR2pqcmdfeU9MZHcySk1SUl9OMDhUdTNHRVJHQk5YTV9DRTZOYk9vME9Lby1T?oc=5",
+   "source": "정보통신신문",
+   "published": "Wed, 18 Nov 2026 07:44:20 GMT",
+   "snippet": "“로봇 활용 역량 높지만 경쟁력 낮아” 정보통신신문",
+   "score": 2.0,
+   "why": "추상적인 산업 전망 기사",
+   "category_hint": "로봇",
+   "summary": "국내 로봇 활용 역량은 높으나 실질적인 경쟁력은 낮다는 평가가 제기되었다. 현장에서는 로봇 도입과 양산 과정에서의 실효성과 수익성을 면밀히 따져봐야 한다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 로봇의 제조 공정이나 양산 난이도에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문이 짧아 병목 구간을 유추할 근거가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "실제 현장에서 로봇 활용 역량이 높다는데 왜 실질적인 경쟁력은 낮게 평가받는 걸까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "575e47e22b1d",
+   "title": "위너스일렉, 헥사로보틱스에 40억 지분 투자 ··· 2대 주주 등극 - 데이터넷",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1GMjA1bnJIMkloNE9zMmVhdE9scDltNDFqRHJvQVZ1QTNpZmYyS2RkUk5lNUpiQ2diZXU4TVYwWWhpOGZmMW9CWjgwZlFiUmZobVdqZnM5VWNsSUIzVFIzOXozVWZRSjZDaFpGcg?oc=5",
+   "source": "데이터넷",
+   "published": "Wed, 18 Nov 2026 07:43:53 GMT",
+   "snippet": "위너스일렉, 헥사로보틱스에 40억 지분 투자 ··· 2대 주주 등극 데이터넷",
+   "score": 1.0,
+   "why": "단순 지분 투자 뉴스",
+   "category_hint": "HW스타트업",
+   "summary": "위너스일렉이 헥사로보틱스에 40억 원을 지분 투자하며 2대 주주로 등극했다. 이번 투자를 통해 양사의 협력 관계가 강화될 것으로 보인다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "위너스일렉",
+      "evidence": "위너스일렉, 헥사로보틱스에 40억 지분 투자"
+     },
+     {
+      "value": "헥사로보틱스",
+      "evidence": "위너스일렉, 헥사로보틱스에 40억 지분 투자"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "40억",
+      "evidence": "헥사로보틱스에 40억 지분 투자"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 생산 공정이나 양산 관련 언급이 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 정보가 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이번 지분 투자가 헥사로보틱스의 로봇 양산 라인 구축이나 부품 조달에 어떤 실질적 변화를 가져올까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
