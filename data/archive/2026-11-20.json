@@ -1,0 +1,412 @@
+{
+ "date": "2026-11-20",
+ "generated_at": "2026-11-20T07:12+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "49dec1e3c110",
+   "title": "\"한라캐스트, 휴머노이드 로봇 부품 양산 본격 추진\" - 로봇신문",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UQ1pyOEo1LUV0Zkd0NlJabk04QWEtYWI3RGtTdmVxM2NxWkl0VHRkVFkwNEFFN01mYlMwYlhvd2pZRmVMNjhOZ1NwNlB2Y1Q4NnJscGtMdHpFZ2JpOFZqZjZSdnRSZnM0YmpIaQ?oc=5",
+   "source": "로봇신문",
+   "published": "Thu, 19 Nov 2026 04:11:47 GMT",
+   "snippet": "\"한라캐스트, 휴머노이드 로봇 부품 양산 본격 추진\" 로봇신문",
+   "score": 9.0,
+   "why": "휴머노이드 부품 양산 본격화",
+   "category_hint": "로봇",
+   "summary": "한라캐스트가 휴머노이드 로봇 부품의 양산을 본격적으로 추진한다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "한라캐스트",
+      "evidence": "한라캐스트, 휴머노이드 로봇 부품 양산 본격 추진"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "부품 양산 본격 추진"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 부품의 종류나 구체적인 양산 난이도에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유추할 만한 세부 공정이나 수급 정보가 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "한라캐스트가 기존 다이캐스팅 양산 라인을 로봇 부품용으로 전환할 때, 정밀 가공과 수율 확보는 어떤 방식으로 대응할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "설계 양산성",
+    "양산 단가"
+   ]
+  },
+  {
+   "id": "3097e7d0de50",
+   "title": "한라캐스트, 휴머노이드 로봇 부품 양산 시작…내년 성장 본격화-IBK - 이데일리",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVjFMbEtCbEhDQ09kNkZrTmlGYm55a2ctR2hzOEFuWE1CejByQlhsSHN1dzdVYU95RTlidEhpaFVISUZoczdzc1gyT09ENld4VXA3NVdvS1JwUjBCd3ZiVGVhZHFGQWFxR2N1VmtSWGNPTHRjSkUwcVpnTFhIWUFBTg?oc=5",
+   "source": "이데일리",
+   "published": "Wed, 18 Nov 2026 22:54:49 GMT",
+   "snippet": "한라캐스트, 휴머노이드 로봇 부품 양산 시작…내년 성장 본격화-IBK 이데일리",
+   "score": 9.0,
+   "why": "로봇 부품 양산 시작",
+   "category_hint": "로봇",
+   "summary": "한라캐스트가 휴머노이드 로봇 부품의 양산에 돌입하며 내년 본격적인 성장이 전망된다. IBK에서 관련 내용을 다루었다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "한라캐스트",
+      "evidence": "한라캐스트"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 부품 양산 시작"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 부품 스펙이나 공정 난이도에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정이나 공급망 이슈에 대한 언급이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "한라캐스트가 양산하기 시작한 휴머노이드 로봇 부품의 초도 물량 수율과 납기 대응 능력이 어느 정도 수준일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "9b6b46d31fba",
+   "title": "AIDC 냉각 수주 3조·로봇 부품 양산 채비…LG전자, 미래사업 속도전 - 디지털데일리",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MLVRwUkZ0RUFxNUZnQkd1NzNyOENLaGdsN3Itcm5OeUZoa2R1aTVaMG1zYmhsNTQ4cEpDRGIyZ2trb3dMcGVFSzVYNXdabG54THM2dG55eld1T0UwblhKUE5rRUU?oc=5",
+   "source": "디지털데일리",
+   "published": "Thu, 19 Nov 2026 20:00:00 GMT",
+   "snippet": "AIDC 냉각 수주 3조·로봇 부품 양산 채비…LG전자, 미래사업 속도전 디지털데일리",
+   "score": 8.0,
+   "why": "로봇 부품 양산 채비",
+   "category_hint": "로봇",
+   "summary": "LG전자가 AIDC 냉각 시스템 수주와 로봇 부품 양산 준비를 통해 미래 사업에 속도를 내고 있습니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "LG전자",
+      "evidence": "로봇 부품 양산 채비…LG전자"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 부품 양산 채비"
+    },
+    "numbers": [
+     {
+      "value": "3조",
+      "evidence": "AIDC 냉각 수주 3조"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산 과정의 기술적 난이도나 구체적인 공정 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 구간을 유추할 만한 세부 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "로봇 부품 양산을 자체 라인에서 소화할지 외주로 돌릴지 결정되었을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "ca216ef28977",
+   "title": "현대차그룹 보스턴다이내믹스 100% 품었다…로봇 양산 가속 - 한국신용신문",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0teWRyYVdpdk9Pam1fRzJpdS1zN2lweEFQUHBUREpoNHhHTmltV1VrWk50ZzRSSXhzVnk1VFFnWEZCanBkX2dkQmthMHF4bUhRNGN3all2aHFWWmZrZ0Q3ZjF0OUd3M0hDZ24w?oc=5",
+   "source": "한국신용신문",
+   "published": "Thu, 19 Nov 2026 09:26:00 GMT",
+   "snippet": "현대차그룹 보스턴다이내믹스 100% 품었다…로봇 양산 가속 한국신용신문",
+   "score": 8.0,
+   "why": "로봇 양산 가속화",
+   "category_hint": "로봇",
+   "summary": "현대차그룹이 보스턴다이내믹스의 지분을 100% 확보하며 로봇 양산을 가속화할 전망이다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "현대차그룹",
+      "evidence": "현대차그룹"
+     },
+     {
+      "value": "보스턴다이내믹스",
+      "evidence": "보스턴다이내믹스"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "로봇 양산 가속"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "지분 인수 외에 구체적인 양산 공정이나 부품 수급에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 구간을 유추할 만한 세부 공정 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "지분 100% 인수가 향후 보스턴다이내믹스 로봇의 양산 라인 구축과 부품 공급망에 어떤 변화를 줄까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "d5bcb73cb767",
+   "title": "2028년 완성차 로봇 경쟁 본격화...GM ’도입’ 늘리고, 현대차 ’양산’ 나선다 By EBN - Investing.com 한국어",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9JMWhHVDJlNFhISnFuZXhvNlgxTldSMTVvSzdvQTNTR05vN2F3MmZnenh6OGRLeDk1ekhCV2h6bEpUUVRweENEeElQcFFmNEw4eEJrYnI4N0ZBdlN2VHF5bFdHRlJEbGNYbTBlTEwyckg?oc=5",
+   "source": "Investing.com 한국어",
+   "published": "Thu, 19 Nov 2026 07:23:00 GMT",
+   "snippet": "2028년 완성차 로봇 경쟁 본격화...GM ’도입’ 늘리고, 현대차 ’양산’ 나선다 By EBN Investing.com 한국어",
+   "score": 8.0,
+   "why": "완성차 로봇 양산 돌입",
+   "category_hint": "로봇",
+   "summary": "완성차 업계가 2028년을 목표로 로봇 도입과 양산을 본격적으로 준비하고 있다. GM은 로봇 도입을 늘리고 현대차는 양산에 나설 계획이다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "GM",
+      "evidence": "GM ’도입’ 늘리고"
+     },
+     {
+      "value": "현대차",
+      "evidence": "현대차 ’양산’ 나선다"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "현대차 ’양산’ 나선다"
+    },
+    "numbers": [
+     {
+      "value": "2028년",
+      "evidence": "2028년 완성차 로봇 경쟁 본격화"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 기술적 난이도에 대한 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 구간을 유추할 수 있는 세부 내용이 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "현대차가 2028년까지 로봇 양산 체제를 갖추려면 부품 공급망과 자체 조립 라인을 어떻게 구축할 계획일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "b4e9289e3312",
+   "title": "장원테크, 20년 마그네슘 기술로 휴머노이드 공략…2027년 양산 목표 - 에너지경제신문",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OeVRvT2diXzhrMnRwYlBUWWZPYnE0eEw5ajVqQWhrX3VZZ2xSNGhzLUt1dC0tbEsxeGw4UEx4UThoMi1TS2V4aVBmUlhpdnFhLTJrMldqT0F3VXc?oc=5",
+   "source": "에너지경제신문",
+   "published": "Thu, 19 Nov 2026 00:15:00 GMT",
+   "snippet": "장원테크, 20년 마그네슘 기술로 휴머노이드 공략…2027년 양산 목표 에너지경제신문",
+   "score": 8.0,
+   "why": "로봇 부품 양산 목표",
+   "category_hint": "로봇",
+   "summary": "장원테크가 마그네슘 제조 기술을 바탕으로 휴머노이드 로봇 시장 공략에 나서며 2027년 양산을 목표로 한다. 오랜 기간 축적된 경량화 소재 기술을 로봇 부품에 적용할 계획이다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "설계 양산성",
+    "양산 단가"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "장원테크",
+      "evidence": "장원테크, 20년 마그네슘 기술로 휴머노이드 공략"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "2027년 양산 목표"
+    },
+    "numbers": [
+     {
+      "value": "20년",
+      "evidence": "20년 마그네슘 기술로 휴머노이드 공략"
+     },
+     {
+      "value": "2027년",
+      "evidence": "2027년 양산 목표"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 설계 구조에 대한 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 공정이나 공급망 관련 정보가 원문에 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "마그네슘 다이캐스팅 부품을 휴머노이드 구조물에 적용할 때 수율과 금형 투자비는 어느 정도로 잡혀 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "설계 양산성",
+    "양산 단가"
+   ]
+  },
+  {
+   "id": "bef844a98ad1",
+   "title": "Meta Muse Charm $300 and Verizon 5G: Reported vs Confirmed - explainx.ai",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZkhTblFVMVRBcnZhYno1TDRnMVZUR1dkMGhUUHFEZUltSlJmTG9Da1pOa2k1alRPU0lnZjRELV9YSE5EcXM1WmtCNXlXVTJtZGlHZ0dXTkdaOGdnRTF5RFJyb2RwTFN1ZVJRX2txTnA1ZjdGdDc1R1F0Zi13Xy1TSkNKZkV3enYtZFBpMGdZSExaSFVvRjM3ejRja1VWUi1qQm1fN09HaV9yTnp3RmNxeVVka0U4d0ZzTFFzbmc0ZkItS3VL?oc=5",
+   "source": "explainx.ai",
+   "published": "Thu, 19 Nov 2026 00:00:00 GMT",
+   "snippet": "Meta Muse Charm $300 and Verizon 5G: Reported vs Confirmed explainx.ai",
+   "score": 1.0,
+   "why": "단순 제품 루머 기사",
+   "category_hint": "AI기기·가전",
+   "summary": "메타의 신제품 뮤즈 참과 버라이즌 5G 연동에 대한 루머와 사실 관계를 다룬 기사입니다. 제품의 구체적인 양산 계획이나 하드웨어 스펙은 본문에 언급되지 않았습니다.",
+   "category": "AI기기·가전",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Meta",
+      "evidence": "Meta Muse Charm"
+     },
+     {
+      "value": "Verizon",
+      "evidence": "Verizon 5G"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "$300",
+      "evidence": "$300"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 공정이나 양산과 관련된 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이 가격과 스펙으로 실제 양산 라인을 태울 때 마진 구조는 어떻게 나올까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "326a62f07f5e",
+   "title": "양산인공지능고, 국제로봇콘테스트 수상 - 경남도민일보",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vZzRCZVFTSG5ycDRPT2lYM1V4eXd3bVQ4RVlRQnRrRTFSdnFQRGE1ank0U0VsMURhQlVhUWZURnFhWm95aHNyam80eDI2UkoxSHdHWVlXOUktS2ZxU2xNWndtZ2lJWC1ETmc?oc=5",
+   "source": "경남도민일보",
+   "published": "Thu, 19 Nov 2026 02:27:41 GMT",
+   "snippet": "양산인공지능고, 국제로봇콘테스트 수상 경남도민일보",
+   "score": 0.0,
+   "why": "고등학교 수상 소식",
+   "category_hint": "기타",
+   "summary": "양산인공지능고등학교가 국제로봇콘테스트에서 수상했다. 학교의 로봇 관련 경진대회 입상 소식이다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산이나 제조 공정에 대한 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 내용이 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "학생들의 로봇 경진대회 수상이 실제 하드웨어 양산이나 부품 공급망과 어떤 연관이 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
