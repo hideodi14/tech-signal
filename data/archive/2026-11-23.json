@@ -1,0 +1,90 @@
+{
+ "date": "2026-11-23",
+ "generated_at": "2026-11-23T07:04+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "93fb15d404ce",
+   "title": "[피지컬 AI, 시연 넘어 양산 경쟁②] 휴머노이드, 시연에서 양산으로…공장 투입이 진짜 승부처 - 뉴시안",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Wc3d2bFlSZVB5bU5zRHJGeDVrY1RLZHlva0JVT3kzSHpycVhqQzc1Ymh6cVdVemdXTEU0cXdlTUZVYnpPbEJfLXFXc3JYZEppTTRUWTFucjJiNzdlVkdUSHpua0xLcWJBY1BWZg?oc=5",
+   "source": "뉴시안",
+   "published": "Sun, 22 Nov 2026 21:47:29 GMT",
+   "snippet": "[피지컬 AI, 시연 넘어 양산 경쟁②] 휴머노이드, 시연에서 양산으로…공장 투입이 진짜 승부처 뉴시안",
+   "score": 9.0,
+   "why": "시제품에서 양산으로 넘어가는 이야기",
+   "category_hint": "로봇",
+   "summary": "휴머노이드 로봇이 단순한 기술 시연 단계를 넘어 실제 공장 투입을 위한 양산 경쟁 단계로 진입하고 있습니다. 제조 현장에서의 실효성과 대량 생산 능력이 향후 성패를 가를 핵심 승부처가 될 전망입니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "양산",
+     "evidence": "시연 넘어 양산 경쟁②"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 난이도나 공정 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 만한 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "실제 공장 라인에 휴머노이드를 투입할 때 기존 설비와의 인터페이스와 신뢰성 검증은 어떤 기준으로 준비해야 할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "설계 양산성",
+    "수요·시장성"
+   ]
+  },
+  {
+   "id": "cb54b8214c52",
+   "title": "[피지컬 AI, 시연 넘어 양산 경쟁①] 반도체 넘어 로봇으로…미·중 AI 패권 경쟁, 피지컬 AI로 확전 - 뉴시안",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EclZtaUNfT09wMnVPb1Y2TVVtRXBhMHZ6dUxMbFMzdGE5S0tyRG0wd0Y2WElPamFvQlAxdjAwOHJKNzQzYll4clNQTnRCb2QyYUxUVjh2bDVBRjkyQ0RyZVZMZkRUOGx2dmpKZg?oc=5",
+   "source": "뉴시안",
+   "published": "Sat, 21 Nov 2026 22:41:53 GMT",
+   "snippet": "[피지컬 AI, 시연 넘어 양산 경쟁①] 반도체 넘어 로봇으로…미·중 AI 패권 경쟁, 피지컬 AI로 확전 뉴시안",
+   "score": 3.0,
+   "why": "추상적인 미중 패권 경쟁 및 소프트웨어 중심",
+   "category_hint": "기타",
+   "summary": "미·중 AI 패권 경쟁이 반도체를 넘어 피지컬 AI와 로봇 분야의 양산 경쟁으로 확전되고 있습니다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정이나 기술적 난이도에 대한 내용이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 수 있는 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "미·중 패권 경쟁 속에서 국내 로봇 부품 공급망과 외주 조립 생태계는 어떤 영향을 받을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}

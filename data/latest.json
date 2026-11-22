@@ -1,74 +1,66 @@
 {
- "date": "2026-11-22",
- "generated_at": "2026-11-22T07:03+09:00",
+ "date": "2026-11-23",
+ "generated_at": "2026-11-23T07:04+09:00",
  "model": "gemini/gemini-3.5-flash-lite",
  "items": [
   {
-   "id": "35a13bc64168",
-   "title": "The BlackBerry-style Clicks phone won’t ship in December - Tbreak UAE",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TbWhWRzNTaW1tdEtBQmRRNHhsZTVhdnNHdHV1VXlpbk9RM0gtc2xsS0k4MGJvZk1iQVVqdU5SbmlNX09BbXdmV2VGeDg4RkpoMGwwdkN4T3Q4SFhpRjJKTGFraExrX19fM2xCMm9GVjA?oc=5",
-   "source": "Tbreak UAE",
-   "published": "Fri, 20 Nov 2026 19:40:00 GMT",
-   "snippet": "The BlackBerry-style Clicks phone won’t ship in December Tbreak UAE",
+   "id": "93fb15d404ce",
+   "title": "[피지컬 AI, 시연 넘어 양산 경쟁②] 휴머노이드, 시연에서 양산으로…공장 투입이 진짜 승부처 - 뉴시안",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Wc3d2bFlSZVB5bU5zRHJGeDVrY1RLZHlva0JVT3kzSHpycVhqQzc1Ymh6cVdVemdXTEU0cXdlTUZVYnpPbEJfLXFXc3JYZEppTTRUWTFucjJiNzdlVkdUSHpua0xLcWJBY1BWZg?oc=5",
+   "source": "뉴시안",
+   "published": "Sun, 22 Nov 2026 21:47:29 GMT",
+   "snippet": "[피지컬 AI, 시연 넘어 양산 경쟁②] 휴머노이드, 시연에서 양산으로…공장 투입이 진짜 승부처 뉴시안",
    "score": 9.0,
-   "why": "양산 및 출시 일정 지연",
-   "category_hint": "HW스타트업",
-   "summary": "블랙베리 스타일의 클릭스 스마트폰이 12월에 출시되지 못하고 일정이 연기되었습니다.",
-   "category": "HW스타트업",
+   "why": "시제품에서 양산으로 넘어가는 이야기",
+   "category_hint": "로봇",
+   "summary": "휴머노이드 로봇이 단순한 기술 시연 단계를 넘어 실제 공장 투입을 위한 양산 경쟁 단계로 진입하고 있습니다. 제조 현장에서의 실효성과 대량 생산 능력이 향후 성패를 가를 핵심 승부처가 될 전망입니다.",
+   "category": "로봇",
    "ai_lenses": [
-    "외주 조립·납기"
+    "외주 조립·납기",
+    "설계 양산성"
    ],
    "extracted": {
-    "companies": [
-     {
-      "value": "Clicks",
-      "evidence": "Clicks phone"
-     }
-    ],
+    "companies": [],
     "stage": {
      "value": "양산",
-     "evidence": "won’t ship in December"
+     "evidence": "시연 넘어 양산 경쟁②"
     },
     "numbers": []
    },
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "출시 연기 사유가 원문에 구체적으로 언급되지 않았다.",
+     "reason": "원문에 구체적인 양산 난이도나 공정 정보가 없다.",
      "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "병목 공정에 대한 단서가 없다.",
+     "reason": "원문에 병목 현상을 유추할 만한 내용이 없다.",
      "confidence": "낮음"
     }
    },
    "program_ids": [],
-   "failure_case": {
-    "cause_tags": [
-     "납기지연"
-    ],
-    "evidence": "won’t ship in December"
-   },
-   "review_question": "출시가 미뤄진 진짜 원인이 금형 수정 때문인지, 부품 수급 차질인지 확인해야 할까?",
+   "failure_case": null,
+   "review_question": "실제 공장 라인에 휴머노이드를 투입할 때 기존 설비와의 인터페이스와 신뢰성 검증은 어떤 기준으로 준비해야 할까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": [
-    "외주 조립·납기"
+    "설계 양산성",
+    "수요·시장성"
    ]
   },
   {
-   "id": "2d399dc6a2ac",
-   "title": "Consumers Embrace AI Pricing—If Brands Earn Their Trust - Small Business Trends",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZGNTMGZtc3RfWXZrZzMwbkRoMUJ4Y0dmdURJcVd6WHZ4MlNCR2hYZ0pMVGtwRmR1cjJMMkZfeUl6TmN6aXo2RlJGTHQzRndDMFpnT1JSRGxfaFFTdmhUQWZucVpBU3RzWGxKemN0LXV6Z25wZnY5anpQUGVTclotS2ZycGZMd0w0c2xv?oc=5",
-   "source": "Small Business Trends",
-   "published": "Fri, 20 Nov 2026 17:04:00 GMT",
-   "snippet": "Consumers Embrace AI Pricing—If Brands Earn Their Trust Small Business Trends",
-   "score": 1.0,
-   "why": "소프트웨어 및 가격 정책 이야기",
+   "id": "cb54b8214c52",
+   "title": "[피지컬 AI, 시연 넘어 양산 경쟁①] 반도체 넘어 로봇으로…미·중 AI 패권 경쟁, 피지컬 AI로 확전 - 뉴시안",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EclZtaUNfT09wMnVPb1Y2TVVtRXBhMHZ6dUxMbFMzdGE5S0tyRG0wd0Y2WElPamFvQlAxdjAwOHJKNzQzYll4clNQTnRCb2QyYUxUVjh2bDVBRjkyQ0RyZVZMZkRUOGx2dmpKZg?oc=5",
+   "source": "뉴시안",
+   "published": "Sat, 21 Nov 2026 22:41:53 GMT",
+   "snippet": "[피지컬 AI, 시연 넘어 양산 경쟁①] 반도체 넘어 로봇으로…미·중 AI 패권 경쟁, 피지컬 AI로 확전 뉴시안",
+   "score": 3.0,
+   "why": "추상적인 미중 패권 경쟁 및 소프트웨어 중심",
    "category_hint": "기타",
-   "summary": "소비자들은 브랜드가 신뢰를 얻는다면 AI 기반 가격 책정 방식을 수용할 의향이 있다. 신뢰 구축이 AI 가격 정책 성공의 핵심 요인으로 작용한다.",
-   "category": "기타",
+   "summary": "미·중 AI 패권 경쟁이 반도체를 넘어 피지컬 AI와 로봇 분야의 양산 경쟁으로 확전되고 있습니다.",
+   "category": "로봇",
    "ai_lenses": [],
    "extracted": {
     "companies": [],
@@ -78,18 +70,18 @@
    "estimated": {
     "production_difficulty": {
      "value": "판단불가",
-     "reason": "원문에 제조, 부품, 양산과 관련된 구체적인 공정 정보가 없다.",
-     "confidence": "높음"
+     "reason": "원문에 구체적인 양산 공정이나 기술적 난이도에 대한 내용이 없다.",
+     "confidence": "낮음"
     },
     "likely_bottleneck": {
      "value": "판단불가",
-     "reason": "원문에 병목 현상을 유추할 만한 내용이 없다.",
-     "confidence": "높음"
+     "reason": "원문에 병목 현상을 유추할 수 있는 정보가 없다.",
+     "confidence": "낮음"
     }
    },
    "program_ids": [],
    "failure_case": null,
-   "review_question": "소비자 신뢰를 확보하지 못한 상태에서 AI 가격 책정을 도입하면 어떤 시장 저항에 부딪힐까?",
+   "review_question": "미·중 패권 경쟁 속에서 국내 로봇 부품 공급망과 외주 조립 생태계는 어떤 영향을 받을까?",
    "dropped": 0,
    "programs": [],
    "ai_lenses_baseline": []
