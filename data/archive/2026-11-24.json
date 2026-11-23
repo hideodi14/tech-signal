@@ -1,0 +1,173 @@
+{
+ "date": "2026-11-24",
+ "generated_at": "2026-11-24T07:15+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "4c3822b74bd6",
+   "title": "레인보우로보틱스, 삼성향 매출 비중 40%에 육박…'RB-Y2' 양산은 내년 하반기부터 - 마켓잉크",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBaSC1UcHpsU3BLQmdCaTBGMDZpYVpua2llU1UzWkFMZmVXZVlXTExiZHgwbXlGa01DQUt4U2s3VnlSejFxYXhneVRnQnM1SnhKZUkzZVkxa256VEthckVoSmtiTWFLMXIyYk9MMVplQQ?oc=5",
+   "source": "마켓잉크",
+   "published": "Mon, 23 Nov 2026 00:35:28 GMT",
+   "snippet": "레인보우로보틱스, 삼성향 매출 비중 40%에 육박…'RB-Y2' 양산은 내년 하반기부터 마켓잉크",
+   "score": 10.0,
+   "why": "구체적인 양산 시점과 공급처 언급",
+   "category_hint": "로봇",
+   "summary": "레인보우로보틱스의 삼성향 매출 비중이 40%에 육박하는 가운데, 신제품 'RB-Y2'의 양산은 내년 하반기로 예정되어 있다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "레인보우로보틱스",
+      "evidence": "레인보우로보틱스, 삼성향 매출"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "RB-Y2' 양산은 내년 하반기"
+    },
+    "numbers": [
+     {
+      "value": "40%",
+      "evidence": "매출 비중 40%에 육박"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 양산 공정이나 설계 구조에 대한 구체적인 언급이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "공급망이나 생산 라인 관련 병목을 유추할 정보가 부족하다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "내년 하반기 RB-Y2 양산 시점에 맞춰 부품 공급과 외주 조립 라인의 준비 상황은 문제없이 진행되고 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "6d3c4b8a7528",
+   "title": "중국산 빼는 美 로봇 시장…로보티즈·삼현, 액추에이터 대체 공급망 노린다 - www.ebn.co.kr",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sZ3hHdHNQLXY1Wkh5RFp1ZXZPWVB0YlFzaW1HdGFNM0NuV2prY0E2V1NfYTZIM0lDRndTa0lmb1ljSy13b2FiaTNFQndxei1iSWp0RHR2VUJ6TXVJblZENmVob0NRa0l0?oc=5",
+   "source": "www.ebn.co.kr",
+   "published": "Mon, 23 Nov 2026 02:45:39 GMT",
+   "snippet": "중국산 빼는 美 로봇 시장…로보티즈·삼현, 액추에이터 대체 공급망 노린다 www.ebn.co.kr",
+   "score": 9.0,
+   "why": "부품 공급망 및 대체재 확보 이슈",
+   "category_hint": "부품·공급망",
+   "summary": "미국 로봇 시장에서 중국산 배제 움직임이 커지면서 국내 부품사들이 대체 공급망 진입을 노리고 있다. 로보티즈와 삼현 등이 핵심 부품인 액추에이터를 중심으로 기회를 모색 중이다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "로보티즈",
+      "evidence": "로보티즈·삼현, 액추에이터 대체 공급망 노린다"
+     },
+     {
+      "value": "삼현",
+      "evidence": "로보티즈·삼현, 액추에이터 대체 공급망 노린다"
+     }
+    ],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 난이도나 공정 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 구간을 유추할 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "미국 시장 요구 스펙에 맞춰 액추에이터 대체 공급을 시작할 때, 품질 신뢰성을 확보하는 데 가장 큰 변수는 무엇일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  },
+  {
+   "id": "32c4c9c89efa",
+   "title": "알톤, 로보틱스 기업 엑스업과 자율주행 로봇 구조물 설계·생산 협력 추진 - 더스탁(The Stock)",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE01TXpqcklBamY2UXhZZzJ5YVRYNUhJaTJHcW5YRDFCal8zZEp3d0lOYVQ4Wll0ZklSb3ZHQWFOdEhHanVLZ1h4cE5XV1ZyRzVwTG00UHUyaHJPR1dzNmttNW9rUTVYRG1BLUE?oc=5",
+   "source": "더스탁(The Stock)",
+   "published": "Sun, 22 Nov 2026 23:54:37 GMT",
+   "snippet": "알톤, 로보틱스 기업 엑스업과 자율주행 로봇 구조물 설계·생산 협력 추진 더스탁(The Stock)",
+   "score": 8.0,
+   "why": "로봇 구조물 설계 및 생산 협력",
+   "category_hint": "외주생산·EMS",
+   "summary": "알톤은 로보틱스 기업 엑스업과 협력하여 자율주행 로봇의 구조물 설계와 생산을 추진하기로 했다. 이번 협력을 통해 양사는 로봇 관련 제품의 제조 및 공급 역량을 강화할 것으로 기대된다.",
+   "category": "외주생산·EMS",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "알톤",
+      "evidence": "알톤, 로보틱스 기업 엑스업과"
+     },
+     {
+      "value": "엑스업",
+      "evidence": "로보틱스 기업 엑스업과 자율주행 로봇"
+     }
+    ],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구조물 설계 및 생산 협력 추진 내용만 있고 구체적인 양산 난이도나 공정 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 만한 생산 수량이나 세부 조건이 언급되지 않았다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "알톤의 기존 자전거 생산 라인을 로봇 구조물 조립에 그대로 쓰려면 치구와 검사 장비를 얼마나 새로 깔아야 할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "설계 양산성",
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "6bf80e46e6d5",
+   "title": "Electronic Component Sourcing: Why Shortages Persist - Electropages",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa2ExR0Q1c0wySlc1aWpna2g0QjlmVTZiUGg3YVNhTHN1dVNUWkRNa1ZxaHJRSzN2eEtuMllyVUtFQ1hFV28yRk1XeGNJNWlwQnVlb0NCazBfZVhMZUtJQlUwR3Q4clhpbDlOOXJWdzFSTU83M1dVMUUwNlJHdU0tcVhoRjdnUnJHZHhrdUw3aDEwdGhLTmZCUw?oc=5",
+   "source": "Electropages",
+   "published": "Mon, 23 Nov 2026 09:44:39 GMT",
+   "snippet": "Electronic Component Sourcing: Why Shortages Persist Electropages",
+   "score": 8.0,
+   "why": "부품 수급 및 리드타임 문제 다룸",
+   "category_hint": "부품·공급망",
+   "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+  }
+ ]
+}
