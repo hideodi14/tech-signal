@@ -1,0 +1,289 @@
+{
+ "date": "2026-11-25",
+ "generated_at": "2026-11-25T07:20+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "47091e74cc5f",
+   "title": "로봇도, 드론도 '메이드 바이 인탑스'…프리뉴와 양산 돌입 - 아시아경제",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjRHpVODVKRlkyanlZcWFNQ3VBRnk5cFRRZ0VfMjB2U0VEUkZ2YzZpem5CZTNDVl9zeEx6MGw2SFVyakM5TjRMb2Y4RGdnSFRrRFoydU9GdGU4bkdKM19SOA?oc=5",
+   "source": "아시아경제",
+   "published": "Mon, 23 Nov 2026 23:50:57 GMT",
+   "snippet": "로봇도, 드론도 '메이드 바이 인탑스'…프리뉴와 양산 돌입 아시아경제",
+   "score": 10.0,
+   "why": "EMS 업체를 통한 드론 양산 시작",
+   "category_hint": "외주생산·EMS",
+   "summary": "인탑스가 프리뉴와 손잡고 드론 양산에 돌입한다. 로봇과 드론 분야의 외주 생산을 본격적으로 확대하고 있다.",
+   "category": "외주생산·EMS",
+   "ai_lenses": [
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "인탑스",
+      "evidence": "메이드 바이 인탑스"
+     },
+     {
+      "value": "프리뉴",
+      "evidence": "프리뉴와 양산 돌입"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "양산 돌입"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 생산 공정이나 부품 구성에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문 제목과 스니펫 외에 병목 공정을 유추할 만한 상세 내용이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "프리뉴 드론의 초도 양산 물량을 인탑스 라인에 태울 때 수삽 공정 비중이 얼마나 되나?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "외주 조립·납기"
+   ]
+  },
+  {
+   "id": "7edbaf47d7ac",
+   "title": "삼성전자 휴머노이드 공개와 구미 양산, 데이터센터 투자 - 머니터링",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qSU1EdHlxRk1BTGEzUWdpT3FBUC1GSzRmOHp4OTVhMFRrbXJBRzhWX1dscl9kWXhzb0hJU3RPMllnRmVOWl9IUVNwQTYxQQ?oc=5",
+   "source": "머니터링",
+   "published": "Tue, 24 Nov 2026 05:36:14 GMT",
+   "snippet": "삼성전자 휴머노이드 공개와 구미 양산, 데이터센터 투자 머니터링",
+   "score": 9.0,
+   "why": "국내 공장 휴머노이드 로봇 양산",
+   "category_hint": "로봇",
+   "summary": "삼성전자가 휴머노이드 로봇을 공개하고 구미에서의 양산과 데이터센터 투자를 추진합니다. 로봇 생산을 위한 구미 거점의 양산 체제 구축이 진행될 예정입니다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "설계 양산성"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "삼성전자",
+      "evidence": "삼성전자 휴머노이드 공개와 구미 양산"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "구미 양산"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 휴머노이드의 구체적인 구조나 부품 수급 조건이 언급되지 않아 양산 난이도를 판단할 수 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상에 대한 세부 내용이 원문에 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "구미 공장에서 휴머노이드 양산을 시작할 때 기존 가전 라인과 비교해 어떤 부품 수급과 조립 공정 라인 정비가 먼저 필요할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "59aef4e8e1eb",
+   "title": "삼성전자, 131명 정기 임원 인사 단행…‘HBM·로봇’ 핵심 인재 전면 배치 - 비즈중앙",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB1ZFFXU2s2XzhZaFdUXzJySUlQc0RuSUFZaDhvelFwRk5UOHVSZkllUUVqcGtrLVNGT3Z2ajBjUktGdXgtNmREdWIwaGtUOVJMcVlpczNaM3dweXdtWkxiV1dQNXFHTHRyQUFOTkg0NEs?oc=5",
+   "source": "비즈중앙",
+   "published": "Tue, 24 Nov 2026 08:27:19 GMT",
+   "snippet": "삼성전자, 131명 정기 임원 인사 단행…‘HBM·로봇’ 핵심 인재 전면 배치 비즈중앙",
+   "score": 2.0,
+   "why": "임원 인사로 양산과 무관함",
+   "category_hint": "기타",
+   "summary": "삼성전자가 131명의 정기 임원 인사를 단행하며 HBM과 로봇 분야의 핵심 인재를 전면 배치했습니다. 조직 쇄신과 미래 먹거리 기술 확보에 초점을 맞춘 인사입니다.",
+   "category": "로봇",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "삼성전자",
+      "evidence": "삼성전자, 131명 정기 임원 인사 단행"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "131명",
+      "evidence": "삼성전자, 131명 정기 임원 인사 단행"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "임원 인사 관련 내용으로 제조 및 양산 난이도를 파악할 수 있는 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "생산 공정이나 공급망 관련 병목 현상에 대한 언급이 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이번 임원 인사가 실제 로봇과 HBM 양산 라인의 부품 수급이나 수율 개선에 어떤 실질적 변화를 가져올까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "e666d3bd5fb6",
+   "title": "기업가치 600억 위안 육박, 소프트뱅크·엔비디아 대규모 베팅…독일 로봇 유니콘 창업자는 중국인! - PANews",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBuS3NUQ1BqWEpYN1UtQzRLbWpUY1JCVHJEVW8yOUI5SUZtcWN4UkhkeHprODQzOWZGdGpNQ1ltNFpjVi0zVGUzY1FnR2taMi03dUo4TnlxM3oyNURjVW9vOFRvSTBlZXFyUWZSalpMWmN4anNjdWhiVkxQM0dNWXM?oc=5",
+   "source": "PANews",
+   "published": "Tue, 24 Nov 2026 13:40:02 GMT",
+   "snippet": "기업가치 600억 위안 육박, 소프트뱅크·엔비디아 대규모 베팅…독일 로봇 유니콘 창업자는 중국인! PANews",
+   "score": 2.0,
+   "why": "투자 유치 뉴스이며 양산 내용 부족",
+   "category_hint": "HW스타트업",
+   "summary": "독일의 로봇 유니콘 기업이 소프트뱅크와 엔비디아로부터 대규모 투자를 유치하며 주목받고 있다. 해당 기업의 가치는 600억 위안에 육박하는 것으로 알려졌다.",
+   "category": "HW스타트업",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "소프트뱅크",
+      "evidence": "소프트뱅크·엔비디아 대규모 베팅"
+     },
+     {
+      "value": "엔비디아",
+      "evidence": "소프트뱅크·엔비디아 대규모 베팅"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "600억 위안",
+      "evidence": "기업가치 600억 위안 육박"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 공정이나 양산 난이도에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 생산 병목에 대한 단서가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "소프트뱅크와 엔비디아의 대규모 투자가 실제 양산 라인 구축과 부품 공급망 안정화에 어떻게 반영될까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "8774f8ab07b2",
+   "title": "천안시, ‘2026 C-STAR 인사이트 투어’ 개최…제조현장 2곳 방문 - 위런치",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1hNktjeHV5Q3FGWEtiM3ljTUk5dUdxNlB5YU9ETWppdS1vYnUwM0FIbnNjbTYtMzBJQlpHam1fYWNFRy0zRkNZR1p1YU1EX0gtSVViVWo2Mm1VQVNNUWc0VFdhX1U?oc=5",
+   "source": "위런치",
+   "published": "Tue, 24 Nov 2026 10:30:06 GMT",
+   "snippet": "천안시, ‘2026 C-STAR 인사이트 투어’ 개최…제조현장 2곳 방문 위런치",
+   "score": 1.0,
+   "why": "단순 지자체 행사 홍보 기사임",
+   "category_hint": "기타",
+   "summary": "천안시가 제조현장 2곳을 방문하는 '2026 C-STAR 인사이트 투어'를 개최합니다. 관련 기관과 기업들의 현장 소통이 이루어질 것으로 보입니다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "2026",
+      "evidence": "2026 C-STAR"
+     },
+     {
+      "value": "2곳",
+      "evidence": "제조현장 2곳"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "제조현장 방문 행사에 대한 안내일 뿐 구체적인 양산 공정이나 스펙 정보가 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "공정상의 병목 현상을 유추할 수 있는 정보가 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이번 투어에서 방문하는 제조현장 2곳은 어떤 품목을 양산하는 곳인가?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "1ca9f308d2e6",
+   "title": "Cyber Attacks Bombard US Ports With 'Thousands' of Hacks - Newsweek",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5URVE4UWJzaGVhb01SeXNmYXhscWRqWWQxdWJTakIzWF9Nei01WXAwc0lXRWx0N3o0ZnMwLUdibjJRWjlzOS1qY1pFSnVaR3d4NXkycERELVdnX2VnS0FGTXhQSGx2bVg2b2dKaHlHakl0V29KelFwNTF3?oc=5",
+   "source": "Newsweek",
+   "published": "Mon, 23 Nov 2026 12:11:00 GMT",
+   "snippet": "Cyber Attacks Bombard US Ports With 'Thousands' of Hacks Newsweek",
+   "score": 0.0,
+   "why": "하드웨어 공급망과 관련 없는 보안 뉴스",
+   "category_hint": "기타",
+   "summary": "미국 항만이 수천 건의 사이버 공격에 시달리고 있다는 내용이다. 구체적인 양산 계획이나 부품 수급 관련 정보는 언급되지 않았다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "제조 및 양산과 관련된 내용이 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "사이버 공격에 대한 내용만 있고 제조 공정이나 공급망 병목에 대한 근거가 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "항만 보안 이슈가 물류나 부품 공급망에 어떤 실질적인 차질을 줄까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
