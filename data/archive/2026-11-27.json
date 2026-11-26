@@ -1,0 +1,355 @@
+{
+ "date": "2026-11-27",
+ "generated_at": "2026-11-27T07:21+09:00",
+ "model": "gemini/gemini-3.5-flash-lite",
+ "items": [
+  {
+   "id": "5d549ff3d361",
+   "title": "씨피시스템, 현대차 美 생산기지향 '로봇 보호 핵심' 로보웨이 2차 양산 물량 본격 납품 - 프라임경제",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5KME1sb1F6VmhmbURGN0dVOUxpeVRRRlhQcWtTWlpFc21vRlJOVnRtOVRkcElMcVNRTkhBbUpVczBERE5meXdWcWQzRXk4anRkQ0phWjVmUWVSOVNUOHhYdG1mald1eWpldHhfemtYX0ZiZw?oc=5",
+   "source": "프라임경제",
+   "published": "Thu, 26 Nov 2026 00:50:17 GMT",
+   "snippet": "씨피시스템, 현대차 美 생산기지향 '로봇 보호 핵심' 로보웨이 2차 양산 물량 본격 납품 프라임경제",
+   "score": 9.0,
+   "why": "부품 2차 양산 및 납품",
+   "category_hint": "부품·공급망",
+   "summary": "씨피시스템이 현대자동차의 미국 생산기지로 로봇 보호 핵심 부품인 로보웨이 2차 양산 물량을 본격적으로 납품합니다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "부품 수급"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "씨피시스템",
+      "evidence": "씨피시스템"
+     },
+     {
+      "value": "현대차",
+      "evidence": "현대차"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "2차 양산 물량 본격 납품"
+    },
+    "numbers": [
+     {
+      "value": "2차",
+      "evidence": "2차 양산 물량"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 양산 공정 난이도에 대한 정보가 없습니다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 공급 병목이나 리스크 요인이 기재되어 있지 않습니다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "해외 생산기지로 납기할 때 물류 지연이나 현장 품질 이슈가 발생할 가능성은 없을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "e7c1d82764d7",
+   "title": "씨피시스템, 로봇 전력케이블 보호 솔루션 2차 양산 물량 납품 - 뉴시스",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9INktVY3dYaVQ5MnNYU2tPSUZhVWFKd012THVBdUF2ZUF0aG82enBIRjNCOFd5RldsVEN4N0RLQk1MOUxLdUsySWt3REhLUkpBTE1HcXhOUEtSV2g0eTJ6dNIBeEFVX3lxTE1FWUlxWGNaZmRIckxlWi1Sd3NSSjR2VGM3QVdwTFBWUDlJbk5rSm8wdEFVSWpSelJ6Sk9qY19UaHh2VDdLQnhEQnFFZklLR1h4cmQ2cER1bWEwNU5uVmZ1MC1TWGNCaXNBS1NEYnlLQUVSaE9hYnlxTA?oc=5",
+   "source": "뉴시스",
+   "published": "Thu, 26 Nov 2026 01:32:28 GMT",
+   "snippet": "씨피시스템, 로봇 전력케이블 보호 솔루션 2차 양산 물량 납품 뉴시스",
+   "score": 9.0,
+   "why": "로봇 부품 양산 납품",
+   "category_hint": "로봇",
+   "summary": "씨피시스템이 로봇용 전력케이블 보호 솔루션의 2차 양산 물량을 납품했다. 로봇 구동에 필수적인 부품 공급이 안정적으로 이어지고 있음을 보여준다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "씨피시스템",
+      "evidence": "씨피시스템, 로봇 전력케이블"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "2차 양산 물량 납품"
+    },
+    "numbers": [
+     {
+      "value": "2차",
+      "evidence": "2차 양산 물량 납품"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 공정이나 설계 난이도에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 생산 병목이나 공급 지연에 대한 언급이 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "2차 납품 물량이 늘어나면서 케이블 보호 튜브의 수율이나 압출 공정에서 불량이 늘어날 조임새는 없을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "1426e66c651c",
+   "title": "Circuit board shortage: Shimano drops delivery dates for Di2 and e-bike parts - Bike Europe",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObGRpbk5kcTFwV0oxdkZLcFdpVUpJeW0ydU1qNFYyc3hkdng3QUlZMmRQZllZWW4yal9lZHlHMzViMVBIaTVLSVgtLW84WU40QVBKSHJzSjJXRFE3aTVhd2dlaWtQM2dsVURCRFZXN2lieldxZXgwck96NHZpR0VFbGxR?oc=5",
+   "source": "Bike Europe",
+   "published": "Thu, 26 Nov 2026 09:45:38 GMT",
+   "snippet": "Circuit board shortage: Shimano drops delivery dates for Di2 and e-bike parts Bike Europe",
+   "score": 9.0,
+   "why": "기판 품귀로 납기 지연",
+   "category_hint": "부품·공급망",
+   "summary": "시마노가 회로기판 부족으로 인해 Di2와 전기자전거 부품의 납품일을 연기하거나 취소하고 있습니다. 핵심 부품의 수급 불안정으로 인해 전체 조립 및 공급망에 차질이 빚어지고 있습니다.",
+   "category": "부품·공급망",
+   "ai_lenses": [
+    "부품 수급",
+    "외주 조립·납기"
+   ],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Shimano",
+      "evidence": "Shimano drops delivery dates"
+     }
+    ],
+    "stage": {
+     "value": "양산",
+     "evidence": "delivery dates for Di2 and e-bike parts"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "높음",
+     "reason": "회로기판(Circuit board) 부족으로 인해 완제품 조립 납기가 중단되거나 지연되고 있다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "Circuit board shortage",
+     "reason": "원문에 회로기판 부족이 납기 지연의 직접적인 원인으로 언급되어 있다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": {
+    "cause_tags": [
+     "부품수급",
+     "납기지연"
+    ],
+    "evidence": "Circuit board shortage: Shimano drops delivery dates"
+   },
+   "review_question": "회로기판 품귀로 납기가 밀리는데 대체 공급처를 뚫거나 설계를 변경하는 데 얼마나 걸릴까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  },
+  {
+   "id": "912e4fabe6ab",
+   "title": "[휴머노이드 양산의 조건②] 3분기 세계 휴머노이드 출하량 97%는 中 업체 몫 - 뉴스로드",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2a0tlM3g0R2ZacjVGLUZFN1dMT1Bick9PX0xoRmFGZXZqTTUwdFRfUFFBZHhCMGd1VTdFbDVnOEFBVzlfd01nQjFmeDVqb25BVkJZWnFhREU0eXVMc3ZlLTFDa2QwSzk3LVNr0gFvQVVfeXFMUEtaT29UYk56emR4Zjc5cWZKVzlWUmNuYVRyRlhKRjlsWnhBYVZuNm1YLXBDNGo4QVZHUXBQTjlKM3ZhWVlhN2FPbzJremZUVy14OEk0RGlMZmRqM3ZlLV8zcG5RMzctbHd4TDZNT1ZN?oc=5",
+   "source": "뉴스로드",
+   "published": "Wed, 25 Nov 2026 23:40:16 GMT",
+   "snippet": "[휴머노이드 양산의 조건②] 3분기 세계 휴머노이드 출하량 97%는 中 업체 몫 뉴스로드",
+   "score": 8.0,
+   "why": "휴머노이드 양산 및 출하",
+   "category_hint": "로봇",
+   "summary": "3분기 전 세계 휴머노이드 출하량의 대부분을 중국 기업들이 차지한 것으로 나타났다. 양산 단계에서 중국 업체의 물량 공세가 이어지고 있다.",
+   "category": "로봇",
+   "ai_lenses": [
+    "외주 조립·납기",
+    "양산 단가"
+   ],
+   "extracted": {
+    "companies": [],
+    "stage": {
+     "value": "양산",
+     "evidence": "휴머노이드 양산"
+    },
+    "numbers": [
+     {
+      "value": "97%",
+      "evidence": "출하량 97%는 中 업체"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 제조 공정이나 부품 수급에 대한 구체적인 내용이 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "병목 현상을 유추할 수 있는 정보가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "중국 업체들이 저렴한 단가로 출하량을 늘리고 있는데 국내 부품 공급망과 외주 조립 라인은 어떻게 대응해야 할까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "수요·시장성",
+    "양산 단가"
+   ]
+  },
+  {
+   "id": "11ce7dff6225",
+   "title": "How AI and real-time data can help supply chains manage festive demand - Manufacturing Today India",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YNDAxMUREeHVrcV9KY1VrMk10OXc0V2I4MWIyNzR0YUowT2sxVENoWVFwV1pzVFhYelVwczhTSkNObWdyWTE4bTFZTXFLYmxmWlRfdThxcUZveTMtc2FvLTNtY1A5S25hMEhoTjNR?oc=5",
+   "source": "Manufacturing Today India",
+   "published": "Thu, 26 Nov 2026 12:49:17 GMT",
+   "snippet": "How AI and real-time data can help supply chains manage festive demand Manufacturing Today India",
+   "score": 4.0,
+   "why": "AI 공급망 관리 일반론",
+   "category_hint": "부품·공급망",
+   "summary": "AI와 실시간 데이터를 활용하면 공급망이 축제 기간의 수요를 효율적으로 관리할 수 있다. 정확한 정보 부족으로 인해 구체적인 수치나 기업 정보는 확인할 수 없다.",
+   "category": "부품·공급망",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [],
+    "stage": null,
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 구체적인 제조 공정이나 양산 관련 내용이 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상을 유추할 수 있는 구체적인 정보가 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이 기사에서 말하는 AI와 실시간 데이터가 실제 부품 공급망의 어떤 단계를 개선한다는 뜻일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": [
+    "부품 수급"
+   ]
+  },
+  {
+   "id": "c8e357a531ee",
+   "title": "위대한디자인, 하이엔드 스마트홈 ‘WDH Smart Living’ 출시 - 위런치",
+   "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNaVE5em9PbXFsNG5oYXJJdmlTS0ZqSEVZRE9rTlNiYzBBUmJwSXBTSTNxV1VRdlZVakZsVEZnYU1hSzh2Qk5kdmlmZ0JZaFJyV0ZuTjVkaDdxak5xX1lQS2FjV0hYazJuSVBsYUlUanMtOEplMjRkaklySDRzeE9aU0dScnRRVTRCaXE1ajd4a1RoUmg3TXJHUkRBWjNCTVhBY2VWZDBnMXRzZFVCTmJaZXdoTHdlMnctX2hPRTZTa1dBWEpMaWZ1WWMteHZRMUJCaFYzRGFFWVF4Z0RsN003M3RxLUlhU2pmYlRUQ0RsWjhfSmFjWXB4SnZCdmh0dkVHWmRRUWQ0b0FhbTBXb2x4ckJxdm1NdW1JLXpFN0lrV0xyMm5P?oc=5",
+   "source": "위런치",
+   "published": "Thu, 26 Nov 2026 03:26:20 GMT",
+   "snippet": "위대한디자인, 하이엔드 스마트홈 ‘WDH Smart Living’ 출시 위런치",
+   "score": 3.0,
+   "why": "단순 제품 출시 기사",
+   "category_hint": "AI기기·가전",
+   "summary": "위대한디자인이 하이엔드 스마트홈 브랜드 'WDH Smart Living'을 출시했다.",
+   "category": "AI기기·가전",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "위대한디자인",
+      "evidence": "위대한디자인, 하이엔드 스마트홈"
+     }
+    ],
+    "stage": {
+     "value": "상용판매",
+     "evidence": "출시"
+    },
+    "numbers": []
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "원문에 생산 난이도에 대한 정보가 없다.",
+     "confidence": "낮음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "원문에 병목 현상에 대한 근거가 없다.",
+     "confidence": "낮음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이 제품의 양산 물량이 확보된 상태에서 출시한 것일까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  },
+  {
+   "id": "3ea4eaaf1676",
+   "title": "Time Is Running Out for Apple’s iPhone Settlement. How to File a Claim Before Dec. 21 - CNET",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZTdSZVEzUXF5bkNnQ296SDV5eWlvV3Y0YmNLWnFNWW02SzVudThHdEhlRHkzNGJYalFjRENjVDUxUTJELWRaWDROZExudlN2YUtMTTJXaGUtMEpxSnJZXzBIMW9BLTl3TTFfSzBQWm1LdmdYVy12b0NVY3hsbUVpa0lmbmEyeGpKR2E5bVBfVUlDbi1iU0RnVEc5M2ZhczA?oc=5",
+   "source": "CNET",
+   "published": "Thu, 26 Nov 2026 01:36:00 GMT",
+   "snippet": "Time Is Running Out for Apple’s iPhone Settlement. How to File a Claim Before Dec. 21 CNET",
+   "score": 0.0,
+   "why": "소비자 소송 안내 기사",
+   "category_hint": "기타",
+   "summary": "애플의 아이폰 합의금 청구 마감일이 12월 21일로 다가왔다. 사용자는 마감일 전에 보상 청구를 완료해야 한다.",
+   "category": "기타",
+   "ai_lenses": [],
+   "extracted": {
+    "companies": [
+     {
+      "value": "Apple",
+      "evidence": "Apple’s iPhone Settlement"
+     }
+    ],
+    "stage": null,
+    "numbers": [
+     {
+      "value": "Dec. 21",
+      "evidence": "Before Dec. 21"
+     }
+    ]
+   },
+   "estimated": {
+    "production_difficulty": {
+     "value": "판단불가",
+     "reason": "제조 및 양산 공정과 관련된 내용이 없다.",
+     "confidence": "높음"
+    },
+    "likely_bottleneck": {
+     "value": "판단불가",
+     "reason": "제조 병목 현상에 대한 언급이 없다.",
+     "confidence": "높음"
+    }
+   },
+   "program_ids": [],
+   "failure_case": null,
+   "review_question": "이 합의금 청구 건이 자재나 생산 라인 운영에 직접적인 영향을 줄 일이 있을까?",
+   "dropped": 0,
+   "programs": [],
+   "ai_lenses_baseline": []
+  }
+ ]
+}
